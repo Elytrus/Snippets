@@ -1,0 +1,19 @@
+void add(int x, int y, int z){
+	for(int cx = x; cx <= n; cx += cx & -cx){
+		for(int cy = y; cy <= n; cy += cy & -cy){
+			tree[cx][cy] += z;
+		}
+	}
+}
+
+int sum(int x, int y){
+	int summ = 0;
+
+	for(int cx = x; cx > 0; cx -= cx & -cx){
+		for(int cy = y; cy > 0; cy -= cy & -cy){
+			summ += tree[cx][cy];
+		}
+	}
+
+	return summ;
+}

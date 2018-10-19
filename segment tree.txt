@@ -1,0 +1,37 @@
+int build(int i, int l, int r){
+	if(l == r){
+		return tree[i] = arr[l];
+	}
+
+	int mid = (l + r) / 2;
+
+	return tree[i] = build(2 * i, l, mid) + build(2 * i + 1, mid + 1, r);
+}
+
+int query(int i, int bl, int br, int ql, int qr){
+	if(ql > qr){
+		return 0;
+	}
+
+	if(bl == ql && br == qr){
+		return tree[i];
+	}
+
+	int mid = (bl + br) / 2;
+
+	return query(i * 2, bl, mid, ql, min(qr, mid)) + query(i * 2 + 1, mid + 1, br, max(ql, mid + 1), qr);
+}
+
+int update(int i, int bl, int br, int q, int v){
+    if(q < bl || q > br){
+		return tree[i];
+    }
+
+	if(bl == q && br == q){
+		return tree[i] += v;
+	}
+
+	int mid = (bl + br) / 2;
+
+	return tree[i] = update(i * 2, bl, mid, q, v) + update(i * 2 + 1, mid + 1, br, q, v);
+}

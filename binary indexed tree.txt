@@ -1,0 +1,15 @@
+void add(int x, int z){
+	for(; x <= n; x += x & -x){
+		tree[x] += z;
+	}
+}
+
+int sum(int x){
+	int sum = 0;
+
+	for(; x > 0; x -= x & -x){
+		sum += tree[x];
+	}
+
+	return sum;
+} 	 
