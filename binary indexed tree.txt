@@ -1,3 +1,6 @@
+const int MAX = 1000001;
+int tree[MAX];
+
 void add(int x, int z){
 	for(; x <= n; x += x & -x){
 		tree[x] += z;

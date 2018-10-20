@@ -1,3 +1,5 @@
+// Optimization may be incorrect
+
 struct disjoint{
 	int set[MAX], ranks[MAX], size;
 
