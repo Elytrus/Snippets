@@ -1,7 +1,8 @@
 const int MAX = 1000001;
-int tree[MAX * 5]; // Some random constant value that's big enough
+int tree[MAX * 5]; // Some random constant value that's big enough since segtree has O(n log n) space complexity
 
-int build(int i, int l, int r){
+// Example: `build(1, 1, n);`
+int build(int i, int l, int r){ 
 	if(l == r){
 		return tree[i] = arr[l];
 	}
@@ -11,7 +12,8 @@ int build(int i, int l, int r){
 	return tree[i] = build(i << 1, l, mid) + build(i << 1 | 1, mid + 1, r);
 }
 
-int query(int i, int bl, int br, int ql, int qr){
+// Example: (from range `a` to `b`) `query(1, 1, n, a, b);`
+int query(int i, int bl, int br, int ql, int qr){ 
 	if(ql > qr){
 		return 0;
 	}
@@ -25,6 +27,7 @@ int query(int i, int bl, int br, int ql, int qr){
 	return query(i << 1, bl, mid, ql, min(qr, mid)) + query(i << 1 | 1, mid + 1, br, max(ql, mid + 1), qr);
 }
 
+// Example: (for index `i` with value `v`) `query(1, 1, n, i, v);`
 int update(int i, int bl, int br, int q, int v){
     if(q < bl || q > br){
 		return tree[i];

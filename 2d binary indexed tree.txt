@@ -1,7 +1,7 @@
 const int MAX = 1001;
 int tree[MAX][MAX];
 
-void add(int x, int y, int z){
+void add(int x, int y, int z){ // Adds `z` to index `(x, y)`
 	for(int cx = x; cx <= n; cx += cx & -cx){
 		for(int cy = y; cy <= n; cy += cy & -cy){
 			tree[cx][cy] += z;
@@ -9,7 +9,7 @@ void add(int x, int y, int z){
 	}
 }
 
-int sum(int x, int y){
+int sum(int x, int y){ // Querys index `(x, y)`
 	int summ = 0;
 
 	for(int cx = x; cx > 0; cx -= cx & -cx){
@@ -20,3 +20,5 @@ int sum(int x, int y){
 
 	return summ;
 }
+
+// I ain't explaining how a fenwick tree works
