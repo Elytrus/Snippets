@@ -1,0 +1,69 @@
+// This is a min segment tree
+
+const int MAX = 30001;
+int n, 
+	arr[MAX], tree[MAX * 6], lazyp[MAX * 12]; // Large arbitrary coefficients to account for O(nlogn) size
+
+// Resolves whatever lazy propogation was done at tree index `i` and pushes it onto its children
+inline void resolve_lazy(int i){
+	if(lazyp[i]){
+		tree[i] = max(0, tree[i] + lazyp[i]);
+
+		lazyp[i << 1] += lazyp[i];
+		lazyp[i << 1 | 1] += lazyp[i];
+		lazyp[i] = 0;
+	}
+}
+
+// Example: `build(1, 1, n);`
+int build(int i, int l, int r){
+	if(l == r){
+		return tree[i] = arr[l];
+	}
+
+	int mid = (l + r) / 2;
+
+	return tree[i] = min(build(i << 1, l, mid), build(i << 1 | 1, mid + 1, r));
+}
+
+// Example: (from range `a` to `b`) `query(1, 1, n, a, b);`
+int query(int i, int bl, int br, int ql, int qr){
+	resolve_lazy(i);
+
+	if(ql > qr){
+		return INT_MAX;
+	}
+
+	if(bl == ql && br == qr){
+		return tree[i];
+	}
+
+	int mid = (bl + br) / 2;
+
+	int qval = min(query(i << 1, bl, mid, ql, min(qr, mid)),
+			query(i << 1 | 1, mid + 1, br, max(ql, mid + 1), qr));
+	tree[i] = min(tree[i], qval);
+
+	return qval;
+}
+
+// Example: (for range `a` to `b` with value `v`) `query(1, 1, n, a, b, v);`
+int update(int i, int bl, int br, int ql, int qr, int v){
+	resolve_lazy(i);
+
+    if(ql > qr){
+		return tree[i];
+    }
+
+	if(bl == ql && br == qr){
+		lazyp[i << 1] += v;
+		lazyp[i << 1 | 1] += v;
+
+		return tree[i] = max(0, tree[i] + v);
+	}
+
+	int mid = (bl + br) / 2;
+
+	return tree[i] = min(update(i << 1, bl, mid, ql, min(qr, mid), v),
+			update(i << 1 | 1, mid + 1, br, max(ql, mid + 1), qr, v));
+}
