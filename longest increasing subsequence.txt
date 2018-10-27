@@ -1,0 +1,59 @@
+//============================================================================
+// Name        : LongestIncreasingSubsequenceRecode.cpp
+// Author      : Daxi the Taxi
+// Version     :
+// Copyright   : ALL YOUR CODE IS BELONG TO US
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+
+struct pi{
+	int v, i;
+
+	pi(int v0, int i0) : v(v0), i(i0){};
+
+	friend bool operator<(const pi &a, const pi &b){
+		return a.v < b.v;
+	}
+
+	friend bool operator>(const pi &a, const pi &b){
+		return a.v > b.v;
+	}
+};
+
+const int MAX = 1000001;
+int n, buf, dp[MAX], pre[MAX];
+vector<pi> seq;
+
+int main(){
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	cin >> n;
+	memset(pre, -1, sizeof(pre));
+
+	for (int i = 1; i <= n; ++i) {
+		cin >> buf;
+
+		if(seq.empty() || buf > seq.back().v){
+			seq.emplace_back(buf, i);
+			dp[i] = seq.size();
+		}
+		else{
+			auto ptr = lower_bound(seq.begin(), seq.end(), pi(buf, -1));
+
+			pre[i] = ptr->i;
+			dp[i] = dp[ptr->i] + 1;
+
+			ptr->i = i;
+			ptr->v = buf;
+		}
+	}
+
+	printf("%d\n", seq.size());
+}
