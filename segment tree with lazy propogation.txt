@@ -51,9 +51,9 @@ int query(int i, int bl, int br, int ql, int qr){
 int update(int i, int bl, int br, int ql, int qr, int v){
 	resolve_lazy(i);
 
-    if(ql > qr){
+	if(ql > qr){
 		return tree[i];
-    }
+	}
 
 	if(bl == ql && br == qr){
 		lazyp[i << 1] += v;
