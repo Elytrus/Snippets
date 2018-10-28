@@ -1,69 +1,70 @@
-// This is a min segment tree
+//============================================================================
+// Name        : LongestIncreasingSubsequenceRecode.cpp
+// Author      : Daxi the Taxi
+// Version     :
+// Copyright   : ALL YOUR CODE IS BELONG TO US
+// Description : Hello World in C++, Ansi-style
+//============================================================================
 
-const int MAX = 30001;
-int n, 
-	arr[MAX], tree[MAX * 6], lazyp[MAX * 12]; // Large arbitrary coefficients to account for O(nlogn) size
+#include <bits/stdc++.h>
 
-// Resolves whatever lazy propogation was done at tree index `i` and pushes it onto its children
-inline void resolve_lazy(int i){
-	if(lazyp[i]){
-		tree[i] = max(0, tree[i] + lazyp[i]);
+using namespace std;
 
-		lazyp[i << 1] += lazyp[i];
-		lazyp[i << 1 | 1] += lazyp[i];
-		lazyp[i] = 0;
-	}
-}
+typedef long long ll;
 
-// Example: `build(1, 1, n);`
-int build(int i, int l, int r){
-	if(l == r){
-		return tree[i] = arr[l];
-	}
+struct pi{
+	int v, i;
 
-	int mid = (l + r) / 2;
+	pi(int v0, int i0) : v(v0), i(i0){};
 
-	return tree[i] = min(build(i << 1, l, mid), build(i << 1 | 1, mid + 1, r));
-}
-
-// Example: (from range `a` to `b`) `query(1, 1, n, a, b);`
-int query(int i, int bl, int br, int ql, int qr){
-	resolve_lazy(i);
-
-	if(ql > qr){
-		return INT_MAX;
+	friend bool operator<(const pi &a, const pi &b){
+		return a.v < b.v;
 	}
 
-	if(bl == ql && br == qr){
-		return tree[i];
+	friend bool operator>(const pi &a, const pi &b){
+		return a.v > b.v;
+	}
+};
+
+const int MAX = 1000001;
+int n, buf, arr[MAX], pre[MAX];
+vector<pi> seq;
+
+int main(){
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	cin >> n;
+	memset(pre, -1, sizeof(pre));
+	seq.emplace_back(INT_MIN, -1);
+
+	for (int i = 1; i <= n; ++i) {
+		cin >> buf;
+
+		arr[i] = buf;
+
+		if(buf > seq.back().v){
+			pre[i] = seq.back().i;
+
+			seq.emplace_back(buf, i);
+		}
+		else{
+			auto ptr = lower_bound(seq.begin(), seq.end(), pi(buf, -1));
+
+			pre[i] = (ptr - 1)->i;
+
+			ptr->i = i;
+			ptr->v = buf;
+		}
+
 	}
 
-	int mid = (bl + br) / 2;
-
-	int qval = min(query(i << 1, bl, mid, ql, min(qr, mid)),
-			query(i << 1 | 1, mid + 1, br, max(ql, mid + 1), qr));
-	tree[i] = min(tree[i], qval);
-
-	return qval;
-}
-
-// Example: (for range `a` to `b` with value `v`) `query(1, 1, n, a, b, v);`
-int update(int i, int bl, int br, int ql, int qr, int v){
-	resolve_lazy(i);
-
-	if(ql > qr){
-		return tree[i];
+	int curr = seq.back().i;
+	while(curr != -1){
+		printf("%d ", arr[curr]);
+		curr = pre[curr];
 	}
+	printf("\n");
 
-	if(bl == ql && br == qr){
-		lazyp[i << 1] += v;
-		lazyp[i << 1 | 1] += v;
-
-		return tree[i] = max(0, tree[i] + v);
-	}
-
-	int mid = (bl + br) / 2;
-
-	return tree[i] = min(update(i << 1, bl, mid, ql, min(qr, mid), v),
-			update(i << 1 | 1, mid + 1, br, max(ql, mid + 1), qr, v));
+	printf("%d\n", seq.size() - 1);
 }
