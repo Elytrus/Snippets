@@ -21,6 +21,10 @@ struct disjoint{
 	void unite(int v1, int v2){
 		v1 = root(v1);
 		v2 = root(v2);
+		
+		if(v1 == v2){
+			return;
+		}
 
 		if(ranks[v1] < ranks[v2]){
 			set[v1] = v2;
