@@ -1,0 +1,27 @@
+// Generic BFS implementation
+
+const int MAX = 1000001;
+int n, start, // n: Number of nodes, start: Start node
+	levels[MAX]; // Visited/Distance array
+
+vector<int> matrix[MAX]; // Adjecency list
+deque<int> nextt;
+
+fill(levels, levels + n + 1, -1);
+
+levels[start] = 0;
+nextt.push_back(start);
+
+while(!nextt.empty()){
+	int curr = nextt.front(), level = levels[curr];
+	nextt.pop_front();
+
+	for(int adj : matrix[curr]){
+		if(levels[adj] != -1){
+			continue;
+		}
+
+		levels[adj] = level + 1;
+		nextt.push_back(adj);
+	}
+}

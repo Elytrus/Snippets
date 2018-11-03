@@ -1,0 +1,20 @@
+const int MAX = 2001;
+
+int levels[MAX];
+vector<int> matrix[MAX];
+
+void dfs(int curr, int level){
+	levels[curr] = level;
+
+	for(int adj : matrix[curr]){
+		if(levels[adj] == -1){
+			dfs(adj, level + 1);
+		}
+	}
+}
+
+// Initialization for Levels
+fill(levels, levels + n + 1, -1);
+
+// Using DFS
+dfs(a, 0);
