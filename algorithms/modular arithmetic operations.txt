@@ -18,7 +18,7 @@ ll fastpow(ll x, ll y){
 
 #define INVERSE(x) (fastpow((x), (MOD - 2)))
 
-#define M_ADD(x, y) (((x) + (y)) % (MOD))
-#define M_SUB(x, y) (((x) - (y)) % (MOD))
-#define M_MUL(x, y) (((x) * (y)) % (MOD))
-#define M_DIV(x, y) (((x) * (INVERSE(y))) % (MOD))
+#define M_ADD(x, y) ((((x) % (MOD)) + ((y) % (MOD))) % (MOD))
+#define M_SUB(x, y) ((((x) % (MOD)) - ((y) % (MOD))) % (MOD))
+#define M_MUL(x, y) ((((x) % (MOD)) * ((y) % (MOD))) % (MOD))
+#define M_DIV(x, y) ((((x) % (MOD)) * (INVERSE(y))) % (MOD))
