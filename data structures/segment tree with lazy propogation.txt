@@ -42,7 +42,6 @@ int query(int i, int bl, int br, int ql, int qr){
 
 	int qval = min(query(i << 1, bl, mid, ql, min(qr, mid)),
 			query(i << 1 | 1, mid + 1, br, max(ql, mid + 1), qr));
-	tree[i] = min(tree[i], qval);
 
 	return qval;
 }
