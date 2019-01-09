@@ -17,40 +17,26 @@ inline void resolve_lazy(int i){
 
 // Example: `build(1, 1, n);`
 int build(int i, int l, int r){
-	if(l == r){
-		return tree[i] = arr[l];
-	}
+	if(l == r) return tree[i] = arr[l];
 
 	int mid = (l + r) / 2;
-
 	return tree[i] = min(build(i << 1, l, mid), build(i << 1 | 1, mid + 1, r));
 }
 
 // Example: (from range `a` to `b`) `query(1, 1, n, a, b);`
 int query(int i, int bl, int br, int ql, int qr){
 	resolve_lazy(i);
-
-	if(br < ql || bl > qr){
-		return INT_MAX;
-	}
-
-	if(bl >= ql && br <= qr){
-		return tree[i];
-	}
+	if(br < ql || bl > qr) return INT_MAX;
+	if(bl >= ql && br <= qr) return tree[i];
 
 	int mid = (bl + br) / 2;
-
-	return min(query(i << 1, bl, mid, ql, qr),
-			query(i << 1 | 1, mid + 1, br, ql, qr));
+	return min(query(i << 1, bl, mid, ql, qr), query(i << 1 | 1, mid + 1, br, ql, qr));
 }
 
 // Example: (for range `a` to `b` with value `v`) `query(1, 1, n, a, b, v);`
 int update(int i, int bl, int br, int ql, int qr, int v){
 	resolve_lazy(i);
-
-	if(br < ql || bl > qr){
-		return tree[i];
-	}
+	if(br < ql || bl > qr) return tree[i];
 
 	if(bl >= ql && br <= qr){
 		lazyp[i << 1] += v;
@@ -61,6 +47,5 @@ int update(int i, int bl, int br, int ql, int qr, int v){
 
 	int mid = (bl + br) / 2;
 
-	return tree[i] = min(update(i << 1, bl, mid, ql, qr, v),
-			update(i << 1 | 1, mid + 1, br, ql, qr, v));
+	return tree[i] = min(update(i << 1, bl, mid, ql, qr, v), update(i << 1 | 1, mid + 1, br, ql, qr, v));
 }

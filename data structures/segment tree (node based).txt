@@ -1,0 +1,45 @@
+// This is a sum segment tree
+
+struct segtree{
+	segtree *left, *right;
+	int l, r, val;
+
+	segtree(int l0, int r0) : left(nullptr), right(nullptr), l(l0), r(r0), val(0){}
+
+	int init(int* arr){
+		if(l == r){
+			return val = arr[l];
+		}
+
+		int mid = (l + r) / 2;
+
+		left = new segtree(l, mid);
+		right = new segtree(mid + 1, r);
+
+		return val = left->init(arr) + right->init(arr);
+	}
+
+	int query(int ql, int qr){
+		if(r < ql || l > qr){
+			return 0;
+		}
+
+		if(l >= ql && r <= qr){
+			return val;
+		}
+
+		return left->query(ql, qr) + right->query(ql, qr);
+	}
+
+	int update(int i, int v){
+		if(i < l || i > r){
+			return val;
+		}
+
+		if(l == i && r == i){
+			return val += v;
+		}
+
+		return val = left->update(i, v) + right->update(i, v);
+	}
+};

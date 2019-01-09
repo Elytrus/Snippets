@@ -3,41 +3,26 @@ int tree[MAX * 5]; // Some random constant value that's big enough since segtree
 
 // Example: `build(1, 1, n);`
 int build(int i, int l, int r){ 
-	if(l == r){
-		return tree[i] = arr[l];
-	}
+	if(l == r) return tree[i] = arr[l];
 
 	int mid = (l + r) / 2;
-
 	return tree[i] = build(i << 1, l, mid) + build(i << 1 | 1, mid + 1, r);
 }
 
 // Example: (from range `a` to `b`) `query(1, 1, n, a, b);`
 int query(int i, int bl, int br, int ql, int qr){ 
-	if(br < ql || bl > qr){
-		return 0;
-	}
-
-	if(bl >= ql && br <= qr){
-		return tree[i];
-	}
+	if(br < ql || bl > qr) return 0;
+	if(bl >= ql && br <= qr) return tree[i];
 
 	int mid = (bl + br) / 2;
-
 	return query(i << 1, bl, mid, ql, qr) + query(i << 1 | 1, mid + 1, br, ql, qr);
 }
 
 // Example: (for index `i` with value `v`) `query(1, 1, n, i, v);`
 int update(int i, int bl, int br, int q, int v){
-    	if(q < bl || q > br){
-		return tree[i];
-    	}
-
-	if(bl == q && br == q){
-		return tree[i] += v;
-	}
+    	if(q < bl || q > br) return tree[i];
+	if(bl == q && br == q) return tree[i] += v;
 
 	int mid = (bl + br) / 2;
-
 	return tree[i] = update(i << 1, bl, mid, q, v) + update(i << 1 | 1, mid + 1, br, q, v);
 }

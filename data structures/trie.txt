@@ -1,0 +1,62 @@
+#define CHV(x) ((int)(x - 'A'))
+
+struct trie{
+	trie* child[26];
+	int val;
+};
+
+void init(trie* node){
+	for(int i = 0; i < 26; i++){
+		node->child[i] = nullptr;
+	}
+	node->val = -1;
+}
+
+void insert(trie* root, string str, int index, int setval){
+	if(index == str.length()){
+		root->val = setval;
+		return;
+	}
+
+	int ilet = CHV(str[index]);
+
+	if(root->child[ilet] != nullptr){
+		insert(root->child[ilet], str, index + 1, setval);
+	}
+	else{
+		root->child[ilet] = new trie;
+		insert(root->child[ilet], str, index + 1, setval);
+	}
+}
+
+int search(trie* root, string str, int index){
+	if(index == str.length()){
+		return root->val;
+	}
+
+	int ilet = CHV(str[index]);
+
+	if(root->child[ilet] != nullptr){
+		return search(root->child[ilet], str, index + 1);
+	}
+	else{
+		return -1;
+	}
+}
+
+void insert(trie* root, string str, int index, int setval){
+	if(index == str.length()){
+		root->val = setval;
+		return;
+	}
+
+	int ilet = CHV(str[index]);
+
+	if(root->child[ilet] != nullptr){
+		insert(root->child[ilet], str, index + 1, setval);
+	}
+	else{
+		root->child[ilet] = new trie;
+		insert(root->child[ilet], str, index + 1, setval);
+	}
+}
