@@ -1,0 +1,140 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+
+const int MIN_PRI = 0, MAX_PRI = INT_MAX;
+mt19937 twister;
+uniform_int_distribution<> dis;
+
+inline void init(){
+	random_device seeder;
+	twister = mt19937(seeder());
+	dis = uniform_int_distribution<>(MIN_PRI, MAX_PRI);
+}
+
+struct treap{
+	treap *lhs, *rhs;
+	int pri, size, count, val;
+
+	treap(int vval) : lhs(nullptr), rhs(nullptr), pri(dis(twister)), size(1), count(1), val(vval){}
+};
+
+inline int size(treap *node){ // Get size of node
+	return node != nullptr ? node->size : 0;
+}
+
+inline void update(treap *node){ // Update node size
+	node->size = node->count + size(node->lhs) + size(node->rhs);
+}
+
+treap* rotateright(treap *curr, treap *cpar){ // Assumes lhs is not nullptr
+	treap *pivot = curr->lhs, *bnode = pivot->rhs;
+
+	curr->lhs = bnode;
+	pivot->rhs = curr;
+	update(curr);
+	update(pivot);
+
+	return pivot;
+}
+
+treap* rotateleft(treap *curr, treap *cpar){ // Assumes rhs is not nullptr
+	treap *pivot = curr->rhs, *bnode = pivot->lhs;
+
+	curr->rhs = bnode;
+	pivot->lhs = curr;
+	update(curr);
+	update(pivot);
+
+	return pivot;
+}
+
+treap* insert(treap* &curr, treap *cpar, int v){
+	if(curr == nullptr) return curr = new treap(v);
+
+	if(v < curr->val){
+		curr->lhs = insert(curr->lhs, curr, v);
+		if(curr->lhs->pri > curr->pri) curr = rotateright(curr, cpar);
+	}
+	else if(v > curr->val){
+		curr->rhs = insert(curr->rhs, curr, v);
+		if(curr->rhs->pri > curr->pri) curr = rotateleft(curr, cpar);
+	}
+	else curr->count++;
+
+	update(curr);
+	return curr;
+}
+
+treap* remove(treap* &curr, treap *cpar){
+	if(curr->lhs != nullptr && curr->rhs != nullptr){
+		if(curr->lhs->pri > curr->rhs->pri){ // Make left on top (Curr becomes rhs)
+			curr = rotateright(curr, cpar);
+			curr->rhs = remove(curr->rhs, curr);
+		}
+		else{ // Make right on top (Curr becomes lhs)
+			curr = rotateleft(curr, cpar);
+			curr->lhs = remove(curr->lhs, curr);
+		}
+
+		update(curr);
+		return curr;
+	}
+
+	treap* ncurr = nullptr;
+	if(curr->lhs != nullptr) ncurr = curr->lhs;
+	else if(curr->rhs != nullptr) ncurr = curr->rhs;
+
+	delete curr;
+	return ncurr;
+}
+
+treap* remove(treap* &curr, treap *cpar, int v){
+	if(curr == nullptr) return curr;
+
+	if(v < curr->val) curr->lhs = remove(curr->lhs, curr, v);
+	else if(v > curr->val) curr->rhs = remove(curr->rhs, curr, v);
+	else{ // v == curr->val
+		if(curr->count > 1) curr->count--;
+		else return curr = remove(curr, cpar);
+	}
+
+	update(curr);
+	return curr;
+}
+
+int search(treap *curr, int idx, int v){
+	if(curr == nullptr) return -1;
+
+	if(v < curr->val) return search(curr->lhs, idx, v);
+	else if(v > curr->val) return search(curr->rhs, idx + size(curr->lhs) + curr->count, v);
+	else return idx + size(curr->lhs) + 1;
+}
+
+int kth(treap *curr, int idx){
+	if(idx > size(curr->lhs) + curr->count) return kth(curr->rhs, idx - size(curr->lhs) - curr->count);
+	else if(idx > size(curr->lhs)) return curr->val;
+	else return kth(curr->lhs, idx);
+}
+
+void inorder(treap *curr){
+	if(curr == nullptr) return;
+	inorder(curr->lhs);
+	for(int i = 0; i < curr->count; i++) printf("%d ", curr->val);
+	inorder(curr->rhs);
+}
+
+void treeorder(treap *curr, int cn){
+	for(int i = 0; i < cn; i++) printf("-");
+
+	if(curr == nullptr) printf("nullptr\n");
+	else{
+		printf(" %d, cnt: %d, pri: %d\n", curr->val, curr->count, curr->pri);
+		treeorder(curr->lhs, cn + 1);
+		treeorder(curr->rhs, cn + 1);
+	}
+}
+
+// This version was inspired by sunnylancoder's submission of ds4.  It runs slightly slower than my v1 Treap, but is significantly smaller in code size
