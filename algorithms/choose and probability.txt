@@ -1,0 +1,21 @@
+ll tria[MAX][MAX];
+
+inline void maketria(int n){ // Generates pascal's triangle
+	tria[1][1] = 1;
+	for(int i = 1; i < n; i++){
+		for(int j = 1; j <= i; j++){
+			tria[i + 1][j] += tria[i][j];
+			tria[i + 1][j + 1] += tria[i][j];
+		}
+	}
+}
+
+#define choose(n, k) (tria[(n) + 1][(k) + 1]) // n choose k
+
+/*
+Given n coins, the probability of getting k of them to be heads,
+with the probability of a coin being heads being p, can be computed
+with the following formula:
+
+(n choose k) * p^k * (1 - p)^(n - k)
+ */
