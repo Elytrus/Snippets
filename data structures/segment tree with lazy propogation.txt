@@ -2,7 +2,7 @@
 
 const int MAX = 30001;
 int n, 
-	arr[MAX], tree[MAX * 6], lazyp[MAX * 12]; // Large arbitrary coefficients to account for O(nlogn) size
+	arr[MAX], tree[MAX * 4], lazy[MAX * 8]; // Large arbitrary coefficients to account for O(nlogn) size
 
 // Resolves whatever lazy propogation was done at tree index `i` and pushes it onto its children
 inline void resolve_lazy(int i){

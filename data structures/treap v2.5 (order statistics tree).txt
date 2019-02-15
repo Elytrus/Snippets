@@ -3,8 +3,7 @@ mt19937 twister;
 uniform_int_distribution<> dis;
 
 inline void init(){
-	random_device seeder;
-	twister = mt19937(seeder());
+	twister = mt19937(time(0));
 	dis = uniform_int_distribution<>(MIN_PRI, MAX_PRI);
 }
 
