@@ -1,36 +1,18 @@
-// This is a sparse table for computing the max value in a range
+const int MAX = 1000001, MLOG = 21;
+int sparse[MLOG][MAX];
 
-const int MAX = 100001, B_MAX = 18;
-int sptable[B_MAX][MAX]; // The base 2 log of 100000 (Max size) is ~16.609, I used 18 to be safe
-
-void build(){ // Builds sparse table `sptable` from array `arr`
-	copy(arr, arr + n + 1, sptable[0]); // First row is same as the array
-
-	for (int i = 1; i < B_MAX; ++i) {
-		int gap = 1 << (i - 1), maxv = n - (1 << i) + 1;
-
-		for (int j = 1; j <= maxv; ++j) {
-			sptable[i][j] = max(sptable[i - 1][j], sptable[i - 1][j + gap]);
-		}
+// Builds sparse table, assumes that the first row (sparse[0]) is already filled
+inline void build(){
+	for(int i = 1; i < MLOG; i++){
+		int jmp = 1 << (i - 1), end = n - jmp;
+		for(int j = 1; j <= end; j++)
+			sparse[i][j] = max(sparse[i - 1][j], sparse[i - 1][j + jmp]);
 	}
 }
 
-int query(int a, int b){ // Querys the range from `a` to `b`
-	// Find max bit
-	int delta = b - a, maxbit = 1, // Max bit begins at 0 to account for `b - maxbit + 1` when `a == b`
-			maxbitind = 0; // Row of the sparse table to use
-
-	for (int i = B_MAX; i >= 0; --i) {
-		int v = 1 << i;
-
-		if(delta & v){
-			maxbit = v;
-			maxbitind = i;
-			break;
-		}
-	}
-
-	// Return Range
-	return max(sptable[maxbitind][a],
-			sptable[maxbitind][b - maxbit + 1]);
+// Does a range max query
+// 31 - __builtin_clz(x) finds the max set bit of x
+inline int qmax(int l, int r){
+	int delta = r - l + 1, bit = 31 - __builtin_clz(delta);
+	return max(sparse[bit][l], sparse[bit][r - (1 << bit) + 1]);
 }
