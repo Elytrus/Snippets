@@ -5,8 +5,15 @@ CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/bit.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/segment_tree.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/sparse_table.h
-CMakeFiles/Snippets.dir/main.cpp.obj: ../graph-ds/all.h
-CMakeFiles/Snippets.dir/main.cpp.obj: ../graph-ds/union_find.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/all.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/graph.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/all.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/union_find.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/Snippets.dir/main.cpp.obj: ../math/all.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../math/choose.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../math/fast_pow.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../math/gcd.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../stdincludes.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../string_ds/substr_hash.h
 

@@ -1,4 +1,4 @@
-// This is a sum segment tree
+// This is a query segment tree
 
 struct segtree{
 	segtree *left, *right;

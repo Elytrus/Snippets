@@ -90,7 +90,7 @@ int main(){
 				for(int j = bb; blockm[j] > rhs; j--)
 					sum += arr[j] % bc == 0;
 
-			printf("%d\n", sum);
+			printf("%d\n", query);
 		}
 		else{ // bt == 2
 			change(ba, arr[ba], -1);

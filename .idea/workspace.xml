@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/util.h" line="0" />
+    <bookmark url="file://$PROJECT_DIR$/util.h" line="4" />
+    <bookmark url="file://$PROJECT_DIR$/string_ds/substr_hash.h" line="11" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
@@ -15,34 +16,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Snippets.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds/all.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds/bit.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds/segment_tree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds/sparse_table.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph-ds/all.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph-ds/union_find.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stdincludes.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/binary search.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/2d binary indexed tree.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/binary indexed tree.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/compressed/segment tree with lazy propogation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/compressed/segment tree.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/disjoint set (path compression).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/disjoint set.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/all.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/graph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math/all.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math/choose.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math/fast_pow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math/gcd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/string_ds/all.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/string_ds/substr_hash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/choose and probability.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/fast pow (logn x^y).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/gcd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/querying prefix sum arrays.txt" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/querying prefix sum arrays.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Snippets.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Snippets.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Snippets.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Snippets.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data structures/segment tree (node based).txt" beforeDir="false" afterPath="$PROJECT_DIR$/data structures/segment tree (node based).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/segment tree with lazy propogation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/segment tree.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/sparse table.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/BIT.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/PriorityQueue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data structures/square root decomp (dmpg 18 silver P5).txt" beforeDir="false" afterPath="$PROJECT_DIR$/data structures/square root decomp (dmpg 18 silver P5).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/bit.h" beforeDir="false" afterPath="$PROJECT_DIR$/ds/bit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/segment_tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/ds/segment_tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/sparse_table.h" beforeDir="false" afterPath="$PROJECT_DIR$/ds/sparse_table.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph-ds/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph_ds/all.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph-ds/union_find.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph_ds/union_find.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stdincludes.h" beforeDir="false" afterPath="$PROJECT_DIR$/stdincludes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/util.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,17 +80,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="255">
+              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/math/choose.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#14#41#0" expanded="true" />
+                <element signature="e#153#181#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,9 +124,11 @@
     <findStrings>
       <find>N</find>
       <find>sparse</find>
+      <find>substrhash</find>
     </findStrings>
     <replaceStrings>
       <replace>table</replace>
+      <replace>substringhash</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -118,13 +142,26 @@
         <option value="$PROJECT_DIR$/data structures/segment tree (node based).txt" />
         <option value="$PROJECT_DIR$/ds/all.h" />
         <option value="$PROJECT_DIR$/graph-ds/all.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/ds/bit.h" />
         <option value="$PROJECT_DIR$/graph-ds/union_find.h" />
+        <option value="$PROJECT_DIR$/template.h" />
+        <option value="$PROJECT_DIR$/string-ds/all.h" />
+        <option value="$PROJECT_DIR$/string-ds/substr_hash.h" />
+        <option value="$PROJECT_DIR$/util.h" />
+        <option value="$PROJECT_DIR$/stdincludes.h" />
+        <option value="$PROJECT_DIR$/graph/all.h" />
         <option value="$PROJECT_DIR$/ds/segment_tree.h" />
         <option value="$PROJECT_DIR$/ds/sparse_table.h" />
-        <option value="$PROJECT_DIR$/util.h" />
-        <option value="$PROJECT_DIR$/template.h" />
+        <option value="$PROJECT_DIR$/graph_ds/union_find.h" />
+        <option value="$PROJECT_DIR$/string_ds/substr_hash.h" />
+        <option value="$PROJECT_DIR$/algorithms/gcd.txt" />
+        <option value="$PROJECT_DIR$/graph/graph.h" />
+        <option value="$PROJECT_DIR$/math/gcd.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/math/fast_pow.h" />
+        <option value="$PROJECT_DIR$/math/all.h" />
+        <option value="$PROJECT_DIR$/ds/bit.h" />
+        <option value="$PROJECT_DIR$/algorithms/choose and probability.txt" />
+        <option value="$PROJECT_DIR$/math/choose.h" />
       </list>
     </option>
   </component>
@@ -146,6 +183,36 @@
             <path>
               <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
               <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="graph_ds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="string_ds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,23 +259,23 @@
       <updated>1559604931812</updated>
       <workItem from="1559604932878" duration="1850000" />
       <workItem from="1559606795340" duration="170000" />
-      <workItem from="1559606966355" duration="720000" />
+      <workItem from="1559606966355" duration="7709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2740000" />
+    <option name="totallyTimeSpent" value="9729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29577464" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29577464" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -250,16 +317,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/algorithms/binary search.txt" />
-    <entry file="file://$PROJECT_DIR$/stdincludes.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/choose and probability.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-256" />
@@ -271,9 +328,6 @@
     <entry file="file://$PROJECT_DIR$/data structures/disjoint set (path compression).txt" />
     <entry file="file://$PROJECT_DIR$/data structures/compressed/segment tree.txt" />
     <entry file="file://$PROJECT_DIR$/data structures/sparse table.txt" />
-    <entry file="file://$PROJECT_DIR$/data structures/LCA (binary lifting).txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/PriorityQueue.py" />
     <entry file="file://$PROJECT_DIR$/data structures/segment tree (node based).txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -287,7 +341,7 @@
         <state relative-caret-position="-1310" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph-ds/all.h">
+    <entry file="file://$PROJECT_DIR$/graph_ds/all.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
@@ -304,44 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph-ds/union_find.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="2" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds/sparse_table.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="e#128#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds/segment_tree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
-          <folding>
-            <element signature="e#190#222#0" expanded="true" />
-            <element signature="e#1434#1466#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds/bit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-          <folding>
-            <element signature="e#106#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -353,17 +369,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util.h">
+    <entry file="file://$PROJECT_DIR$/data structures/LCA (binary lifting).txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="289">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/algorithms/dijkstra.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stdincludes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds/segment_tree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding>
+            <element signature="e#190#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/all.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -371,6 +407,134 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/gcd.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/graph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <element signature="e#75#87#0" expanded="true" />
+            <element signature="e#331#357#0" expanded="true" />
+            <element signature="e#876#920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_ds/union_find.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math/gcd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string_ds/all.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string_ds/substr_hash.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#240#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds/sparse_table.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+          <folding>
+            <element signature="e#128#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/fast pow (logn x^y).txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/modular arithmetic operations.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds/bit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding>
+            <element signature="e#106#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math/all.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math/fast_pow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#134#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/choose and probability.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math/choose.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#14#41#0" expanded="true" />
+            <element signature="e#153#181#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

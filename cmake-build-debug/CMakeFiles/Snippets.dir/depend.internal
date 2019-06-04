@@ -6,7 +6,14 @@ CMakeFiles/Snippets.dir/main.cpp.obj
  E:/repos/Snippets/ds/bit.h
  E:/repos/Snippets/ds/segment_tree.h
  E:/repos/Snippets/ds/sparse_table.h
- E:/repos/Snippets/graph-ds/all.h
- E:/repos/Snippets/graph-ds/union_find.h
+ E:/repos/Snippets/graph/all.h
+ E:/repos/Snippets/graph/graph.h
+ E:/repos/Snippets/graph_ds/all.h
+ E:/repos/Snippets/graph_ds/union_find.h
  E:/repos/Snippets/main.cpp
+ E:/repos/Snippets/math/all.h
+ E:/repos/Snippets/math/choose.h
+ E:/repos/Snippets/math/fast_pow.h
+ E:/repos/Snippets/math/gcd.h
  E:/repos/Snippets/stdincludes.h
+ E:/repos/Snippets/string_ds/substr_hash.h
