@@ -15,41 +15,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/graph/all.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/graph.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/math/all.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/math/choose.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/math/fast_pow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/math/gcd.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string_ds/all.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/string_ds/substr_hash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/choose and probability.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/fast pow (logn x^y).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/gcd.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/querying prefix sum arrays.txt" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/querying prefix sum arrays.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/includes_CXX.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Snippets.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Snippets.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Snippets.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Snippets.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/segment tree (node based).txt" beforeDir="false" afterPath="$PROJECT_DIR$/data structures/segment tree (node based).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data structures/square root decomp (dmpg 18 silver P5).txt" beforeDir="false" afterPath="$PROJECT_DIR$/data structures/square root decomp (dmpg 18 silver P5).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/bit.h" beforeDir="false" afterPath="$PROJECT_DIR$/ds/bit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/segment_tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/ds/segment_tree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/sparse_table.h" beforeDir="false" afterPath="$PROJECT_DIR$/ds/sparse_table.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph-ds/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph_ds/all.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph-ds/union_find.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph_ds/union_find.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stdincludes.h" beforeDir="false" afterPath="$PROJECT_DIR$/stdincludes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/util.h" afterDir="false" />
-    </list>
+    <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/math/choose.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="476">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#14#41#0" expanded="true" />
                 <element signature="e#153#181#0" expanded="true" />
@@ -259,12 +225,12 @@
       <updated>1559604931812</updated>
       <workItem from="1559604932878" duration="1850000" />
       <workItem from="1559606795340" duration="170000" />
-      <workItem from="1559606966355" duration="7709000" />
+      <workItem from="1559606966355" duration="8335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9729000" />
+    <option name="totallyTimeSpent" value="10355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -527,10 +493,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/topological sort (longest path in DAG).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/math/choose.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#14#41#0" expanded="true" />
             <element signature="e#153#181#0" expanded="true" />
