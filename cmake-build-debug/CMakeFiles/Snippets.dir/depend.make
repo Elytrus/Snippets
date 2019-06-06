@@ -5,8 +5,15 @@ CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/bit.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/segment_tree.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/sparse_table.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/static_deque.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/static_stack.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/all.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/articulation_points.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/bfs.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/dijkstra.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/graph.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/scc.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/topological_sort.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/union_find.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../main.cpp
@@ -14,6 +21,9 @@ CMakeFiles/Snippets.dir/main.cpp.obj: ../math/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../math/choose.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../math/fast_pow.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../math/gcd.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../math/heron.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../stdincludes.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../string_ds/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../string_ds/substr_hash.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../string_ds/trie.h
 

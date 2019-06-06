@@ -6,8 +6,15 @@ CMakeFiles/Snippets.dir/main.cpp.obj
  E:/repos/Snippets/ds/bit.h
  E:/repos/Snippets/ds/segment_tree.h
  E:/repos/Snippets/ds/sparse_table.h
+ E:/repos/Snippets/ds/static_deque.h
+ E:/repos/Snippets/ds/static_stack.h
  E:/repos/Snippets/graph/all.h
+ E:/repos/Snippets/graph/articulation_points.h
+ E:/repos/Snippets/graph/bfs.h
+ E:/repos/Snippets/graph/dijkstra.h
  E:/repos/Snippets/graph/graph.h
+ E:/repos/Snippets/graph/scc.h
+ E:/repos/Snippets/graph/topological_sort.h
  E:/repos/Snippets/graph_ds/all.h
  E:/repos/Snippets/graph_ds/union_find.h
  E:/repos/Snippets/main.cpp
@@ -15,5 +22,8 @@ CMakeFiles/Snippets.dir/main.cpp.obj
  E:/repos/Snippets/math/choose.h
  E:/repos/Snippets/math/fast_pow.h
  E:/repos/Snippets/math/gcd.h
+ E:/repos/Snippets/math/heron.h
  E:/repos/Snippets/stdincludes.h
+ E:/repos/Snippets/string_ds/all.h
  E:/repos/Snippets/string_ds/substr_hash.h
+ E:/repos/Snippets/string_ds/trie.h

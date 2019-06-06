@@ -7,7 +7,6 @@
 template <int MAX, typename T = int>
 struct BIT {
     int n; T tree[MAX];
-    BIT() {}
     void init(int n0) { n = n0; }
     void upd(int x, T z){ // Adds value `z` to index `x`
         for(; x <= n; x += x & -x)
@@ -29,7 +28,6 @@ struct BIT {
 template <int MAXN, int MAXM, typename T = int>
 struct BIT2D {
     int n, m; T tree[MAXN][MAXM];
-    BIT2D() {}
     void init(int n0, int m0) { n = n0; m = m0; }
     void add(int x, int y, T z){ // Adds `z` to index `(x, y)`
         for(int cx = x; cx <= n; cx += cx & -cx)

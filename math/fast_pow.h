@@ -6,7 +6,6 @@
 //description Basic Fastpow and Modular Division template
 template <typename T, T MOD>
 struct FastPow {
-    FastPow() {}
     ll fastPow(ll x, ll y) {
         ll ans = 1;
         for (ll mag = 1, cpow = x; mag <= y; mag <<= 1, cpow = (cpow * cpow) % MOD)

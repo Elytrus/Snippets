@@ -1,5 +1,5 @@
 const int MAX = 6001, B_MAX = 18;
-int firstinstances[MAX], dist[MAX];
+int firstinstances[MAX], dis[MAX];
 
 int sptable[B_MAX][MAX * 2 + 1], path_size = 1; // The base 2 log of 100000 (Max size) is ~16.609, I used 18 to be safe
 #define PUSH_EDGE(x) sptable[0][path_size++] = x // Push edge
@@ -7,7 +7,7 @@ int sptable[B_MAX][MAX * 2 + 1], path_size = 1; // The base 2 log of 100000 (Max
 vector<int> matrix[MAX]; // Adjecency List
 
 inline int dist_min(int a, int b){ // Gets min distance of nodes `a` and `b`
-	return dist[a] < dist[b] ? a : b;
+	return dis[a] < dis[b] ? a : b;
 }
 
 int query(int a, int b){ // Querys the range from `a` to `b`
@@ -41,7 +41,7 @@ int query(int a, int b){ // Querys the range from `a` to `b`
 // DFS
 void dfs(int curr, int lvl, int parent){
 	PUSH_EDGE(curr);
-	dist[curr] = lvl;
+	dis[curr] = lvl;
 
 	for(int adj : matrix[curr]){
 		if(adj != parent){

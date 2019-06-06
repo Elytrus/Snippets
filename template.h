@@ -5,6 +5,10 @@ using namespace std;
 
 typedef long long ll;
 
+// Defines
+#define INF 0x3f3f3f3f
+#define LLINF 0x3f3f3f3f3f3f3f3f
+
 // Scan and Debug
 void scan(){}
 template<typename F, typename... R> void scan(F &f,R&... r){cin>>f;scan(r...);}

@@ -13,7 +13,6 @@ template <int MAX, typename T, T DEFAULT>
 struct SegmentTree {
     int n; T tree[MAX << 2];
     function<T(T, T)> merge;
-    SegmentTree() {}
     void init(int n0, function<T(T, T)> merge0) { n = n0; merge = merge0; }
     int build(int i, int l, int r, T* arr){
         if(l == r) return tree[i] = arr[l];
@@ -51,7 +50,6 @@ struct LazySegmentTree {
     int n; T tree[MAX << 2], lazy[MAX << 3];
     function<T(T, T)> merge;
     function<void(T&, T&, T&, T&)> updLazy;
-    LazySegmentTree() {}
     void init(int n0, function<T(T, T)> merge0, function<void(T&, T&, T&, T&)> updLazy0) { n = n0; merge = merge0; updLazy = updLazy0; }
     int build(int i, int l, int r, T* arr){
         if(l == r) return tree[i] = arr[l];
