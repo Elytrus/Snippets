@@ -9,12 +9,14 @@ All snippets are written in C++
     * Dynamic Square Root Decomposition: [Maintaining Some Coins](https://dmoj.ca/problem/cpc19c1p6)
     * Split-Merge Treap
     * Implicit Treap
+    * N-Dimensional BIT: [Inaho 2](https://dmoj.ca/problem/inaho2)
 * Algorithms
-    * Tarjan's Bridge Finding Algorithm (basically the same thing as articulation points)
     * Centroid Decomposition (Flexible template, similar to trie)
     * Centroid Tree (Flexible template, similar to trie)
 * Utilities
     * Flat graph (Both adjecency lists are just arrays)
+    * Fast Clearing Array (An array that can reset itself in O(1) time.  Useful for centroid decomposition problems
+    * Fast Clearing Array 2 (An alternative to the Fast Clearing Array that sets everything back by using a vector to track changes, clear runs in amortized O(1))
 * Updates
     * Generalize BFS to allow for flat graph
     * Generalize Dijkstra to allow for flat graph
@@ -22,6 +24,4 @@ All snippets are written in C++
 
 ## Templates that need to be ported
 
-* LCA (Euler Tour)
-* LCA (Binary Lifting)
 * Prefix Sum/Max/Min array, Difference Array

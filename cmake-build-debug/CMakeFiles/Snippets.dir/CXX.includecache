@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+.././graph/graph.h
+../stdincludes.h
+.././stdincludes.h
+
 E:/repos/Snippets/ds/all.h
 bit.h
 E:/repos/Snippets/ds/bit.h
@@ -51,6 +55,8 @@ scc.h
 E:/repos/Snippets/graph/scc.h
 articulation_points.h
 E:/repos/Snippets/graph/articulation_points.h
+bridges.h
+E:/repos/Snippets/graph/bridges.h
 
 E:/repos/Snippets/graph/articulation_points.h
 stdincludes.h
@@ -59,6 +65,12 @@ graph.h
 E:/repos/Snippets/graph/graph.h
 
 E:/repos/Snippets/graph/bfs.h
+stdincludes.h
+E:/repos/Snippets/graph/stdincludes.h
+graph.h
+E:/repos/Snippets/graph/graph.h
+
+E:/repos/Snippets/graph/bridges.h
 stdincludes.h
 E:/repos/Snippets/graph/stdincludes.h
 graph.h
@@ -89,6 +101,22 @@ E:/repos/Snippets/graph/graph.h
 E:/repos/Snippets/graph_ds/all.h
 union_find.h
 E:/repos/Snippets/graph_ds/union_find.h
+lca_euler.h
+E:/repos/Snippets/graph_ds/lca_euler.h
+lca_binary_lift.h
+E:/repos/Snippets/graph_ds/lca_binary_lift.h
+
+E:/repos/Snippets/graph_ds/lca_binary_lift.h
+stdincludes.h
+E:/repos/Snippets/graph_ds/stdincludes.h
+graph/graph.h
+E:/repos/Snippets/graph_ds/graph/graph.h
+
+E:/repos/Snippets/graph_ds/lca_euler.h
+stdincludes.h
+E:/repos/Snippets/graph_ds/stdincludes.h
+graph/graph.h
+E:/repos/Snippets/graph_ds/graph/graph.h
 
 E:/repos/Snippets/graph_ds/union_find.h
 ../stdincludes.h
@@ -117,6 +145,8 @@ choose.h
 E:/repos/Snippets/math/choose.h
 heron.h
 E:/repos/Snippets/math/heron.h
+sieve_and_factor.h
+E:/repos/Snippets/math/sieve_and_factor.h
 
 E:/repos/Snippets/math/choose.h
 ../stdincludes.h
@@ -135,6 +165,10 @@ E:/repos/Snippets/stdincludes.h
 E:/repos/Snippets/math/heron.h
 ../stdincludes.h
 E:/repos/Snippets/stdincludes.h
+
+E:/repos/Snippets/math/sieve_and_factor.h
+stdincludes.h
+E:/repos/Snippets/math/stdincludes.h
 
 E:/repos/Snippets/stdincludes.h
 bits/stdc++.h

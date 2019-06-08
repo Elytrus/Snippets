@@ -6,3 +6,4 @@
 #include "dijkstra.h"
 #include "scc.h"
 #include "articulation_points.h"
+#include "bridges.h"
