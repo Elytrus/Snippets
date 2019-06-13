@@ -4,7 +4,7 @@
 
 //begintemplate fastpow
 //description Basic Fastpow and Modular Division template
-template <typename T, T MOD>
+template <ll MOD>
 struct FastPow {
     ll fastPow(ll x, ll y) {
         ll ans = 1;
@@ -16,3 +16,15 @@ struct FastPow {
     ll divMod(ll x, ll y) { return (x * fastPow(y, MOD - 2)) % MOD; }
 };
 //endtemplate fastpow
+
+void fast_pow_test() {
+    FastPow<1000000007> test;
+
+    assert(test.fastPow(2, 4) == 16);
+    assert(test.fastPow(3, 1) == 3);
+    assert(test.fastPow(3, 3) == 27);
+    assert(test.fastPow(5, 3) == 125);
+    assert(test.fastPow(1555, 0) == 1);
+
+    PASSED("FastPow");
+}

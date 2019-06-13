@@ -2,6 +2,7 @@
 
 #include "stdincludes.h"
 #include "graph.h"
+#include "test/test_graph.h"
 
 //begintemplate topologicalsort
 //description Topological Sort Algorithm
@@ -14,7 +15,7 @@ struct TopologicalSort {
             if (!vis[adj]) dfs(adj);
         order.push_back(cur);
     }
-    void sort(T graph0) {
+    void sort(T &graph0) {
         graph = graph0.transpose();
         memset(vis, false, sizeof vis);
         for (int i = 1; i <= graph.n; i++)
@@ -23,11 +24,28 @@ struct TopologicalSort {
 };
 //endtemplate topologicalsort
 
-void TOPOSORT_CE_TEST() {
-    WeightedGraph<10, int> wg; wg.init(10, 5);
-    Graph<10> g; g.init(10, 5);
-    TopologicalSort<10, WeightedGraph<10, int>> top;
-    TopologicalSort<10, Graph<10>> top2;
-    top.sort(wg);
-    top2.sort(g);
+template <typename T, typename G> void check_sorting(G g, T topo) {
+    bool vis[21]; memset(vis, false, sizeof vis);
+    int inDeg[21]; memset(inDeg, 0, sizeof inDeg);
+    for (int i = 1; i < 21; i++)
+        for (int adj : g.adjs(i))
+            inDeg[adj]++;
+    for (int i = 1; i < 21; i++)
+        vis[i] = true;
+
+    for (int i = 0, sz = topo.order.size(); i < sz; i++) {
+        assert(vis[topo.order[i]]);
+        for (int adj : g.adjs(topo.order[i]))
+            vis[adj] = true;
+    }
+}
+
+void topological_sort_test() {
+    Graph<21> g = test_DAG();
+    TopologicalSort<21, Graph<21>> topo;
+    topo.sort(g);
+
+    check_sorting(g, topo);
+
+    PASSED("Topological Sort");
 }

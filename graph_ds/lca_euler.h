@@ -53,3 +53,5 @@ void EULER_LCA_CE_TEST() {
     lca.init(g);
     lca.lca(1, 2);
 }
+
+//TODO: Euler LCA Test

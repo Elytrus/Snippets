@@ -2,6 +2,7 @@
 
 #include "stdincludes.h"
 #include "graph.h"
+#include "test/test_graph.h"
 
 //begintemplate articulationpoints
 //description Tarjan's Articulation Points algorithm
@@ -45,3 +46,18 @@ struct ArticulationPoints {
     }
 };
 //endtemplate articulationpoints
+
+const int MAX = 21;
+const vector<int> PTS = {1, 3, 7, 18};
+
+void articulation_points_test() {
+    Graph<MAX> g = test_graph();
+    ArticulationPoints<MAX, Graph<MAX>> ap;
+
+    ap.tarjan(g);
+
+    sort(ap.points.begin(), ap.points.end());
+    assert(ap.points == PTS);
+
+    PASSED("Articulation Points");
+}

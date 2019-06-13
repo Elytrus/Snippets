@@ -67,7 +67,10 @@ struct WeightedGraph {
 
 //begintemplate edgeidgraph
 //description Unweighted graph with Edge IDs attached
-struct edi { int i, v; };
+struct edi {
+    int i, v;
+    operator int() const { return v; } // Returns the adjacent node
+};
 template <int MAX>
 struct EdgeIdGraph {
     int n, m, __ba, __bb; vector<edi> matrix[MAX];

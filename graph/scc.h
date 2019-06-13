@@ -2,6 +2,7 @@
 
 #include "stdincludes.h"
 #include "graph.h"
+#include "test/test_graph.h"
 
 //begintemplate scc
 //description Tarjan's Strongly Connected Components algorithm
@@ -49,10 +50,45 @@ struct SCC {
 };
 //endtemplate scc
 
-void SCC_CE_TEST() {
-    Graph<10> g; g.init(10, 5);
-    WeightedGraph<10, int> g2; g2.init(10, 5);
+bool cmp(const vector<int> &a, const vector<int> &b) {
+    return a[0] < b[0];
+}
 
-    SCC<10, Graph<10>> scc; scc.tarjan(g);
-    SCC<10, WeightedGraph<10, int>> scc2; scc2.tarjan(g2);
+const vector<vector<int>> COMPS = {
+        {1},
+        {2},
+        {3, 4, 11},
+        {5},
+        {6, 7, 12, 15, 16, 17, 20},
+        {8},
+        {9},
+        {10},
+        {13},
+        {14},
+        {18},
+        {19}
+};
+
+void strongly_connected_components_test() {
+    Graph<21> g = test_directed_cyclic_graph();
+//    Graph<21> g = test_DAG();
+
+    SCC<21, Graph<21>> scc;
+    scc.tarjan(g);
+
+    for (auto it = scc.comps.begin(); it != scc.comps.end(); it++)
+        sort(it->begin(), it->end());
+    sort(scc.comps.begin(), scc.comps.end(), cmp);
+
+//    for (auto comp : scc.comps) {
+//        cout << "comp: [";
+//        for (auto x : comp) {
+//            cout << x << ", ";
+//        }
+//        cout << "]\n";
+//    }
+
+    assert(scc.comps == COMPS);
+
+    PASSED("Strongly Connected Components");
 }

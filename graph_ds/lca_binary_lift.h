@@ -50,3 +50,5 @@ void BINARY_LIFT_LCA_CE_TEST() {
     lca.init(g);
     lca.lca(1, 2);
 }
+
+//TODO: Binary Lift LCA Tests

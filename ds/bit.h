@@ -7,8 +7,8 @@
 template <int MAX, typename T = int>
 struct BIT {
     int n; T tree[MAX];
-    function<void(T&, T&)> merge;
-    void init(int n0, function<void(T&, T&)> &merge0) { n = n0; merge = merge0; }
+    inline void merge(T& a, T& b){ assert(("Needs to be implemented!", 0)); };
+    void init(int n0) { n = n0; }
     void upd(int x, T z){ // Adds value `z` to index `x`
         for(; x <= n; x += x & -x)
             merge(tree[x], z);
@@ -29,8 +29,8 @@ struct BIT {
 template <int MAXN, int MAXM, typename T = int>
 struct BIT2D {
     int n, m; T tree[MAXN][MAXM];
-    function<void(T&, T&)> merge;
-    void init(int n0, int m0, function<void(T&, T&)> &merge0) { n = n0; m = m0; n = n0; merge = merge0; }
+    inline void merge(T& a, T& b){ assert(("Needs to be implemented!", 0)); };
+    void init(int n0, int m0) { n = n0; m = m0; n = n0; }
     void add(int x, int y, T z){ // Adds `z` to index `(x, y)`
         for(int cx = x; cx <= n; cx += cx & -cx)
             for(int cy = y; cy <= m; cy += cy & -cy)

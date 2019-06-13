@@ -23,20 +23,36 @@ struct Bridges {
         ord[cur] = low[cur] = ++curOrd;
 
         for (auto adj : graph.adjs(cur)) {
-            if (!vis[adj.v]) {
-                dfs(adj.v, cur);
+            if (adj ^ par) {
+                if (!vis[adj.v])
+                    dfs(adj.v, cur);
                 low[cur] = min(low[cur], low[adj.v]);
                 if (low[adj.v] > ord[cur])
                     bridges.push_back(adj.i);
             }
-            else if (adj.v ^ par)
-                low[cur] = min(low[cur], ord[adj.v]);
         }
     }
 };
 //endtemplate bridges
 
-void BRIDGES_CE_TEST() {
-    EdgeIdGraph<10> g; g.init(10, 5);
-    Bridges<10, EdgeIdGraph<10>> bd; bd.tarjan(g);
+void bridges_test() {
+    const int MAX = 21;
+    const vector<int> IDS = {0, 1, 5, 10, 12};
+
+    EdgeIdGraph<MAX> g = test_edge_id_graph();
+    Bridges<MAX, EdgeIdGraph<MAX>> bd;
+
+//    for (int i = 1; i <= 20; i++)
+//        cout << "i: " << i << ", v: " << bd.ord[i] << ", low: " << bd.low[i] << "\n";
+//    for (auto x : bd.bridges) {
+//        cout << x << ", ";
+//    }
+//    cout << "]]\n";
+
+    bd.tarjan(g);
+
+    sort(bd.bridges.begin(), bd.bridges.end());
+    assert(bd.bridges == IDS);
+
+    PASSED("Bridges");
 }

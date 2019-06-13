@@ -63,6 +63,8 @@ void trie_test() {
     search("worlt", false);
 
     test.del();
+
+    PASSED("Trie");
 }
 #undef insert
 #undef search

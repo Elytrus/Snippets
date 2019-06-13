@@ -13,13 +13,10 @@ All snippets are written in C++
 * Algorithms
     * Centroid Decomposition (Flexible template, similar to trie)
     * Centroid Tree (Flexible template, similar to trie)
+    * Kruskal MST
 * Utilities
-    * Flat graph (Both adjecency lists are just arrays)
     * Fast Clearing Array (An array that can reset itself in O(1) time.  Useful for centroid decomposition problems
     * Fast Clearing Array 2 (An alternative to the Fast Clearing Array that sets everything back by using a vector to track changes, clear runs in amortized O(1))
-* Updates
-    * Generalize BFS to allow for flat graph
-    * Generalize Dijkstra to allow for flat graph
 
 
 ## Templates that need to be ported

@@ -13,8 +13,10 @@ CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/articulation_points.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/bfs.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/bridges.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/dijkstra.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/flat_graph.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/graph.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/scc.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/test/test_graph.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/topological_sort.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/lca_binary_lift.h
