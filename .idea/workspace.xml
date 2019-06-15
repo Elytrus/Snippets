@@ -16,41 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/graph/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/test/generators/ap_bridge_brute_force.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/test/generators/graphmaker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/test/test_graph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Snippets.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Snippets.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Snippets.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/bit.h" beforeDir="false" afterPath="$PROJECT_DIR$/ds/bit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/segment_tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/ds/segment_tree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/all.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/articulation_points.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/articulation_points.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/bfs.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/bfs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/bridges.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/bridges.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/dijkstra.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/dijkstra.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/flat_graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/flat_graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/scc.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/scc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/topological_sort.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph/topological_sort.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_ds/lca_binary_lift.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph_ds/lca_binary_lift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_ds/lca_euler.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph_ds/lca_euler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_ds/union_find.h" beforeDir="false" afterPath="$PROJECT_DIR$/graph_ds/union_find.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/choose.h" beforeDir="false" afterPath="$PROJECT_DIR$/math/choose.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/fast_pow.h" beforeDir="false" afterPath="$PROJECT_DIR$/math/fast_pow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/gcd.h" beforeDir="false" afterPath="$PROJECT_DIR$/math/gcd.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/heron.h" beforeDir="false" afterPath="$PROJECT_DIR$/math/heron.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/sieve_and_factor.h" beforeDir="false" afterPath="$PROJECT_DIR$/math/sieve_and_factor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stdincludes.h" beforeDir="false" afterPath="$PROJECT_DIR$/stdincludes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_ds/substr_hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/string_ds/substr_hash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_ds/trie.h" beforeDir="false" afterPath="$PROJECT_DIR$/string_ds/trie.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.h" beforeDir="false" afterPath="$PROJECT_DIR$/template.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graph/topological_sort.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="731">
               <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
               <folding>
                 <element signature="e#14#38#0" expanded="true" />
@@ -101,11 +71,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="272">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#208#220#0" expanded="true" />
+                <element signature="e#341#353#0" expanded="true" />
+                <element signature="e#651#678#0" expanded="true" />
+                <element signature="e#792#819#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/graph/bfs.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
-              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+              <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding>
                 <element signature="e#14#38#0" expanded="true" />
                 <element signature="e#150#171#0" expanded="true" />
@@ -173,7 +158,6 @@
         <option value="$PROJECT_DIR$/ds/all.h" />
         <option value="$PROJECT_DIR$/ds/static_stack.h" />
         <option value="$PROJECT_DIR$/ds/static_deque.h" />
-        <option value="$PROJECT_DIR$/template.h" />
         <option value="$PROJECT_DIR$/string_ds/all.h" />
         <option value="$PROJECT_DIR$/math/all.h" />
         <option value="$PROJECT_DIR$/graph_ds/all.h" />
@@ -205,6 +189,7 @@
         <option value="$PROJECT_DIR$/graph/dijkstra.h" />
         <option value="$PROJECT_DIR$/graph/bfs.h" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/template.h" />
       </list>
     </option>
   </component>
@@ -219,7 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,13 +246,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../C-Generator" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -319,11 +304,13 @@
       <workItem from="1559966061848" duration="5810000" />
       <workItem from="1560043507289" duration="823000" />
       <workItem from="1560445481481" duration="13247000" />
+      <workItem from="1560476754797" duration="1821000" />
+      <workItem from="1560557513325" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55446000" />
+    <option name="totallyTimeSpent" value="57307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,7 +324,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -348,7 +335,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.3217768" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.3217768" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -409,17 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="e#136#163#0" expanded="true" />
-            <element signature="e#277#304#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,17 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph/topological_sort.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-          <folding>
-            <element signature="e#14#38#0" expanded="true" />
-            <element signature="e#655#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graph/graph.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -699,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graph/flat_graph.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1666">
@@ -716,10 +674,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/topological_sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding>
+            <element signature="e#14#38#0" expanded="true" />
+            <element signature="e#655#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graph/bfs.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
-          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="e#14#38#0" expanded="true" />
             <element signature="e#150#171#0" expanded="true" />
@@ -727,10 +710,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/template.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#208#220#0" expanded="true" />
+            <element signature="e#341#353#0" expanded="true" />
+            <element signature="e#651#678#0" expanded="true" />
+            <element signature="e#792#819#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

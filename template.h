@@ -9,7 +9,11 @@ typedef long long ll;
 #define INF 0x3f3f3f3f
 #define LLINF 0x3f3f3f3f3f3f3f3f
 
-// Scan and Debug
+// Scan, Debug, and other nonsense
+template <typename T> ostream& operator<<(ostream& out,vector<T> iter){out<<"[";for(auto t:iter){out<<t<<", ";}out<<"]";return out;}
+template <typename T> void printArray(ostream& out,T* arr,int sz){out<<"[";for(int i=0;i<sz;i++){out<<arr[i]<<", "; } out<<"]";}
+#define OUT_OPERATOR(type, propa, propb) ostream& operator<<(ostream& out,type obj){out<<"("<<#propa<<"="<<obj. propa<<", "<<#propb<<"="<<obj. propb<<")";return out;}
+
 void scan(){}
 template<typename F, typename... R> void scan(F &f,R&... r){cin>>f;scan(r...);}
 int di_; string dnms_, co_ = ",";
