@@ -8,6 +8,7 @@ CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/segment_tree.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/sparse_table.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/static_deque.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/static_stack.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/treap.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/articulation_points.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/bfs.h

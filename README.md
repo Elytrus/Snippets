@@ -7,8 +7,8 @@ All snippets are written in C++
 
 * DS
     * Dynamic Square Root Decomposition: [Maintaining Some Coins](https://dmoj.ca/problem/cpc19c1p6)
-    * Split-Merge Treap
     * Implicit Treap
+    * BIT Binary Search Technique: [Wowow](https://dmoj.ca/problem/cco10p3)
     * N-Dimensional BIT: [Inaho 2](https://dmoj.ca/problem/inaho2)
 * Algorithms
     * Centroid Decomposition (Flexible template, similar to trie)

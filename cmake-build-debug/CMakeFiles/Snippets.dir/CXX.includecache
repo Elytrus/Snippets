@@ -21,6 +21,8 @@ static_stack.h
 E:/repos/Snippets/ds/static_stack.h
 static_deque.h
 E:/repos/Snippets/ds/static_deque.h
+treap.h
+E:/repos/Snippets/ds/treap.h
 
 E:/repos/Snippets/ds/bit.h
 ../stdincludes.h
@@ -39,6 +41,10 @@ stdincludes.h
 E:/repos/Snippets/ds/stdincludes.h
 
 E:/repos/Snippets/ds/static_stack.h
+stdincludes.h
+E:/repos/Snippets/ds/stdincludes.h
+
+E:/repos/Snippets/ds/treap.h
 stdincludes.h
 E:/repos/Snippets/ds/stdincludes.h
 

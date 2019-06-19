@@ -5,9 +5,11 @@ using namespace std;
 
 typedef long long ll;
 
-// Defines
+// Defines and one-liners
 #define INF 0x3f3f3f3f
 #define LLINF 0x3f3f3f3f3f3f3f3f
+template <typename T> inline T& back(vector<T> &vec) { return *(vec.end() - 1); }
+template <typename T> inline void pop(vector<T> &vec) { return vec.erase(vec.end() - 1); }
 
 // Scan, Debug, and other nonsense
 template <typename T> ostream& operator<<(ostream& out,vector<T> iter){out<<"[";for(auto t:iter){out<<t<<", ";}out<<"]";return out;}

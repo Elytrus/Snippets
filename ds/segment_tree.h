@@ -9,29 +9,29 @@
 
 //begintemplate segtree
 //description Recursive Segment Tree (Interval Tree)
-template <int MAX, typename T, T DEFAULT>
+template <int MAX, typename T>
 struct SegmentTree {
-    int n; T tree[MAX << 2];
+    int n; T defaultV, tree[MAX << 2];
     inline T merge(T a, T b){ assert(("Needs to be implemented!", 0)); };
-    void init(int n0) { n = n0; }
-    int build(int i, int l, int r, T* arr){
+    void init(int n0, T defaultV0) { n = n0; defaultV = defaultV0; }
+    T build(int i, int l, int r, T* arr){
         if(l == r) return tree[i] = arr[l];
 
-        int mid = (l + r) / 2;
+        int mid = (l + r) >> 1;
         return tree[i] = merge(build(i << 1, l, mid, arr), build(i << 1 | 1, mid + 1, r, arr));
     }
-    int query(int i, int bl, int br, int ql, int qr){
-        if(br < ql || bl > qr) return DEFAULT;
+    T query(int i, int bl, int br, int ql, int qr){
+        if(br < ql || bl > qr) return defaultV;
         if(bl >= ql && br <= qr) return tree[i];
 
-        int mid = (bl + br) / 2;
+        int mid = (bl + br) >> 1;
         return merge(query(i << 1, bl, mid, ql, qr), query(i << 1 | 1, mid + 1, br, ql, qr));
     }
-    int update(int i, int bl, int br, int q, T v){
+    T update(int i, int bl, int br, int q, T v){
         if(q < bl || q > br) return tree[i];
-        if(bl == q && br == q) return tree[i] += v;
+        if(bl == q && br == q) return tree[i] = assert(("Needs to be implemented!", 0));;
 
-        int mid = (bl + br) / 2;
+        int mid = (bl + br) >> 1;
         return tree[i] = merge(update(i << 1, bl, mid, q, v), update(i << 1 | 1, mid + 1, br, q, v));
     }
 };
@@ -45,27 +45,27 @@ struct SegmentTree {
 
 //begintemplate lazysegtree
 //description Recursive Lazy Propagating Segment Tree (Interval Tree)
-template <int MAX, typename T, T DEFAULT>
+template <int MAX, typename T>
 struct LazySegmentTree {
-    int n; T tree[MAX << 2], lazy[MAX << 3];
+    int n; T defaultV, tree[MAX << 2], lazy[MAX << 3];
     inline void merge(T a, T b){ assert(("Needs to be implemented!", 0)); };
     inline void updLazy(T& lazyV, T& treeV, T& lazyVLhs, T& lazyVRhs){ assert(("Needs to be implemented!", 0)); };
-    void init(int n0) { n = n0;}
-    int build(int i, int l, int r, T* arr){
+    void init(int n0, T defaultV0) { n = n0; defaultV = defaultV0; }
+    T build(int i, int l, int r, T* arr){
         if(l == r) return tree[i] = arr[l];
 
-        int mid = (l + r) / 2;
+        int mid = (l + r) >> 1;
         return tree[i] = merge(build(i << 1, l, mid, arr), build(i << 1 | 1, mid + 1, r, arr));
     }
-    int query(int i, int bl, int br, int ql, int qr){
+    T query(int i, int bl, int br, int ql, int qr){
         updLazy(lazy[i], tree[i], lazy[i << 1], lazy[i << 1 | 1]);
-        if(br < ql || bl > qr) return DEFAULT;
+        if(br < ql || bl > qr) return defaultV;
         if(bl >= ql && br <= qr) return tree[i];
 
-        int mid = (bl + br) / 2;
+        int mid = (bl + br) >> 1;
         return merge(query(i << 1, bl, mid, ql, qr), query(i << 1 | 1, mid + 1, br, ql, qr));
     }
-    int update(int i, int bl, int br, int q, T v){
+    T update(int i, int bl, int br, int q, T v){
         updLazy(lazy[i], tree[i], lazy[i << 1], lazy[i << 1 | 1]);
         if(q < bl || q > br) return tree[i];
         if(bl == q && br == q) {
@@ -74,7 +74,7 @@ struct LazySegmentTree {
             return tree[i];
         }
 
-        int mid = (bl + br) / 2;
+        int mid = (bl + br) >> 1;
         return tree[i] = merge(update(i << 1, bl, mid, q, v), update(i << 1 | 1, mid + 1, br, q, v));
     }
 };

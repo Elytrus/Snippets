@@ -24,3 +24,11 @@ ${1:i}.begin(), ${1:i}.end()
 sort(${1:i}.begin(), ${1:i}.end());
 ${1:i}.resize(unique(${1:i}.begin(), ${1:i}.end()) - ${1:i}.begin());
 //endtemplate unique
+
+//begintemplate sort
+sort(${1:i}.begin(), ${1:i}.end());
+//endtemplate sort
+
+//begintemplate reverse
+reverse(${1:i}.begin(), ${1:i}.end());
+//endtemplate reverse
