@@ -7,24 +7,24 @@
 //description Breadth-First Search Template (unweighted only)
 template <int MAX, typename T>
 struct BFS {
-    int levels[MAX]; queue<int> nxt;
+    int dis[MAX]; queue<int> nxt;
     void bfs(int start, T& graph) {
         vector<int> starts = {start};
         multisource_bfs(starts, graph);
     }
     void multisource_bfs(vector<int> &starts, T& graph) {
-        memset(levels, 0x3f, sizeof levels);
+        memset(dis, 0x3f, sizeof dis);
         for (int start : starts) {
-            levels[start] = 0;
+            dis[start] = 0;
             nxt.push(start);
         }
 
         while (!nxt.empty()) {
-            int cur = nxt.front(), level = levels[cur]; nxt.pop();
+            int cur = nxt.front(), cdis = dis[cur]; nxt.pop();
 
             for (int adj : graph.adjs(cur)) {
-                if (levels[adj] > level + 1) {
-                    levels[adj] = level + 1;
+                if (dis[adj] > cdis + 1) {
+                    dis[adj] = cdis + 1;
                     nxt.push(adj);
                 }
             }
@@ -37,24 +37,24 @@ struct BFS {
 //description Breadth-First Search Template (weighted only)
 template <int MAX, typename T, typename dis_t>
 struct WeightedBFS {
-    dis_t levels[MAX]; queue<int> nxt;
+    dis_t dis[MAX]; queue<int> nxt;
     void bfs(int start, T& graph) {
         vector<int> starts = {start};
         multisource_bfs(starts, graph);
     }
     void multisource_bfs(vector<int> &starts, T& graph) {
-        memset(levels, 0x3f, sizeof levels);
+        memset(dis, 0x3f, sizeof dis);
         for (int start : starts) {
-            levels[start] = 0;
+            dis[start] = 0;
             nxt.push(start);
         }
 
         while (!nxt.empty()) {
-            int cur = nxt.front(); dis_t level = levels[cur]; nxt.pop();
+            int cur = nxt.front(); dis_t cdis = dis[cur]; nxt.pop();
 
             for (auto adj : graph.adjs(cur)) {
-                if (levels[adj.v] > level + 1) {
-                    levels[adj.v] = level + adj.w;
+                if (dis[adj.v] > cdis + 1) {
+                    dis[adj.v] = cdis + adj.w;
                     nxt.push(adj);
                 }
             }

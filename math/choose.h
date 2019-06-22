@@ -11,9 +11,8 @@ struct NChooseK {
     FastPow<MOD> fastPow;
     NChooseK() {}
     void init() {
-        facts[1] = 1;
-        for (int i = 2; i < MAX; i++)
-            facts[i] = (facts[i - 1] * i) % MOD;
+        facts[0] = facts[1] = 1;
+        for (int i = 2; i < MAX; i++) facts[i] = (facts[i - 1] * i) % MOD;
     }
     ll choose (int n, int k) { return fastPow.divMod(facts[n], (facts[k] * facts[n - k]) % MOD); }
 };

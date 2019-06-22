@@ -44,6 +44,6 @@ struct SMTreap {
         inOrder(cur->l); cout << cur->val << " "; inOrder(cur->r);
     }
 };
-//endtemplate
+//endtemplate treap
 
 //TODO: Basic Treap Tests (Already tested on Utrka/coci14c2p2) (https://dmoj.ca/src/1484732)
