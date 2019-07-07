@@ -10,6 +10,7 @@ All snippets are written in C++
     * Implicit Treap
     * BIT Binary Search Technique: [Wowow](https://dmoj.ca/problem/cco10p3)
     * N-Dimensional BIT: [Inaho 2](https://dmoj.ca/problem/inaho2)
+    * ALL DS and graph template: switch to using constructors instead of init function (when possible)
 * Algorithms
     * Centroid Decomposition (Flexible template, similar to trie)
     * Centroid Tree (Flexible template, similar to trie)

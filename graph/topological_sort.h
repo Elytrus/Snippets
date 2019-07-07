@@ -2,7 +2,15 @@
 
 #include "stdincludes.h"
 #include "graph.h"
+#include "topological_sort_no_transpose.h"
 #include "test/test_graph.h"
+
+/**
+ * Note that for this template, the graph is passed into the sort function instead of as a constructor parameter
+ * because the graph is transposed before sorting
+ * @tparam MAX
+ * @tparam T
+ */
 
 //begintemplate topologicalsort
 //description Topological Sort Algorithm
@@ -15,8 +23,8 @@ struct TopologicalSort {
             if (!vis[adj]) dfs(adj);
         order.push_back(cur);
     }
-    void sort(T &graph0) {
-        graph = graph0.transpose();
+    void sort(T &graph0, T (*transposeFun)(T&)) {
+        graph = transposeFun(graph0);
         memset(vis, false, sizeof vis);
         for (int i = 1; i <= graph.n; i++)
             if (!vis[i]) dfs(i);
@@ -43,9 +51,13 @@ template <typename T, typename G> void check_sorting(G g, T topo) {
 void topological_sort_test() {
     Graph<21> g = test_DAG();
     TopologicalSort<21, Graph<21>> topo;
-    topo.sort(g);
+    topo.sort(g, transpose);
+
+    TopologicalSortNT<21, Graph<21>> topo2(g);
+    topo2.sort();
 
     check_sorting(g, topo);
+    check_sorting(g, topo2);
 
     PASSED("Topological Sort");
 }

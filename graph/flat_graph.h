@@ -41,15 +41,6 @@ struct FlatGraph {
         for (int i = 0; i < m; i++)
             to[start[A[i]] + ptr[A[i]]++] = B[i];
     }
-    FlatGraph<MAX, MAXE> transpose() {
-        FlatGraph<MAX, MAXE> ret; ret.init(n, m);
-        for (int i = 0; i < m; i++) {
-            ret.A[i] = B[i];
-            ret.B[i] = A[i];
-        }
-        ret.setup();
-        return ret;
-    }
     FlatGraphIter<int> adjs(int x) { return {to + start[x], to + start[x + 1]}; }
 };
 //endtemplate flatgraph
@@ -81,18 +72,31 @@ struct WeightedFlatGraph {
         for (int i = 0; i < m; i++)
             to[start[A[i]] + ptr[A[i]]++] = B[i];
     }
-    WeightedFlatGraph<MAX, MAXE, T> transpose() {
-        WeightedFlatGraph<MAX, MAXE, T> ret; ret.init(n, m);
-        for (int i = 0; i < m; i++) {
-            ret.A[i] = B[i];
-            ret.B[i] = A[i];
-        }
-        ret.setup();
-        return ret;
-    }
     FlatGraphIter<ed<T>> adjs(int x) { return {to + start[x], to + start[x + 1]}; }
 };
 //endtemplate weightedflatgraph
+
+//begintemplate flatgraphtranspose
+//description Transposing but for flat graphs
+template <int MAX, int MAXE> FlatGraph<MAX, MAXE> transpose(FlatGraph<MAX, MAXE> &g) {
+    FlatGraph<MAX, MAXE> ret; ret.init(g.n, g.m);
+    for (int i = 0; i < g.m; i++) {
+        ret.A[i] = g.B[i];
+        ret.B[i] = g.A[i];
+    }
+    ret.setup();
+    return ret;
+}
+template <int MAX, int MAXE, typename T> WeightedFlatGraph<MAX, MAXE, T> transpose(WeightedFlatGraph<MAX, MAXE, T> &g) {
+    WeightedFlatGraph<MAX, MAXE, T> ret; ret.init(g.n, g.m);
+    for (int i = 0; i < g.m; i++) {
+        ret.A[i] = g.B[i];
+        ret.B[i] = g.A[i];
+    }
+    ret.setup();
+    return ret;
+}
+//endtemplate flatgraphtranspose
 
 FlatGraph<31, 30> test_flat_graph() {
     FlatGraph<31, 30> g;

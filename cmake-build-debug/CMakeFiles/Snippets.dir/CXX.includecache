@@ -23,10 +23,16 @@ static_deque.h
 E:/repos/Snippets/ds/static_deque.h
 treap.h
 E:/repos/Snippets/ds/treap.h
+fast_clear_array.h
+E:/repos/Snippets/ds/fast_clear_array.h
 
 E:/repos/Snippets/ds/bit.h
 ../stdincludes.h
 E:/repos/Snippets/stdincludes.h
+
+E:/repos/Snippets/ds/fast_clear_array.h
+stdincludes.h
+E:/repos/Snippets/ds/stdincludes.h
 
 E:/repos/Snippets/ds/segment_tree.h
 ../stdincludes.h
@@ -53,6 +59,8 @@ graph.h
 E:/repos/Snippets/graph/graph.h
 topological_sort.h
 E:/repos/Snippets/graph/topological_sort.h
+topological_sort_no_transpose.h
+E:/repos/Snippets/graph/topological_sort_no_transpose.h
 bfs.h
 E:/repos/Snippets/graph/bfs.h
 dijkstra.h
@@ -121,8 +129,16 @@ stdincludes.h
 E:/repos/Snippets/graph/stdincludes.h
 graph.h
 E:/repos/Snippets/graph/graph.h
+topological_sort_no_transpose.h
+E:/repos/Snippets/graph/topological_sort_no_transpose.h
 test/test_graph.h
 E:/repos/Snippets/graph/test/test_graph.h
+
+E:/repos/Snippets/graph/topological_sort_no_transpose.h
+stdincludes.h
+E:/repos/Snippets/graph/stdincludes.h
+graph.h
+E:/repos/Snippets/graph/graph.h
 
 E:/repos/Snippets/graph_ds/all.h
 union_find.h
@@ -167,6 +183,8 @@ gcd.h
 E:/repos/Snippets/math/gcd.h
 fast_pow.h
 E:/repos/Snippets/math/fast_pow.h
+fast_mul.h
+E:/repos/Snippets/math/fast_mul.h
 choose.h
 E:/repos/Snippets/math/choose.h
 heron.h
@@ -179,6 +197,10 @@ E:/repos/Snippets/math/choose.h
 E:/repos/Snippets/stdincludes.h
 fast_pow.h
 E:/repos/Snippets/math/fast_pow.h
+
+E:/repos/Snippets/math/fast_mul.h
+stdincludes.h
+E:/repos/Snippets/math/stdincludes.h
 
 E:/repos/Snippets/math/fast_pow.h
 ../stdincludes.h

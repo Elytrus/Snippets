@@ -7,8 +7,8 @@
 //description LCA implementation using the Binary Lift method.  O(N log N) setup and O(log N) query
 template <int MAX, int LOG, typename T>
 struct BinaryLiftLCA {
-    int pars[LOG][MAX], levels[MAX]; T graph;
-    BinaryLiftLCA() {}
+    int pars[LOG][MAX], levels[MAX]; T &graph;
+    BinaryLiftLCA(T& graph0) : graph(graph0) {}
     void dfs(int cur, int par, int level) {
         levels[cur] = level;
         pars[0][cur] = par;
@@ -16,9 +16,7 @@ struct BinaryLiftLCA {
             if (adj ^ par)
                 dfs(adj, cur, level + 1);
     }
-    void init(T &graph0) {
-        graph = graph0;
-
+    void init() {
         // Setting sparse table
         dfs(1, -1, 0);
         for (int i = 1; i < LOG; i++) {
@@ -46,8 +44,8 @@ struct BinaryLiftLCA {
 
 void BINARY_LIFT_LCA_CE_TEST() {
     Graph<10> g; g.init(10, 5);
-    BinaryLiftLCA<10, 5, Graph<10>> lca;
-    lca.init(g);
+    BinaryLiftLCA<10, 5, Graph<10>> lca(g);
+    lca.init();
     lca.lca(1, 2);
 }
 

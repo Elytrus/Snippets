@@ -11,9 +11,8 @@
 //description Recursive Segment Tree (Interval Tree)
 template <int MAX, typename T>
 struct SegmentTree {
-    int n; T defaultV, tree[MAX << 2];
-    inline T merge(T a, T b){ assert(("Needs to be implemented!", 0)); };
-    void init(int n0, T defaultV0) { n = n0; defaultV = defaultV0; }
+    int n; T defaultV, tree[MAX << 2]; T (*merge)(T, T);
+    SegmentTree(int n0, T defaultV0, T (*merge0)(T, T)) : n(n0), defaultV(defaultV0), merge(merge0) {}
     T build(int i, int l, int r, T* arr){
         if(l == r) return tree[i] = arr[l];
 
@@ -47,10 +46,8 @@ struct SegmentTree {
 //description Recursive Lazy Propagating Segment Tree (Interval Tree)
 template <int MAX, typename T>
 struct LazySegmentTree {
-    int n; T defaultV, tree[MAX << 2], lazy[MAX << 3];
-    inline void merge(T a, T b){ assert(("Needs to be implemented!", 0)); };
-    inline void updLazy(T& lazyV, T& treeV, T& lazyVLhs, T& lazyVRhs){ assert(("Needs to be implemented!", 0)); };
-    void init(int n0, T defaultV0) { n = n0; defaultV = defaultV0; }
+    int n; T defaultV, tree[MAX << 2], lazy[MAX << 3]; T (*merge)(T, T); void (*updLazy)(T&, T&, T&, T&);
+    LazySegmentTree(int n0, T defaultV0, T (*merge0)(T, T), void (*updLazy0)(T&, T&, T&, T&)) : n(n0), defaultV(defaultV0), merge(merge0), updLazy(updLazy0) {}
     T build(int i, int l, int r, T* arr){
         if(l == r) return tree[i] = arr[l];
 

@@ -8,10 +8,10 @@
 //description Tarjan's Articulation Points algorithm
 template <int MAX, typename T>
 struct ArticulationPoints {
-    int curOrd = -1, ord[MAX], low[MAX]; bool vis[MAX]; T graph;
+    int curOrd = -1, ord[MAX], low[MAX]; bool vis[MAX]; T &graph;
     vector<int> points;
-    void tarjan(T &graph0) {
-        graph = graph0;
+    ArticulationPoints(T &graph0) : graph(graph0) {}
+    void tarjan() {
         curOrd = -1;
         memset(vis, false, sizeof vis);
 
@@ -52,9 +52,9 @@ const vector<int> PTS = {1, 3, 7, 18};
 
 void articulation_points_test() {
     Graph<MAX> g = test_graph();
-    ArticulationPoints<MAX, Graph<MAX>> ap;
+    ArticulationPoints<MAX, Graph<MAX>> ap(g);
 
-    ap.tarjan(g);
+    ap.tarjan();
 
     sort(ap.points.begin(), ap.points.end());
     assert(ap.points == PTS);

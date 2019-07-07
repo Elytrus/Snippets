@@ -8,11 +8,11 @@
 //description Tarjan's Strongly Connected Components algorithm
 template <int MAX, typename T>
 struct SCC {
-    int curOrd = -1, ord[MAX], low[MAX]; stack<int> stk; bool inStk[MAX], vis[MAX]; T graph;
+    int curOrd = -1, ord[MAX], low[MAX]; stack<int> stk; bool inStk[MAX], vis[MAX]; T &graph;
     vector<vector<int>> comps;
-    void tarjan(T &graph0) {
+    SCC(T &graph0) : graph(graph0) {}
+    void tarjan() {
         comps.clear();
-        graph = graph0;
         curOrd = -1;
         memset(inStk, false, sizeof inStk);
         memset(vis, false, sizeof vis);
@@ -73,8 +73,8 @@ void strongly_connected_components_test() {
     Graph<21> g = test_directed_cyclic_graph();
 //    Graph<21> g = test_DAG();
 
-    SCC<21, Graph<21>> scc;
-    scc.tarjan(g);
+    SCC<21, Graph<21>> scc(g);
+    scc.tarjan();
 
     for (auto it = scc.comps.begin(); it != scc.comps.end(); it++)
         sort(it->begin(), it->end());

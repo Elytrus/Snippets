@@ -6,17 +6,12 @@
 //description Binary Indexed Tree
 template <int MAX, typename T = int>
 struct BIT {
-    int n; T defaultV, tree[MAX];
-    inline void merge(T& a, T& b){ assert(("Needs to be implemented!", 0)); };
-    void init(int n0, T defaultV0) { n = n0; defaultV = defaultV0; }
-    void upd(int x, T z){ // Adds value `z` to index `x`
-        for(; x <= n; x += x & -x)
-            merge(tree[x], z);
-    }
+    int n; T defaultV, tree[MAX]; void (*merge)(T&, T&);
+    BIT(int n0, T defaultV0, void (*merge0)(T&, T&)) : n(n0), defaultV(defaultV0), merge(merge0) {}
+    void upd(int x, T z){ for(; x <= n; x += x & -x) merge(tree[x], z); }
     T query(int x){ // Queries index `x`
         T sum = defaultV;
-        for(; x; x -= x & -x)
-            merge(sum, tree[x]);
+        for(; x; x -= x & -x) merge(sum, tree[x]);
         return sum;
     }
     void reverseUpd(int x, T z) { upd(n - x + 1, z); }
@@ -28,18 +23,17 @@ struct BIT {
 //description 2D Binary Indexed Tree
 template <int MAXN, int MAXM, typename T = int>
 struct BIT2D {
-    int n, m; T defaultV, tree[MAXN][MAXM];
-    inline void merge(T& a, T& b){ assert(("Needs to be implemented!", 0)); };
-    void init(int n0, int m0, T defaultV0) { n = n0; m = m0; n = n0; defaultV = defaultV0; }
+    int n, m; T defaultV, tree[MAXN][MAXM]; void (*merge)(T&, T&);
+    BIT2D(int n0, int m0, T defaultV0, void (*merge0)(T&, T&)) : n(n0), m(m0), defaultV(defaultV0), merge(merge0) {}
     void add(int x, int y, T z){ // Adds `z` to index `(x, y)`
-        for(int cx = x; cx <= n; cx += cx & -cx)
-            for(int cy = y; cy <= m; cy += cy & -cy)
+        for (int cx = x; cx <= n; cx += cx & -cx)
+            for (int cy = y; cy <= m; cy += cy & -cy)
                 merge(tree[cx][cy], z);
     }
     T query(int x, int y){ // Querys index `(x, y)`
         T sum = defaultV;
-        for(int cx = x; cx; cx -= cx & -cx)
-            for(int cy = y; cy; cy -= cy & -cy)
+        for (int cx = x; cx; cx -= cx & -cx)
+            for (int cy = y; cy; cy -= cy & -cy)
                 merge(sum, tree[cx][cy]);
         return sum;
     }

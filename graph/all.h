@@ -2,6 +2,7 @@
 
 #include "graph.h"
 #include "topological_sort.h"
+#include "topological_sort_no_transpose.h"
 #include "bfs.h"
 #include "dijkstra.h"
 #include "scc.h"

@@ -4,6 +4,7 @@
 CMakeFiles/Snippets.dir/main.cpp.obj: .././graph/graph.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/bit.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/fast_clear_array.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/segment_tree.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/sparse_table.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../ds/static_deque.h
@@ -19,6 +20,7 @@ CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/graph.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/scc.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/test/test_graph.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/topological_sort.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../graph/topological_sort_no_transpose.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/lca_binary_lift.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/lca_euler.h
@@ -26,6 +28,7 @@ CMakeFiles/Snippets.dir/main.cpp.obj: ../graph_ds/union_find.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Snippets.dir/main.cpp.obj: ../math/all.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../math/choose.h
+CMakeFiles/Snippets.dir/main.cpp.obj: ../math/fast_mul.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../math/fast_pow.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../math/gcd.h
 CMakeFiles/Snippets.dir/main.cpp.obj: ../math/heron.h

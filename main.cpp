@@ -9,9 +9,14 @@
 #define CATEGORY(x) cout << "-- Beginning Category: " << x << "\n"
 
 int main() {
+    // Test ds
+    CATEGORY("Data Structures");
+    fca_test();
+
     // Test Math
     CATEGORY("Math");
     fast_pow_test();
+    fast_mul_test();
 
     // Test string_ds
     CATEGORY("String Data Structures");

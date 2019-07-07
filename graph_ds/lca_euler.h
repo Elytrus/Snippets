@@ -7,8 +7,8 @@
 //description LCA implementation using the Euler Tour method.  O(N log N) setup and O(1) query
 template <int MAX, int LOG, typename T>
 struct EulerTourLCA {
-    int eulerPtr = 1, levels[MAX], firstIdx[MAX], table[LOG + 1][MAX << 1]; T graph;
-    EulerTourLCA() {}
+    int eulerPtr = 1, levels[MAX], firstIdx[MAX], table[LOG + 1][MAX << 1]; T &graph;
+    EulerTourLCA(T &graph0) : graph(graph0) {}
     void dfs(int cur, int par, int level) {
         levels[cur] = level;
         table[0][eulerPtr++] = cur;
@@ -20,9 +20,7 @@ struct EulerTourLCA {
         }
     }
     inline int levelMin(int a, int b) { return levels[a] < levels[b] ? a : b; }
-    void init(T &graph0) {
-        graph = graph0;
-
+    void init() {
         // DFSing and setting firstIdx Table
         table[0][0] = -1;
         dfs(1, -1, 0);
@@ -49,8 +47,8 @@ struct EulerTourLCA {
 
 void EULER_LCA_CE_TEST() {
     Graph<10> g; g.init(10, 5);
-    EulerTourLCA<10, 5, Graph<10>> lca;
-    lca.init(g);
+    EulerTourLCA<10, 5, Graph<10>> lca(g);
+    lca.init();
     lca.lca(1, 2);
 }
 

@@ -5,6 +5,7 @@ CMakeFiles/Snippets.dir/main.cpp.obj
  .././graph/graph.h
  E:/repos/Snippets/ds/all.h
  E:/repos/Snippets/ds/bit.h
+ E:/repos/Snippets/ds/fast_clear_array.h
  E:/repos/Snippets/ds/segment_tree.h
  E:/repos/Snippets/ds/sparse_table.h
  E:/repos/Snippets/ds/static_deque.h
@@ -20,6 +21,7 @@ CMakeFiles/Snippets.dir/main.cpp.obj
  E:/repos/Snippets/graph/scc.h
  E:/repos/Snippets/graph/test/test_graph.h
  E:/repos/Snippets/graph/topological_sort.h
+ E:/repos/Snippets/graph/topological_sort_no_transpose.h
  E:/repos/Snippets/graph_ds/all.h
  E:/repos/Snippets/graph_ds/lca_binary_lift.h
  E:/repos/Snippets/graph_ds/lca_euler.h
@@ -27,6 +29,7 @@ CMakeFiles/Snippets.dir/main.cpp.obj
  E:/repos/Snippets/main.cpp
  E:/repos/Snippets/math/all.h
  E:/repos/Snippets/math/choose.h
+ E:/repos/Snippets/math/fast_mul.h
  E:/repos/Snippets/math/fast_pow.h
  E:/repos/Snippets/math/gcd.h
  E:/repos/Snippets/math/heron.h

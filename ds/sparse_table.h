@@ -6,9 +6,8 @@
 //description Sparse Table (RMQ) data structure
 template <int MAX, int LOG, typename T>
 struct SparseTable {
-    int n; T table[LOG][MAX];
-    function<T(T, T)> merge;
-    void init(int n0, function<T(T, T)> merge0) {n = n0; merge = merge0; }
+    int n; T table[LOG][MAX]; T (*merge)(T, T);
+    SparseTable(int n0, T (*merge0)(T, T)) : n(n0), merge(merge0) {}
     void build(int *arr){
         copy(arr + 1, arr + n + 1, table[0] + 1);
         for(int i = 1; i < LOG; i++){

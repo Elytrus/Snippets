@@ -30,13 +30,6 @@ struct Graph {
             if (undirected) addEdge(__bb, __ba);
         }
     }
-    auto transpose() { // Transposes the graph into its reversed form
-        Graph<MAX> ret; ret.init(n, m);
-        for (int i = 1; i <= n; i++)
-            for (auto adj : adjs(i))
-                ret.addEdge(adj, i);
-        return ret;
-    }
 };
 //endtemplate graph
 
@@ -54,13 +47,6 @@ struct WeightedGraph {
             addEdge(__ba, __bb);
             if (undirected) addEdge(__bb.v, {__ba, __bb.w});
         }
-    }
-    auto transpose() { // Transposes the graph into its reversed form
-        WeightedGraph<MAX, T> ret; ret.init(n, m);
-        for (int i = 1; i <= n; i++)
-            for (auto adj : adjs(i))
-                ret.addEdge(adj.v, {i, adj.w});
-        return ret;
     }
 };
 //endtemplate weightedgraph
@@ -85,12 +71,30 @@ struct EdgeIdGraph {
             if (undirected) addEdge(__bb, __ba, i);
         }
     }
-    auto transpose() { // Transposes the graph into its reversed form
-        EdgeIdGraph<MAX> ret; ret.init(n, m);
-        for (int i = 1; i <= n; i++)
-            for (auto adj : adjs(i))
-                ret.addEdge(adj.v, i, adj.i);
-        return ret;
-    }
 };
 //endtemplate edgeidgraph
+
+//begintemplate transpose
+//description Functions for transposing normal grpahs
+template <int MAX> Graph<MAX> transpose(Graph<MAX> &g) {
+    Graph<MAX> ret; ret.init(g.n, g.m);
+    for (int i = 1; i <= g.n; i++)
+        for (auto adj : g.adjs(i))
+            ret.addEdge(adj, i);
+    return ret;
+}
+template <int MAX, typename T> WeightedGraph<MAX, T> transpose(WeightedGraph<MAX, T> &g) {
+    WeightedGraph<MAX, T> ret; ret.init(g.n, g.m);
+    for (int i = 1; i <= g.n; i++)
+        for (auto adj : g.adjs(i))
+            ret.addEdge(adj.v, {i, adj.w});
+    return ret;
+}
+template <int MAX> EdgeIdGraph<MAX> transpose(EdgeIdGraph<MAX> &g) {
+    EdgeIdGraph<MAX> ret; ret.init(g.n, g.m);
+    for (int i = 1; i <= g.n; i++)
+        for (auto adj : g.adjs(i))
+            ret.addEdge(adj.v, i, adj.i);
+    return ret;
+}
+//endtemplate transpose
