@@ -1,3 +1,0 @@
-E:/repos/Snippets/cmake-build-debug/CMakeFiles/Snippets.dir
-E:/repos/Snippets/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/repos/Snippets/cmake-build-debug/CMakeFiles/rebuild_cache.dir
