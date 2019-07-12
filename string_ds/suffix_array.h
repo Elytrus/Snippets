@@ -29,6 +29,14 @@ struct SuffixArray {
     }
     inline int get(int id) { return sfx[id].idx; }
     inline char ch(int id, int chId) { return s[sfx[id].idx + chId]; }
+    void print() { for (int i = 0; i < n; i++) cout << i << ": " << s.substr(get(i)) << "\n"; }
+    int bsearch(int l, int r, int chId, char find) { // l, r, and chId are 1-indexed.  Acts like C++ lower_bound
+        l--; l--; chId--;
+        while (l + 1 < r) {
+            int mid = (l + r) >> 1;
+            if (ch(mid, chId) >= find) r = mid; else l = mid;
+        } return r + 1;
+    }
 };
 //endtemplate suffixarray
 

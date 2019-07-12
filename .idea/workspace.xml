@@ -2,7 +2,6 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/util.h" line="4" />
-    <bookmark url="file://$PROJECT_DIR$/string_ds/substr_hash.h" line="11" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated />
@@ -14,8 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_ds/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/string_ds/all.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/math/all.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string_ds/substr_hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/string_ds/substr_hash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string_ds/suffix_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/string_ds/suffix_array.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/math/all.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#14#30#0" expanded="true" />
               </folding>
@@ -67,26 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/string_ds/suffix_array.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-              <folding>
-                <element signature="e#282#308#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/string_ds/all.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#14#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="32" column="112" selection-start-line="32" selection-start-column="112" selection-end-line="32" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -141,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/graph-ds/union_find.h" />
         <option value="$PROJECT_DIR$/string-ds/all.h" />
         <option value="$PROJECT_DIR$/string-ds/substr_hash.h" />
         <option value="$PROJECT_DIR$/algorithms/gcd.txt" />
@@ -154,7 +140,6 @@
         <option value="$PROJECT_DIR$/math/gcd.h" />
         <option value="$PROJECT_DIR$/math/heron.h" />
         <option value="$PROJECT_DIR$/math/sieve_and_factor.h" />
-        <option value="$PROJECT_DIR$/string_ds/substr_hash.h" />
         <option value="$PROJECT_DIR$/graph/generators/brute_force.cpp" />
         <option value="$PROJECT_DIR$/graph/test/generators/ap_bridge_brute_force.cpp" />
         <option value="$PROJECT_DIR$/graph/test/generators/graphmaker.py" />
@@ -189,9 +174,11 @@
         <option value="$PROJECT_DIR$/math/fast_pow.h" />
         <option value="$PROJECT_DIR$/math/fast_mul.h" />
         <option value="$PROJECT_DIR$/math/extended_euclidian_algorithm.h" />
-        <option value="$PROJECT_DIR$/math/all.h" />
-        <option value="$PROJECT_DIR$/string_ds/suffix_array.h" />
         <option value="$PROJECT_DIR$/string_ds/all.h" />
+        <option value="$PROJECT_DIR$/string_ds/substr_hash.h" />
+        <option value="$PROJECT_DIR$/math/all.h" />
+        <option value="$PROJECT_DIR$/math/shoelace.h" />
+        <option value="$PROJECT_DIR$/string_ds/suffix_array.h" />
       </list>
     </option>
   </component>
@@ -207,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,6 +230,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,12 +294,14 @@
       <workItem from="1562214936352" duration="70000" />
       <workItem from="1562468789274" duration="1639000" />
       <workItem from="1562552598255" duration="1625000" />
-      <workItem from="1562731724352" duration="124000" />
+      <workItem from="1562731724352" duration="171000" />
+      <workItem from="1562851336827" duration="6368000" />
+      <workItem from="1562893574278" duration="17000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86570000" />
+    <option name="totallyTimeSpent" value="93002000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,9 +314,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21619433" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22348177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -342,7 +330,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.26865673" />
+      <window_info active="true" anchor="bottom" id="CMake" order="12" visible="true" weight="0.26865673" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -353,7 +341,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/algorithms/topological sort.txt" />
     <entry file="file://$PROJECT_DIR$/ds/static_stack.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -414,29 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math/heron.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <element signature="e#180#192#0" expanded="true" />
-            <element signature="e#601#613#0" expanded="true" />
-            <element signature="e#784#796#0" expanded="true" />
-            <element signature="e#1045#1057#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string_ds/substr_hash.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#240#280#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,12 +715,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/string_ds/all.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#14#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string_ds/substr_hash.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math/heron.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#180#192#0" expanded="true" />
+            <element signature="e#601#613#0" expanded="true" />
+            <element signature="e#784#796#0" expanded="true" />
+            <element signature="e#1045#1057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math/all.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#14#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -768,33 +772,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math/all.h">
+    <entry file="file://$PROJECT_DIR$/math/shoelace.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="119">
+          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
           <folding>
-            <element signature="e#14#30#0" expanded="true" />
+            <element signature="e#150#162#0" expanded="true" />
+            <element signature="e#186#198#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/string_ds/suffix_array.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-          <folding>
-            <element signature="e#282#308#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string_ds/all.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#14#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="32" column="112" selection-start-line="32" selection-start-column="112" selection-end-line="32" selection-end-column="112" />
         </state>
       </provider>
     </entry>

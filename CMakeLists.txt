@@ -13,4 +13,4 @@ add_executable(Snippets
         ds/sparse_table.h
         graph_ds/union_find.h
         main.cpp
-        stdincludes.h math/extended_euclidian_algorithm.h string_ds/suffix_array.h)
+        stdincludes.h math/extended_euclidian_algorithm.h string_ds/suffix_array.h math/shoelace.h)

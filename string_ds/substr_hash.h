@@ -5,13 +5,12 @@
 //begintemplate substringhash
 //description O(1) Rolling hashes on a substring with O(N) setup.  This DS also has the ability to preform the same hash on any arbitrary string in O(N) time.  Note that MAX has to be at least 1 over the size of N
 template <int MAX, int PRIME = 113, char A = 'A'>
+template <int MAX, int PRIME = 113, char A = 'a'>
 struct SubstrHash {
-    int n; string s;
-    ll pows[MAX], pfxHash[MAX];
+    int &n; string &s; ll pows[MAX], pfxHash[MAX];
     inline int charVal(char c) { return c - A; }
-    SubstrHash() {}
-    void init(string &s0) {
-        n = s0.length(); s = s0; assert(n < MAX);
+    SubstrHash(int &n0, string &s0) : n(n0), s(s0) { assert(n < MAX); }
+    void init() {
         pows[0] = 1; pfxHash[0] = 0;
         for (int i = 1; i <= n; i++) {
             pows[i] = pows[i - 1] * PRIME;
