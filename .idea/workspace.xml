@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/util.h" line="4" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="Snippets" targetName="Snippets" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -14,10 +16,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/math/all.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_ds/substr_hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/string_ds/substr_hash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_ds/suffix_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/string_ds/suffix_array.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Snippets.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Snippets.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.h" beforeDir="false" afterPath="$PROJECT_DIR$/template.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,6 +47,7 @@
     <expand />
     <select />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -57,11 +62,34 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding>
+                <element signature="e#190#202#0" expanded="true" />
+                <element signature="e#259#283#0" expanded="true" />
+                <element signature="e#325#337#0" expanded="true" />
+                <element signature="e#602#614#0" expanded="true" />
+                <element signature="e#673#685#0" expanded="true" />
+                <element signature="e#798#810#0" expanded="true" />
+                <element signature="e#931#943#0" expanded="true" />
+                <element signature="e#1052#1064#0" expanded="true" />
+                <element signature="e#1366#1393#0" expanded="true" />
+                <element signature="e#1488#1515#0" expanded="true" />
+                <element signature="e#1607#1634#0" expanded="true" />
+                <element signature="e#1770#1797#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/math/all.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#14#30#0" expanded="true" />
               </folding>
@@ -69,20 +97,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/string_ds/suffix_array.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="32" column="112" selection-start-line="32" selection-start-column="112" selection-end-line="32" selection-end-column="112" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -147,7 +167,6 @@
         <option value="$PROJECT_DIR$/stdincludes.h" />
         <option value="$PROJECT_DIR$/graph/dijkstra.h" />
         <option value="$PROJECT_DIR$/util.h" />
-        <option value="$PROJECT_DIR$/template.h" />
         <option value="$PROJECT_DIR$/ds/treap_order_statistics.h" />
         <option value="$PROJECT_DIR$/graph/bfs.h" />
         <option value="$PROJECT_DIR$/ds/treap.h" />
@@ -179,6 +198,7 @@
         <option value="$PROJECT_DIR$/math/all.h" />
         <option value="$PROJECT_DIR$/math/shoelace.h" />
         <option value="$PROJECT_DIR$/string_ds/suffix_array.h" />
+        <option value="$PROJECT_DIR$/template.h" />
       </list>
     </option>
   </component>
@@ -194,6 +214,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,7 +251,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,6 +260,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -261,6 +282,13 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Snippets" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Snippets" TARGET_NAME="Snippets" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Snippets" RUN_TARGET_NAME="Snippets">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -297,11 +325,13 @@
       <workItem from="1562731724352" duration="171000" />
       <workItem from="1562851336827" duration="6368000" />
       <workItem from="1562893574278" duration="17000" />
+      <workItem from="1565841281139" duration="1495000" />
+      <workItem from="1566099018337" duration="5143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93002000" />
+    <option name="totallyTimeSpent" value="99640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,9 +343,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22348177" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22814499" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -330,7 +360,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="CMake" order="12" visible="true" weight="0.26865673" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.26791278" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -452,17 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="88" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
-          <folding>
-            <element signature="e#187#199#0" expanded="true" />
-            <element signature="e#269#281#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,13 +727,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math/extended_euclidian_algorithm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/math/extended_euclidian_algorithm.h" />
     <entry file="file://$PROJECT_DIR$/string_ds/all.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -745,6 +758,8 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/math/shoelace.h" />
+    <entry file="file://$PROJECT_DIR$/string_ds/suffix_array.h" />
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -757,8 +772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/math/all.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#14#30#0" expanded="true" />
           </folding>
@@ -766,27 +781,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math/shoelace.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
-          <folding>
-            <element signature="e#150#162#0" expanded="true" />
-            <element signature="e#186#198#0" expanded="true" />
-          </folding>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/string_ds/suffix_array.h">
+    <entry file="file://$PROJECT_DIR$/template.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="32" column="112" selection-start-line="32" selection-start-column="112" selection-end-line="32" selection-end-column="112" />
+        <state relative-caret-position="578">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#190#202#0" expanded="true" />
+            <element signature="e#259#283#0" expanded="true" />
+            <element signature="e#325#337#0" expanded="true" />
+            <element signature="e#602#614#0" expanded="true" />
+            <element signature="e#673#685#0" expanded="true" />
+            <element signature="e#798#810#0" expanded="true" />
+            <element signature="e#931#943#0" expanded="true" />
+            <element signature="e#1052#1064#0" expanded="true" />
+            <element signature="e#1366#1393#0" expanded="true" />
+            <element signature="e#1488#1515#0" expanded="true" />
+            <element signature="e#1607#1634#0" expanded="true" />
+            <element signature="e#1770#1797#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

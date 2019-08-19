@@ -101,7 +101,16 @@
 		<Unit filename="E:/repos/Snippets/main.cpp">
 			<Option target="Snippets"/>
 		</Unit>
+		<Unit filename="E:/repos/Snippets/math/extended_euclidian_algorithm.h">
+			<Option target="Snippets"/>
+		</Unit>
+		<Unit filename="E:/repos/Snippets/math/shoelace.h">
+			<Option target="Snippets"/>
+		</Unit>
 		<Unit filename="E:/repos/Snippets/stdincludes.h">
+			<Option target="Snippets"/>
+		</Unit>
+		<Unit filename="E:/repos/Snippets/string_ds/suffix_array.h">
 			<Option target="Snippets"/>
 		</Unit>
 		<Unit filename="E:/repos/Snippets/CMakeLists.txt">
