@@ -16,7 +16,7 @@ using vi = vec<int>; using vl = vec<ll>; using vpi = vec<pii>; using vpl = vec<p
 #define pb push_back
 // Shorthand Function Macros
 #define ForI(a, b) for (int i = a; i < b; i++)
-#define ForJ(a, b) for (int j = a, j < b; j++)
+#define ForJ(a, b) for (int j = a; j < b; j++)
 #define ForK(a, b) for (int k = a; k < b; k++)
 #define ForincI(a, b) for (int i = a; i <= b; i++)
 #define ForincJ(a, b) for (int j = a; j <= b; j++)
