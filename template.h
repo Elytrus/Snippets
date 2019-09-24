@@ -15,15 +15,15 @@ using vi = vec<int>; using vl = vec<ll>; using vpi = vec<pii>; using vpl = vec<p
 #define mpr make_pair
 #define pb push_back
 // Shorthand Function Macros
-#define ForI(a, b) for (int i = a; i < b; i++)
-#define ForJ(a, b) for (int j = a; j < b; j++)
-#define ForK(a, b) for (int k = a; k < b; k++)
-#define ForincI(a, b) for (int i = a; i <= b; i++)
-#define ForincJ(a, b) for (int j = a; j <= b; j++)
-#define ForincK(a, b) for (int k = a; k <= b; k++)
-#define CmpLt(type) bool operator<(const type &o) const
-#define CmpGt(type) bool operator>(const type &o) const
-#define CmpFn(type) bool operator()(const type &a, const type &b)
+#define Fori(a, b) for (int i = a; i < b; i++)
+#define Forj(a, b) for (int j = a; j < b; j++)
+#define Fork(a, b) for (int k = a; k < b; k++)
+#define Forinci(a, b) for (int i = a; i <= b; i++)
+#define Forincj(a, b) for (int j = a; j <= b; j++)
+#define Forinck(a, b) for (int k = a; k <= b; k++)
+#define Cmplt(type) bool operator<(const type &o) const
+#define Cmpgt(type) bool operator>(const type &o) const
+#define Cmpfn(type) bool operator()(const type &a, const type &b)
 // Shorthand Function Macros Part 2
 #define Pow2(x) (1LL << (x))
 // Shorthand Functions
