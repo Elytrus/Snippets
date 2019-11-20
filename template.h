@@ -24,6 +24,8 @@ using vi = vec<int>; using vl = vec<ll>; using vpi = vec<pii>; using vpl = vec<p
 #define Cmplt(type) bool operator<(const type &o) const
 #define Cmpgt(type) bool operator>(const type &o) const
 #define Cmpfn(type) bool operator()(const type &a, const type &b)
+#define Memset(ptr, val) memset((ptr), (val), sizeof (ptr))
+#define Memset(ptr, val, size) memset((ptr), (val))
 // Shorthand Function Macros Part 2
 #define Pow2(x) (1LL << (x))
 // Shorthand Functions
