@@ -10,7 +10,8 @@ template <typename K, typename V> using umap = unordered_map<K, V>; template <ty
 using vi = vec<int>; using vl = vec<ll>; using vpi = vec<pii>; using vpl = vec<pll>;
 #ifdef __SIZEOF_INT128__
 using int128 = __int128_t; using uint128 = __uint128_t;
-string int128Str(int128 x) { string ret; while (x > 0) { ret += (x % 10) + '0'; x /= 10; } reverse(ret.begin(), ret.end()); return ret; }
+#endif
+template<typename I> string intStr(I x) { string ret; while (x > 0) { ret += (x % 10) + '0'; x /= 10; } reverse(ret.begin(), ret.end()); return ret; } // Int to string
 #endif
 // Shorthand Macros
 #define INF 0x3f3f3f3f
