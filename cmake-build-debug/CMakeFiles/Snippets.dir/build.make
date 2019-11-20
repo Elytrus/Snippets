@@ -60,15 +60,15 @@ CMakeFiles/Snippets.dir/main.cpp.obj: CMakeFiles/Snippets.dir/flags.make
 CMakeFiles/Snippets.dir/main.cpp.obj: CMakeFiles/Snippets.dir/includes_CXX.rsp
 CMakeFiles/Snippets.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\repos\Snippets\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Snippets.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Snippets.dir\main.cpp.obj -c E:\repos\Snippets\main.cpp
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Snippets.dir\main.cpp.obj -c E:\repos\Snippets\main.cpp
 
 CMakeFiles/Snippets.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snippets.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\repos\Snippets\main.cpp > CMakeFiles\Snippets.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\repos\Snippets\main.cpp > CMakeFiles\Snippets.dir\main.cpp.i
 
 CMakeFiles/Snippets.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snippets.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\repos\Snippets\main.cpp -o CMakeFiles\Snippets.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\repos\Snippets\main.cpp -o CMakeFiles\Snippets.dir\main.cpp.s
 
 # Object files for target Snippets
 Snippets_OBJECTS = \
