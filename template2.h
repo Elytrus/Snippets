@@ -12,7 +12,6 @@ using vi = vec<int>; using vl = vec<ll>; using vpi = vec<pii>; using vpl = vec<p
 using int128 = __int128_t; using uint128 = __uint128_t;
 #endif
 template<typename I> string intStr(I x) { string ret; while (x > 0) { ret += (x % 10) + '0'; x /= 10; } reverse(ret.begin(), ret.end()); return ret; } // Int to string
-#endif
 // Shorthand Macros
 #define INF 0x3f3f3f3f
 #define LLINF 0x3f3f3f3f3f3f3f3f
@@ -42,7 +41,7 @@ template<typename T> inline void mina(T& st, T v) { st = min(st, v); }
 inline void setprec(ostream& out, int prec) { out << setprecision(prec) << fixed; }
 // Out operators and printing for arrays and vectors
 template <typename T> ostream& operator<<(ostream& out,vector<T> iter){out<<"[";for(auto t:iter){out<<t<<", ";}out<<"]";return out;}
-template <typename T> string arrayStr(T *arr,int sz){string ret = "[";for(int i=0;i<sz;i++){ret+=arr[i]+", "; } return ret + "]";}
+template <typename T> string arrayStr(T *arr,int sz){string ret = "[";for(int i=0;i<sz;i++){ret+=to_string(arr[i])+", "; } return ret + "]";}
 template <typename T> void printArray(T *arr,int sz){for(int i=0;i<sz;i++){cout<<arr[i]<<" "; } cout<<"\n";}
 // I/O Operations
 inline void scan(){}
