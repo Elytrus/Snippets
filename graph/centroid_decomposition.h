@@ -1,7 +1,7 @@
 #pragma once
 
 #include "graph.h"
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate centroiddecomp
 //description Centroid Decomposition Template with fill-ins

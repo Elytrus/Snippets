@@ -1,5 +1,5 @@
 #pragma once
-#include "../stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate unionfind
 //description Union-Find/disjoint sets data structure

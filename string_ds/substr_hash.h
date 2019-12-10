@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate substringhash
 //description O(1) Rolling hashes on a substring with O(N) setup.  This DS also has the ability to preform the same hash on any arbitrary string in O(N) time.  Note that MAX has to be at least 1 over the size of N

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate treaporderstatistics
 //description Split-Merge Treap with order statistics BST functionality

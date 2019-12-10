@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 namespace STOP_CONFICTS_4 {
 //begintemplate extendedeuclidianalgorithm

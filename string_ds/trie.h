@@ -1,4 +1,4 @@
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate trie
 //description Basic trie template.  Note that since trie is very versatile and dynamic, editing the template will be needed for almost all questions

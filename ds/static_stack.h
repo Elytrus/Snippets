@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate staticstack
 //description A static, array based stack that's very fast

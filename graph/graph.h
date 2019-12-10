@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate weight
 //description basic graph weight template for dijkstra and related

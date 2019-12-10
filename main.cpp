@@ -1,4 +1,4 @@
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 #include "ds/all.h"
 #include "graph/all.h"

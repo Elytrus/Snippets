@@ -1,4 +1,4 @@
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate treap
 //description Basic Split-Merge Treap

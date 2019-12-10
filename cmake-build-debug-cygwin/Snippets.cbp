@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Snippets"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Snippets">
+				<Option output="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Snippets.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/."/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/ds"/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/graph"/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/graph_ds"/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/math"/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/string_ds"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 Snippets"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Snippets/fast">
+				<Option output="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Snippets.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/."/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/ds"/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/graph"/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/graph_ds"/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/math"/>
+					<Add directory="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/string_ds"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 Snippets/fast"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/main.cpp">
+			<Option target="Snippets"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/test/rand.h">
+			<Option target="Snippets"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/test/template_utils.h">
+			<Option target="Snippets"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/test/test_utils.h">
+			<Option target="Snippets"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/test/tests.h">
+			<Option target="Snippets"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/2021100/Desktop/repos/Snippets/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

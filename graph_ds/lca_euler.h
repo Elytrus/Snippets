@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdincludes.h"
+#include "test/global_includes.h"
 #include "graph/graph.h"
 
 //begintemplate eulertourlca

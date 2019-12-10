@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate heron
 //description Heron's formula calculator along with a checker for whether a point is inside of a triangle

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 // Stops name conflicts
 namespace STOP_CONFLICTS_2 {

@@ -5,12 +5,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 include_directories(ds)
+include_directories(graph)
 include_directories(graph_ds)
+include_directories(math)
+include_directories(string_ds)
 
-add_executable(Snippets
-        ds/bit.h
-        ds/segment_tree.h
-        ds/sparse_table.h
-        graph_ds/union_find.h
-        main.cpp
-        stdincludes.h math/extended_euclidian_algorithm.h string_ds/suffix_array.h math/shoelace.h)
+add_executable(Snippets main.cpp test/rand.h test/template_utils.h test/tests.h test/test_utils.h)

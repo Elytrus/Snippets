@@ -1,4 +1,4 @@
-#include "../stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate implicittreap
 //description Implicit Treap Data Structure

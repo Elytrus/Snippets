@@ -1,4 +1,4 @@
-//begintemplate template
+//begintemplate oldtemplate
 #pragma region
 #include <bits/stdc++.h>
 using namespace std;
@@ -65,4 +65,4 @@ int main(){
 
     return 0;
 }
-//endtemplate template
+//endtemplate oldtemplate

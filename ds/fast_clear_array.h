@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 //begintemplate fastcleararray
 //description An array that can reset itself in O(1) time.  Get and set operations are both O(1) also

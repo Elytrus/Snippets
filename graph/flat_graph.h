@@ -1,8 +1,8 @@
 #pragma once
 
-#include "../stdincludes.h"
+#include "test/global_includes.h"
 #include "graph.h"
-#include "test/test_graph.h"
+#include "test/graph/test_graph.h"
 
 //begintemplate flatgraphiter
 //description The iterable object that's returned by the adj function

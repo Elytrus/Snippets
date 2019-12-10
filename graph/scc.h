@@ -1,8 +1,8 @@
 #pragma once
 
-#include "stdincludes.h"
+#include "test/global_includes.h"
 #include "graph.h"
-#include "test/test_graph.h"
+#include "test/graph/test_graph.h"
 
 //begintemplate scc
 //description Tarjan's Strongly Connected Components algorithm

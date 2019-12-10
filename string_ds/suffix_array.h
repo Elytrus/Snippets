@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdincludes.h"
+#include "test/global_includes.h"
 
 // Link: https://www.hackerearth.com/practice/data-structures/advanced-data-structures/suffix-arrays/tutorial/
 

@@ -1,4 +1,4 @@
-#include "../stdincludes.h";
+#include "test/global_includes.h";
 template <typename T> using vec = vector<T>;
 
 //begintemplate matrixexponent
