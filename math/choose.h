@@ -25,4 +25,4 @@ with the following formula:
 (n choose k) * p^k * (1 - p)^(n - k)
 */
 
-//TODO: N choose K test
+//TODO: N choose K template_tests
