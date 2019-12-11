@@ -3,4 +3,4 @@
 using namespace __gnu_pbds;
 
 template<class T> // Tree definition
-using rb_tree = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+using rb_tree = bit<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;

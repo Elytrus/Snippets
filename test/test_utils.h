@@ -10,6 +10,13 @@ template <bool... tail> struct static_all_of<false, tail...> : false_type {};
 template <> struct static_all_of<> : true_type {};
 
 // Comparison
+/**
+ * Compars equality between two vectors.  Two vectors are equal if all of their elements are equal
+ * @tparam T The data type of the vectors
+ * @param a The first vector
+ * @param b The second vector
+ * @return Whether they are equal
+ */
 template <typename T> bool vector_equals(vector<T> a, vector<T> b) {
     if (a.size() != b.size()) return false;
     for (size_t i = 0; i < a.size(); i++)
@@ -18,6 +25,14 @@ template <typename T> bool vector_equals(vector<T> a, vector<T> b) {
     return true;
 }
 
+/**
+ * Compars equality between two vectors.  Two vectors are equal if all of their elements are equal
+ * @tparam T The data type of the vectors
+ * @param a The first vector
+ * @param b The second vector
+ * @param eq_fun Function to compare equality with
+ * @return Whether they are equal
+ */
 template <typename T> bool vector_equals(vector<T> a, vector<T> b, function<bool(T, T)> eq_fun) {
     if (a.size() != b.size()) return false;
     for (size_t i = 0; i < a.size(); i++)
@@ -26,6 +41,13 @@ template <typename T> bool vector_equals(vector<T> a, vector<T> b, function<bool
     return true;
 }
 
+/**
+ * Compares equality between doubles.  It checks whether their difference is within a certain value (epsilon)
+ * @param a First double
+ * @param b Second double
+ * @param eps The precision (epsilon) used for comparison.  Defaults to the epsilon provided by std::numeric_limits
+ * @return
+ */
 bool double_equals(double a, double b, const double eps = numeric_limits<double>::epsilon()) {
     return abs(a - b) <= eps;
 }
@@ -63,58 +85,72 @@ template <typename T> struct Range {
      */
     Range(vector<T> &vec, int L, int R) : _begin(vec.begin() + L), _end(vec.begin() + R) {}
 
-    /**
-     * Converts the range to a vector
-     * @return Returns the range as a vector
-     */
+    /// Converts the range to a vector
     vector<T> to_vec() { return vector<T>(_begin, _end); }
 
     /**
      * Accesses the element at that point in the same way you do with a vector
      * @param idx The index of the element
-     * @return A reference to the element at that point
      */
     T& operator[](size_t idx) { return *(_begin + idx); }
 
-    /**
-     * Returns the begin iterator
-     * @return The begin iterator
-     */
+    /// Returns the begin iterator
     It begin() { return _begin; }
 
-    /**
-     * Returns the end iterator
-     * @return The end iterator
-     */
+    /// Returns the end iterator
     It end() { return _end; }
+
+    /// Returns the size of the range
+    int size() { return _end - _begin; }
+
+    /// Returns whether the range being represented has a size of zero
+    bool empty() { return _end == _begin; }
 
     /**
      * Returns a new range where the iterators are shifted to the right by a specified amount (left if the amount is negative)
      * @param amount The amount to shift the iterators in the new range by
-     * @return A new range object, as specified
      */
     Range<T> shift(int amount) { return Range<T>(_begin + amount, _end + amount); }
+
+    /**
+     * Returns a new range where the begin iterator are shifted to the right by a specified amount (left if the amount is negative)
+     * @param amount The amount to shift the begin iterator in the new range by
+     */
+    Range<T> shift_l(int amount) { return Range<T>(_begin + amount, _end); }
+
+    /**
+     * Returns a new range where the end iterator are shifted to the right by a specified amount (left if the amount is negative)
+     * @param amount The amount to shift the end iterator in the new range by
+     */
+    Range<T> shift_r(int amount) { return Range<T>(_begin, _end + amount); }
 };
 
-/**
- * Creates a range out of the
- * @tparam T The
- * @param vec
- * @param L
- * @param R
- * @return
- */
-template <typename T> Range<T> sublist(vector<T> &vec, int L, int R) {
-    return Range<T>(vec);
-}
-
-template <typename T> vector<T> map(vector<T> &vec, function<T(T)> f) {
+/// Map function similar to those in many functional languages
+template <typename T> vector<T> map(vector<T> &vec, function<T(T)> func) {
     vector<T> ret;
     for (auto e : vec)
-        ret.push_back(f(e));
+        ret.push_back(func(e));
     return ret;
 }
 
-template <typename T> T reduce(Range<T> , function<T(T, T)> f) {
-
+/// Reduce function with starting value, similar to those in many functional languages
+template <typename T> T reduce(Range<T> range, T start, function<T(T, T)> func) {
+    T ret = start;
+    while (!range.empty()) {
+        ret = func(ret, range[0]);
+        range = range.shift_l(1);
+    }
+    return ret;
 }
+
+/// Reduce function without starting value, similar to those in many functional languages
+template <typename T> T reduce(Range<T> range, function<T(T, T)> func) {
+    if (range.empty()) throw out_of_range("range is empty!");
+    return reduce(range.shift_l(1), range[0], func);
+}
+
+/// Reduce function without starting value, similar to those in many functional languages.  This one converts the vector to a range first
+template <typename T> T reduce(vector<T> range, function<T(T, T)> func) { return reduce(Range<T>(range), func); }
+
+/// Reduce function with starting value, similar to those in many functional languages.  This one converts the vector to a range first
+template <typename T> T reduce(vector<T> range, T start, function<T(T, T)> func) { return reduce(Range<T>(range), start, func); }

@@ -13,6 +13,13 @@ private:
     function<bool(TestData)> run_test_func;
 
 public:
+    /**
+     * Constructor for test object
+     * @param generate_func0 A function that returns some generated test data
+     * @param run_test_func0
+     * @param name0
+     * @param num_tests0
+     */
     Test(function<TestData()> generate_func0, function<bool(TestData)> run_test_func0, string name0, int num_tests0 = 20) :
     generate_func(generate_func0), run_test_func(run_test_func0), name(name0), num_tests(num_tests0) {}
 

@@ -6,7 +6,7 @@
 #include "math/all.h"
 #include "string_ds/all.h"
 
-#define CATEGORY(x) cout << "-- Beginning Category: " << x << "\n"
+#define CATEGORY(x) cout << "-- -- Beginning Test Category: " << x << "\n"
 
 int main() {
     // Test ds

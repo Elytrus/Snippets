@@ -36,7 +36,7 @@ struct treap{
 	}
 
 	node<T>* rotateright(node<T> *croot, node<T> *cpar){ // Assumes lhs is not nullptr
-		//a, b, and c correspond to the three nodes on the wikipedia tree rotation page
+		//a, b, and c correspond to the three nodes on the wikipedia bit rotation page
 		node<T> *pivot = croot->lhs, *bnode = pivot->rhs;
 		int a = SIZE(pivot->lhs), b = SIZE(bnode), c = SIZE(croot->rhs);
 
@@ -54,7 +54,7 @@ struct treap{
 	}
 
 	node<T>* rotateleft(node<T> *croot, node<T> *cpar){ // Assumes rhs is not nullptr
-		//a, b, and c correspond to the three nodes on the wikipedia tree rotation page
+		//a, b, and c correspond to the three nodes on the wikipedia bit rotation page
 		node<T> *pivot = croot->rhs, *bnode = pivot->lhs;
 		int a = SIZE(croot->lhs), b = SIZE(bnode), c = SIZE(pivot->rhs);
 

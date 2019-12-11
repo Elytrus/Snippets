@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/cygdrive/c/Users/2021100/Desktop/repos/Snippets/. -I/cygdrive/c/Users/2021100/Desktop/repos/Snippets/ds -I/cygdrive/c/Users/2021100/Desktop/repos/Snippets/graph -I/cygdrive/c/Users/2021100/Desktop/repos/Snippets/graph_ds -I/cygdrive/c/Users/2021100/Desktop/repos/Snippets/math -I/cygdrive/c/Users/2021100/Desktop/repos/Snippets/string_ds 
+CXX_INCLUDES = -I/cygdrive/e/repos/Snippets/. -I/cygdrive/e/repos/Snippets/ds -I/cygdrive/e/repos/Snippets/graph -I/cygdrive/e/repos/Snippets/graph_ds -I/cygdrive/e/repos/Snippets/math -I/cygdrive/e/repos/Snippets/string_ds 
 

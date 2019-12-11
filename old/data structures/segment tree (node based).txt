@@ -1,4 +1,4 @@
-// This is a query segment tree
+// This is a query segment bit
 
 struct segtree{
 	segtree *left, *right;

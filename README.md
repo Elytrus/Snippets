@@ -22,7 +22,7 @@ All snippets are written in C++
     * Miller-Rabin Primality Test
     * Pollard-Rho Factoring (?)
     * CDQ
-    * Difference Array on Euler Tour for tree queries
+    * Difference Array on Euler Tour for bit queries
 
 ## Templates that need to be ported
 
