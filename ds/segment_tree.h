@@ -1,78 +1,63 @@
 #pragma once
 
-#include "test/global_includes.h"
-
-/*
- * Function Signatures:
- * T merge(T left, T right);
- */
+#include "template_tests/global_includes.h"
 
 //begintemplate segtree
 //description Recursive Segment Tree (Interval Tree)
-template <int MAX, typename T>
+/*
+ * Segment Tree template, supports querying and updating of
+ */
+template <int MN, typename T>
 struct SegmentTree {
-    int n; T defaultV, tree[MAX << 2]; T (*merge)(T, T);
-    SegmentTree(int n0, T defaultV0, T (*merge0)(T, T)) : n(n0), defaultV(defaultV0), merge(merge0) {}
+    int n; T seg[MN << 2];
+    virtual void setVal(T& a, T b) = 0;
+    virtual T merge(T a, T b) = 0;
+    virtual void push(int i, int l, int r) = 0;
+    virtual T getDefault() = 0;
     T build(int i, int l, int r, T* arr){
-        if(l == r) return tree[i] = arr[l];
-
+        if(l == r) return seg[i] = arr[l];
         int mid = (l + r) >> 1;
-        return tree[i] = merge(build(i << 1, l, mid, arr), build(i << 1 | 1, mid + 1, r, arr));
+        return seg[i] = merge(build(i << 1, l, mid, arr), build(i << 1 | 1, mid + 1, r, arr));
     }
-    T query(int i, int bl, int br, int ql, int qr){
-        if(br < ql || bl > qr) return defaultV;
-        if(bl >= ql && br <= qr) return tree[i];
-
+    T _query(int i, int bl, int br, int ql, int qr){
+        if(br < ql || bl > qr) return getDefault();
+        push(i, bl, br);
+        if(bl >= ql && br <= qr) return seg[i];
         int mid = (bl + br) >> 1;
-        return merge(query(i << 1, bl, mid, ql, qr), query(i << 1 | 1, mid + 1, br, ql, qr));
+        return merge(_query(i << 1, bl, mid, ql, qr), _query(i << 1 | 1, mid + 1, br, ql, qr));
     }
-    T update(int i, int bl, int br, int q, T v){
-        if(q < bl || q > br) return tree[i];
-        if(bl == q && br == q) return tree[i] = assert(("Needs to be implemented!", 0));;
-
+    T _update(int i, int bl, int br, int ql, int qr, T v){
+        push(i, bl, br);
+        if(qr < bl || ql > br) return seg[i];
+        if(bl >= ql && br <= qr) { setVal(seg[i], v); return seg[i]; }
         int mid = (bl + br) >> 1;
-        return tree[i] = merge(update(i << 1, bl, mid, q, v), update(i << 1 | 1, mid + 1, br, q, v));
+        return seg[i] = merge(_update(i << 1, bl, mid, ql, qr, v), _update(i << 1 | 1, mid + 1, br, ql, qr, v));
     }
+    void init(int n0) { n = n0; for (int i = 0; i < 4 * n; i++) seg[i] = getDefault(); }
+    void init(int n0, T* arr) { n = n0; build(1, 1, n, arr); }
+    T query(int l, int r) { return _query(1, 1, n, l, r); }
+    void update(int l, int r, T v) { _update(1, 1, n, l, r, v); }
 };
 //endtemplate segtree
 
-/*
- * Function Signatures:
- * T merge(T left, T right);
- * void updLazy(T& lazyv, T& treev, T& lhslazyv, T& rhslazyv);
- */
+namespace __segment_tree_tests {
+    struct TestSegmentTree : SegmentTree<rsq_tests::N, int> {
+        using ST = SegmentTree<rsq_tests::N, int>; using ST::seg;
+        int lazy[rsq_tests::N << 3];
+        int merge(int a, int b) override { return a + b; }
+        void setVal(int &a, int b) override { a += b; }
+        void push(int i, int l, int r) override {
 
-//begintemplate lazysegtree
-//description Recursive Lazy Propagating Segment Tree (Interval Tree)
-template <int MAX, typename T>
-struct LazySegmentTree {
-    int n; T defaultV, tree[MAX << 2], lazy[MAX << 3]; T (*merge)(T, T); void (*updLazy)(T&, T&, T&, T&);
-    LazySegmentTree(int n0, T defaultV0, T (*merge0)(T, T), void (*updLazy0)(T&, T&, T&, T&)) : n(n0), defaultV(defaultV0), merge(merge0), updLazy(updLazy0) {}
-    T build(int i, int l, int r, T* arr){
-        if(l == r) return tree[i] = arr[l];
-
-        int mid = (l + r) >> 1;
-        return tree[i] = merge(build(i << 1, l, mid, arr), build(i << 1 | 1, mid + 1, r, arr));
-    }
-    T query(int i, int bl, int br, int ql, int qr){
-        updLazy(lazy[i], tree[i], lazy[i << 1], lazy[i << 1 | 1]);
-        if(br < ql || bl > qr) return defaultV;
-        if(bl >= ql && br <= qr) return tree[i];
-
-        int mid = (bl + br) >> 1;
-        return merge(query(i << 1, bl, mid, ql, qr), query(i << 1 | 1, mid + 1, br, ql, qr));
-    }
-    T update(int i, int bl, int br, int q, T v){
-        updLazy(lazy[i], tree[i], lazy[i << 1], lazy[i << 1 | 1]);
-        if(q < bl || q > br) return tree[i];
-        if(bl == q && br == q) {
-            lazy[i] = v;
-            updLazy(lazy[i], tree[i], lazy[i << 1], lazy[i << 1 | 1]);
-            return tree[i];
         }
 
-        int mid = (bl + br) >> 1;
-        return tree[i] = merge(update(i << 1, bl, mid, q, v), update(i << 1 | 1, mid + 1, br, q, v));
+        int getDefault() override {
+            return 0;
+        }
+    };
+
+    void segment_tree_tests() {
+
     }
-};
-//endtemplate lazysegtree
+}
+
+using __segment_tree_tests::segment_tree_tests;

@@ -10,8 +10,8 @@ int main() {
     // Test ds
     CATEGORY("Data Structures");
     bit_tests();
-//    fca_test();
-//
+    fca_tests();
+
 //    // Test Math
 //    CATEGORY("Math");
 //    fast_pow_test();

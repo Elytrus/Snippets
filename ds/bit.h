@@ -15,7 +15,7 @@
  * -- Functions Available --
  * void init(int n0) - Initializes the data structure as size n0 | Complexity: O(N)
  * void upd(int x, T z) - Executes A[x] = A[x] `op` z | Complexity O(log N * (complexity of merge))
- * T query(int x) - Returns A[1] `op` A[2] `op` ... `op` A[x] | Complexity O(log N * (complexity of merge))
+ * T query(int x) - Returns op(A[1..x]) | Complexity O(log N * (complexity of merge))
  */
 template <int MN, typename T = int>
 struct BIT {
@@ -44,9 +44,9 @@ struct BIT {
  * -- Functions Available --
  * void init(int n0) - Initializes the data structure as size n0 | Complexity: O(N)
  * void upd(int x, T z) - Executes A[x] = A[x] + z | Complexity O(log N * (complexity of + operator))
- * T query(int x) - Returns A[1] + A[2] + ... + A[x] | Complexity O(log N * (complexity of + operator))
- * T rsq(int l, int r) - Returns A[l] + A[l + 1] + ... + A[r].  Requires the "-" operator to be implemented
- * int bsearch(T minVal) - Returns the first index `i` where A[1] + A[2] + ... + A[i] >= `minVal` | Complexity O(log N * (complexity of + operator))
+ * T query(int x) - Returns sum(A[1..x]) | Complexity O(log N * (complexity of + operator))
+ * T rsq(int l, int r) - Returns sum(A[l..r]).  Requires the "-" operator to be implemented
+ * int bsearch(T minVal) - Returns the first index `i` where sum(A[1..i]) >= `minVal` | Complexity O(log N * (complexity of + operator))
  */
 template <int MN, typename T = int>
 struct SumBIT : BIT<MN, T> {
@@ -79,7 +79,7 @@ struct SumBIT : BIT<MN, T> {
  * -- Functions to implement --
  * Operators "+" and "-" on type T
  * -- Operations --
- * upd(int l, int r, int v) - Preforms A[l], A[l + 1], ..., A[r] += v | Complexity: O(log N * (complexity of + operator))
+ * upd(int l, int r, int v) - Preforms A[l..r] += v | Complexity: O(log N * (complexity of + operator))
  * query(int x) - Returns A[x] | Complexity: O(log N * (complexity of + operator))
  */
 template <int MN, typename T = int>
@@ -133,153 +133,156 @@ struct BIT2D {
 //endtemplate 2dbit
 
 // Testing
-struct Test1DBIT : SumBIT<rsq_tests::N + 1, ll> {
-    ll getDefault() override { return 0LL; }
-};
+namespace __bit_tests {
+    struct Test1DBIT : SumBIT<rsq_tests::N + 1, ll> {
+        ll getDefault() override { return 0LL; }
+    };
 
-struct Test1D : Test<RSQDataSet> {
-    string get_name() override { return "1D BIT Test"; }
-    RSQDataSet generate_data() override {
-        return make_rmq_dataset(false, false, false);
-    }
-    bool run_test(RSQDataSet test) override {
-        int N = rsq_tests::N;
-        Test1DBIT bit; bit.init(N);
-        RSQDummy dummy; dummy.init(N);
+    struct Test1D : Test<RSQDataSet> {
+        string get_name() override { return "1D BIT Test"; }
+        RSQDataSet generate_data() override {
+            return make_rmq_dataset(false, false, false);
+        }
+        bool run_test(RSQDataSet test) override {
+            int N = rsq_tests::N;
+            Test1DBIT bit; bit.init(N);
+            RSQDummy dummy; dummy.init(N);
 
-        for (auto query : test.queries) {
-            auto [type, a, b, c] = query;
-            if (type == 1) {
-                bit.upd(a, b);
-                dummy.range_update(a, a, b);
-            }
-            else {
-                if (bit.query(a) != dummy.range_query(1, a)) {
-                    return false;
+            for (auto query : test.queries) {
+                auto [type, a, b, c] = query;
+                if (type == 1) {
+                    bit.upd(a, b);
+                    dummy.range_update(a, a, b);
+                }
+                else {
+                    if (bit.query(a) != dummy.range_query(1, a)) {
+                        return false;
+                    }
                 }
             }
+
+            return true;
         }
+    };
 
-        return true;
-    }
-};
-
-struct TestBitBsearch : Test<RSQDataSet> {
-    string get_name() override { return "BIT Bsearch Test"; }
-    RSQDataSet generate_data() override {
-        int N = rsq_tests::N;
-        RSQDataSet ret;
-        for (int i = 0; i < rsq_tests::Q; i++) {
-            int type = randint(1, 2);
-            if (type == 1) {
-                int a = randint(1, N), v = randint(0, rsq_tests::MAX_VAL);
-                ret.queries.emplace_back(type, a, v, -1);
+    struct TestBitBsearch : Test<RSQDataSet> {
+        string get_name() override { return "BIT Bsearch Test"; }
+        RSQDataSet generate_data() override {
+            int N = rsq_tests::N;
+            RSQDataSet ret;
+            for (int i = 0; i < rsq_tests::Q; i++) {
+                int type = randint(1, 2);
+                if (type == 1) {
+                    int a = randint(1, N), v = randint(0, rsq_tests::MAX_VAL);
+                    ret.queries.emplace_back(type, a, v, -1);
+                }
+                else {
+                    int v = randint(0, rsq_tests::MAX_VAL * max(1, (i - 5) / 3));
+                    ret.queries.emplace_back(type, v, -1, -1);
+                }
             }
-            else {
-                int v = randint(0, rsq_tests::MAX_VAL * max(1, (i - 5) / 3));
-                ret.queries.emplace_back(type, v, -1, -1);
-            }
+            return ret;
         }
-        return ret;
-    }
-    bool run_test(RSQDataSet test) override {
-        int N = rsq_tests::N;
-        Test1DBIT bit; bit.init(N);
-        RSQDummy dummy; dummy.init(N);
+        bool run_test(RSQDataSet test) override {
+            int N = rsq_tests::N;
+            Test1DBIT bit; bit.init(N);
+            RSQDummy dummy; dummy.init(N);
 
-        for (auto query : test.queries) {
-            auto [type, a, b, c] = query;
+            for (auto query : test.queries) {
+                auto [type, a, b, c] = query;
 //            printf("Q: t=%d a=%d b=%d c=%d ", type, a, b, c);
 //            if (type == 2) printf("expected=%d\n", dummy.first_pfxsum_greater_or_equal(a)); else printf("\n");
-            if (type == 1) {
-                bit.upd(a, b);
-                dummy.range_update(a, a, b);
-            }
-            else {
-                if (bit.bsearch(a) != dummy.first_pfxsum_greater_or_equal(a)) {
-                    return false;
+                if (type == 1) {
+                    bit.upd(a, b);
+                    dummy.range_update(a, a, b);
+                }
+                else {
+                    if (bit.bsearch(a) != dummy.first_pfxsum_greater_or_equal(a)) {
+                        return false;
+                    }
                 }
             }
+
+            return true;
         }
+    };
 
-        return true;
-    }
-};
+    struct TestDDA : DynamicDifferenceArray<rsq_tests::N + 1> {
+        void merge(int &a, int &b) override { a += b; }
+        int getDefault() override { return 0; }
+    };
 
-struct TestDDA : DynamicDifferenceArray<rsq_tests::N + 1> {
-    void merge(int &a, int &b) override { a += b; }
-    int getDefault() override { return 0; }
-};
+    struct TestDiffArray : Test<RSQDataSet> {
+        string get_name() override { return "BIT Difference Array Test"; }
+        RSQDataSet generate_data() override {
+            return make_rmq_dataset(false, true, false);
+        }
+        bool run_test(RSQDataSet test) override {
+            const int N = rsq_tests::N;
+            TestDDA da; da.init(N);
+            RSQDummy dummy; dummy.init(N);
 
-struct TestDiffArray : Test<RSQDataSet> {
-    string get_name() override { return "BIT Difference Array Test"; }
-    RSQDataSet generate_data() override {
-        return make_rmq_dataset(false, true, false);
-    }
-    bool run_test(RSQDataSet test) override {
-        const int N = rsq_tests::N;
-        TestDDA da; da.init(N);
-        RSQDummy dummy; dummy.init(N);
-
-        for (auto query : test.queries) {
-            auto [type, a, b, c] = query;
-            if (type == 1) {
-                da.upd(a, b, c);
-                dummy.range_update(a, b, c);
-            }
-            else {
-                if (da.query(a) != dummy.range_query(a, a)) {
-                    return false;
+            for (auto query : test.queries) {
+                auto [type, a, b, c] = query;
+                if (type == 1) {
+                    da.upd(a, b, c);
+                    dummy.range_update(a, b, c);
+                }
+                else {
+                    if (da.query(a) != dummy.range_query(a, a)) {
+                        return false;
+                    }
                 }
             }
+
+            return true;
         }
+    };
 
-        return true;
-    }
-};
+    struct Test2DBIT : BIT2D<rsq_tests::N2 + 1, rsq_tests::N2 + 1, int> {
+        void merge(int &a, int &b) override { a += b; }
+        int getDefault() override { return 0; }
+    };
 
-struct Test2DBIT : BIT2D<rsq_tests::N2 + 1, rsq_tests::N2 + 1, int> {
-    void merge(int &a, int &b) override { a += b; }
-    int getDefault() override { return 0; }
-};
-
-struct Test2D : Test<RSQDataSet> {
-    string get_name() override { return "2D BIT Test"; }
-    RSQDataSet generate_data() override {
-        int N = rsq_tests::N2;
-        RSQDataSet ret;
-        for (int i = 0; i < rsq_tests::Q; i++) {
-            int type = randint(1, 2), a = randint(1, N), b = randint(1, N), v = randint(0, rsq_tests::MAX_VAL);
-            ret.queries.emplace_back(type, a, b, v);
-        }
-        return ret;
-    }
-    bool run_test(RSQDataSet test) override {
-        int N = rsq_tests::N2;
-        Test2DBIT bit; bit.init(N, N);
-        RSQDummy2D dummy; dummy.init(N, N);
-
-        for (auto query : test.queries) {
-            auto [type, a, b, c] = query;
-            if (type == 1) {
-                bit.upd(a, b, c);
-                dummy.range_update(a, b, a, b, c);
+    struct Test2D : Test<RSQDataSet> {
+        string get_name() override { return "2D BIT Test"; }
+        RSQDataSet generate_data() override {
+            int N = rsq_tests::N2;
+            RSQDataSet ret;
+            for (int i = 0; i < rsq_tests::Q; i++) {
+                int type = randint(1, 2), a = randint(1, N), b = randint(1, N), v = randint(0, rsq_tests::MAX_VAL);
+                ret.queries.emplace_back(type, a, b, v);
             }
-            else {
-                if (bit.query(a, b) != dummy.range_query(1, 1, a, b)) {
-                    WRONG(bit.query(a, b), dummy.range_query(1, 1, a, b));
-                    return false;
+            return ret;
+        }
+        bool run_test(RSQDataSet test) override {
+            int N = rsq_tests::N2;
+            Test2DBIT bit; bit.init(N, N);
+            RSQDummy2D dummy; dummy.init(N, N);
+
+            for (auto query : test.queries) {
+                auto [type, a, b, c] = query;
+                if (type == 1) {
+                    bit.upd(a, b, c);
+                    dummy.range_update(a, b, a, b, c);
+                }
+                else {
+                    if (bit.query(a, b) != dummy.range_query(1, 1, a, b)) {
+                        WRONG(bit.query(a, b), dummy.range_query(1, 1, a, b));
+                        return false;
+                    }
                 }
             }
+
+            return true;
         }
+    };
 
-        return true;
+    void bit_tests() {
+        Test1D().run();
+        TestDiffArray().run();
+        TestBitBsearch().run();
+        Test2D().run();
     }
-};
-
-void bit_tests() {
-    Test1D().run();
-    TestDiffArray().run();
-    TestBitBsearch().run();
-    Test2D().run();
 }
+using __bit_tests::bit_tests;

@@ -3,6 +3,7 @@
 
 CMakeFiles/Snippets.dir/main.cpp.o: ../ds/all.h
 CMakeFiles/Snippets.dir/main.cpp.o: ../ds/bit.h
+CMakeFiles/Snippets.dir/main.cpp.o: ../ds/fast_clear_array.h
 CMakeFiles/Snippets.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Snippets.dir/main.cpp.o: ../template_tests/ds/ds_tests.h
 CMakeFiles/Snippets.dir/main.cpp.o: ../template_tests/ds/rsq.h
