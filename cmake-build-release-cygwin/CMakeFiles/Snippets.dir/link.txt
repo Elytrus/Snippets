@@ -1,1 +1,0 @@
-/usr/bin/c++.exe -O3 -DNDEBUG  -Wl,--enable-auto-import CMakeFiles/Snippets.dir/main.cpp.o  -o Snippets.exe -Wl,--out-implib,libSnippets.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

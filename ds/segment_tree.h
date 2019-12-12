@@ -12,7 +12,7 @@ struct SegmentTree {
     int n; T seg[MN << 2];
     virtual void setVal(T& a, T b) = 0;
     virtual T merge(T a, T b) = 0;
-    virtual void push(int i, int l, int r) = 0;
+    virtual void push(int i, int l, int r) {}
     virtual T getDefault() = 0;
     T build(int i, int l, int r, T* arr){
         if(l == r) return seg[i] = arr[l];

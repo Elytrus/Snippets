@@ -1,3 +1,0 @@
-/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-release-cygwin/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-release-cygwin/CMakeFiles/Snippets.dir
-/cygdrive/c/Users/2021100/Desktop/repos/Snippets/cmake-build-release-cygwin/CMakeFiles/edit_cache.dir

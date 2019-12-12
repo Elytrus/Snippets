@@ -73,6 +73,8 @@ namespace __fca_tests {
                     fca.reset();
                 }
             }
+
+            return true;
         }
     };
 
