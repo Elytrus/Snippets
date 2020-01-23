@@ -16,10 +16,12 @@ template<typename I> string intStr(I x) { string ret; while (x > 0) { ret += (x 
 #define INF 0x3f3f3f3f
 #define LLINF 0x3f3f3f3f3f3f3f3f
 #define mpr make_pair
+#define mtup make_tuple
 #define pb push_back
 #define popcount __builtin_popcount
 #define clz __builtin_clz
 #define ctz __builtin_ctz
+#define finline __attribute__((always_inline))
 // Shorthand Function Macros
 #define sz(x) ((int)((x).size()))
 #define all(x) (x).begin(), (x).end()
@@ -51,8 +53,13 @@ template<typename F, typename... R> inline void println(F f,R... r){cout<<f<<" "
 inline void print(){}
 template<typename F, typename... R> inline void print(F f,R... r){cout<<f;print(r...);}
 // Debugging
-#define db(x) cout << (#x) << ": " << x << ", "
-#define dblb(s) cout << "[" << s << "] "
+#define db(x) cout << (#x) << ": " << (x) << ", "
+#define dblb(s) cout << "[" << (s) << "] "
+#define dba(alias, x) cout << (alias) << ": " << (x) << ", "
+template<typename F> inline string __generic_tostring(F f) { stringstream ss; ss << f; return ss.str(); }
+template<typename F> inline string __join_comma(F f) {return __generic_tostring(f);}
+template<typename F, typename... R> string __join_comma(F f, R... r) { return __generic_tostring(f) + ", " + __join_comma(r...); }
+#define dbp(alias, ...) cout << (alias) << ": (" << __join_comma(__VA_ARGS__) << "), "
 #define dbbin(x, n) cout << (#x) << ": " << bitset<n>(x) << ", "
 #define dbarr(x, n) cout << (#x) << ": " << arrayStr((x), (n)) << ", "
 #define dbln cout << endl;

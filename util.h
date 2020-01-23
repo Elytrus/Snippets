@@ -32,3 +32,19 @@ sort(${1:i}.begin(), ${1:i}.end());
 //begintemplate reverse
 reverse(${1:i}.begin(), ${1:i}.end());
 //endtemplate reverse
+
+//begintemplate pbds
+//description Policy Based Data Structures
+// order statistic idea
+#include <ext/pb_ds/assoc_container.hpp> // Common file
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+template <typename T, class comp = less<T>>
+using os_tree = tree<T, null_type, comp, rb_tree_tag, tree_order_statistics_node_update>;
+//endtemplate pbds
+
+//begintemplate time
+//description gets time
+using namespace std::chrono;
+ll timeMs() { return duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count(); }
+//endtemplate time
