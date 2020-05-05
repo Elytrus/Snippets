@@ -13,12 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/math/modular.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/graph_ds/unionfind.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/aplusb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/aplusb_abort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb_abort.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/aplusb_ce.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb_ce.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/aplusb_sigsev.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb_sigsev.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/aplusb_wa.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb_wa.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/graph_ds/union_find.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/union_find.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/math/fast_mul.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/math/fast_pow.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test_lib/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/main.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -51,11 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_lib/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="983">
-              <caret line="147" column="74" selection-start-line="147" selection-start-column="74" selection-end-line="147" selection-end-column="74" />
+            <state relative-caret-position="184">
+              <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -74,6 +74,24 @@
                 <element signature="e#3135#3147#0" expanded="true" />
                 <element signature="e#3220#3247#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/graph_ds/unionfind.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/graph_ds/union_find.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -146,10 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/graph/graph.h" />
-        <option value="$PROJECT_DIR$/graph_ds/lca_euler.h" />
-        <option value="$PROJECT_DIR$/graph_ds/lca_binary_lift.h" />
-        <option value="$PROJECT_DIR$/ds/sparse_table.h" />
         <option value="$PROJECT_DIR$/graph/centroid_decomposition.h" />
         <option value="$PROJECT_DIR$/math/choose.h" />
         <option value="$PROJECT_DIR$/math/fast_pow.h" />
@@ -196,7 +210,11 @@
         <option value="$PROJECT_DIR$/test/aplusb_sigsev.cpp" />
         <option value="$PROJECT_DIR$/test/aplusb_wa.cpp" />
         <option value="$PROJECT_DIR$/test/aplusb_ce.cpp" />
+        <option value="$PROJECT_DIR$/templates/math/modular.h" />
+        <option value="$PROJECT_DIR$/test/unionfind.cpp" />
         <option value="$PROJECT_DIR$/test_lib/main.py" />
+        <option value="$PROJECT_DIR$/test/graph_ds/unionfind.cpp" />
+        <option value="$PROJECT_DIR$/templates/graph_ds/union_find.h" />
       </list>
     </option>
   </component>
@@ -229,6 +247,23 @@
             <path>
               <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
               <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="graph_ds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
               <item name="test_lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -252,11 +287,11 @@
       <recent name="E:\repos\Snippets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\repos\Snippets\test\graph_ds" />
       <recent name="E:\repos\Snippets\test\test_tests" />
       <recent name="E:\repos\Snippets\templates" />
       <recent name="C:\Users\2021100\Desktop\repos\Snippets\test" />
       <recent name="C:\Users\2021100\Desktop\repos\Snippets\test\graph" />
-      <recent name="E:\repos\Snippets\graph\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,12 +437,12 @@
       <workItem from="1588391264235" duration="47000" />
       <workItem from="1588391350995" duration="27000" />
       <workItem from="1588646390947" duration="369000" />
-      <workItem from="1588646780277" duration="5490000" />
+      <workItem from="1588646780277" duration="6661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173395000" />
+    <option name="totallyTimeSpent" value="174566000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,13 +455,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20309168" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20309168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.317757" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.317757" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -456,23 +492,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/string_ds/all.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#14#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/string_ds/substr_hash.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/math/heron.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -495,16 +514,6 @@
           <folding>
             <element signature="e#14#41#0" expanded="true" />
             <element signature="e#153#170#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/graph_ds/union_find.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
-          <folding>
-            <element signature="e#131#140#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -640,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/math/fast_mul.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/math/fast_pow.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -689,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_lib/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_tests/aplusb_abort.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -731,6 +726,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/math/fast_mul.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/math/modular.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_lib/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_lib/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/template.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -744,13 +770,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_lib/main.py">
+    <entry file="file://$PROJECT_DIR$/test/graph_ds/unionfind.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="983">
-          <caret line="147" column="74" selection-start-line="147" selection-start-column="74" selection-end-line="147" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/graph_ds/union_find.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>

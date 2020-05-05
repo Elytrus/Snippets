@@ -13,18 +13,18 @@ TIMEOUT = 5.
 GCC_ARGS = ['-DLOCAL', '-O2']
 
 PROBLEMS = (
-    (),
+    ('test/graph_ds/unionfind.cpp', 'datastructure/unionfind'),
 )
 
 # Some constant values
-DATA_BASE_DIR = 'test_lib/library-checker-problems/sample'
+DATA_BASE_DIR = 'test_lib/library-checker-problems/'
 RAND_LIM = (0, 1000000000)
 TEST_PROBLEMS = (  # Only for testing the tester
-    ('test/test_tests/aplusb.cpp', 'aplusb'),
-    ('test/test_tests/aplusb_wa.cpp', 'aplusb'),
-    ('test/test_tests/aplusb_ce.cpp', 'aplusb'),
-    ('test/test_tests/aplusb_sigsev.cpp', 'aplusb'),
-    ('test/test_tests/aplusb_abort.cpp', 'aplusb'),
+    ('test/test_tests/aplusb.cpp', 'sample/aplusb'),
+    ('test/test_tests/aplusb_wa.cpp', 'sample/aplusb'),
+    ('test/test_tests/aplusb_ce.cpp', 'sample/aplusb'),
+    ('test/test_tests/aplusb_sigsev.cpp', 'sample/aplusb'),
+    ('test/test_tests/aplusb_abort.cpp', 'sample/aplusb'),
 )
 
 # Colorama Style Settings
@@ -34,7 +34,7 @@ AC = Fore.GREEN + 'AC' + Style.RESET_ALL + ' '
 RE = Fore.LIGHTYELLOW_EX + 'RE' + Style.RESET_ALL + ' '
 
 # Only for debugging
-PROBLEMS = TEST_PROBLEMS
+# PROBLEMS = TEST_PROBLEMS
 
 
 def check(out, expected_out):
@@ -87,11 +87,12 @@ generator_lock = Lock()
 def get_res(src_file_problem):
     """
     Tests the specified source file.  Returns whether it passed the test cases
-    :param src_file_problem: A tuple: (source file to test, ID of the problem to use)
+    :param src_file_problem: A tuple: (source file to test, Path to problem data folder relative to library-checker-problems root directory)
     :return: Whether the tests passed or not
     """
     src_file, problem = src_file_problem
     src_name = path_name(src_file)
+    problem_id = problem.split('/')[-1]
 
     # Colorama
     colorama_init()
@@ -110,7 +111,7 @@ def get_res(src_file_problem):
     # Generate test data
     generator_lock.acquire()
     log(f'Generating test data for {src_name}...')
-    sub.run(['python', 'test_lib/library-checker-problems/generate.py', '-p', problem])
+    sub.run(['python', 'test_lib/library-checker-problems/generate.py', '-p', problem_id])
     generator_lock.release()
 
     # Run on tests
@@ -147,6 +148,7 @@ if __name__ == '__main__':
     # Init colorama
     colorama_init()
 
+    print(os.getcwd())
     log('Running tests...')
 
     # Make pool and run tests
@@ -156,7 +158,7 @@ if __name__ == '__main__':
         for index, passed in enumerate(pool.map(get_res, PROBLEMS)):
             src_file, test_name = PROBLEMS[index]
             src_name = path_name(src_file)
-            
+
             msg = f'{Fore.GREEN}{src_name} passed' if passed else f'{Fore.LIGHTRED_EX}{src_name} Failed'
             log(f'{msg} test set {test_name}')
 

@@ -1,4 +1,5 @@
 cmake-build-*/
 venv/
 *.py[co]
+*.exe
 
