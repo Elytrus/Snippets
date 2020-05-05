@@ -1,7 +1,7 @@
 #pragma once
 
 #include "test/global_includes.h"
-#include "graph/graph.h"
+#include "templates/graph/graph.h"
 
 //begintemplate binaryliftlca
 //description LCA implementation using the Binary Lift method.  O(N log N) setup and O(log N) query

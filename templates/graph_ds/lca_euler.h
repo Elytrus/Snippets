@@ -1,7 +1,7 @@
 #pragma once
 
 #include "test/global_includes.h"
-#include "graph/graph.h"
+#include "templates/graph/graph.h"
 
 //begintemplate eulertourlca
 //description LCA implementation using the Euler Tour method.  O(N log N) setup and O(1) query

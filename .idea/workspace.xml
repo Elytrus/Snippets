@@ -13,9 +13,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/aplusb.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/aplusb_abort.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/aplusb_ce.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/aplusb_sigsev.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/aplusb_wa.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Snippets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Snippets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.h" beforeDir="false" afterPath="$PROJECT_DIR$/template.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template2.h" beforeDir="false" afterPath="$PROJECT_DIR$/template2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Snippets.exe.stackdump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/all.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/bit.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/bit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/fast_clear_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/fast_clear_array.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/segment_tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/segment_tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/sparse_table.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/sparse_table.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/static_deque.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/static_deque.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/static_stack.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/static_stack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/treap.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/treap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/treap_implicit.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/treap_implicit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds/treap_order_statistics.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/treap_order_statistics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/all.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/articulation_points.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/articulation_points.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/bfs.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/bfs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/biconnected_components.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/biconnected_components.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/bridges.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/bridges.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/centroid_decomposition.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/centroid_decomposition.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/dijkstra.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/dijkstra.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/flat_graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/flat_graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/scc.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/scc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/topological_sort.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/topological_sort.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/topological_sort_no_transpose.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/topological_sort_no_transpose.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph_ds/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/all.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph_ds/lca_binary_lift.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/lca_binary_lift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph_ds/lca_euler.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/lca_euler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph_ds/union_find.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/union_find.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_formats.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/input_formats.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/all.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/choose.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/choose.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/extended_euclidian_algorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/extended_euclidian_algorithm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/fast_mul.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/fast_mul.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/fast_pow.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/fast_pow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/gcd.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/gcd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/heron.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/heron.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/matrix_exp.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/matrix_exp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/shoelace.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/shoelace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/sieve_and_factor.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/sieve_and_factor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/algorithms/dfs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/algorithms/dfs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/algorithms/line segment intersections (ccc06s3).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/algorithms/line segment intersections (ccc06s3).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/algorithms/longest increasing subsequence.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/algorithms/longest increasing subsequence.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/algorithms/querying prefix sum arrays.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/algorithms/querying prefix sum arrays.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/data structures/policy based order statistic tree.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/policy based order statistic tree.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/data structures/segment tree (node based).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/segment tree (node based).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/data structures/square root decomp (dmpg 18 silver P5).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/square root decomp (dmpg 18 silver P5).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/data structures/treap v1.0 (order statistics tree).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/treap v1.0 (order statistics tree).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/data structures/treap v2.0 (order statistics tree).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/treap v2.0 (order statistics tree).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/data structures/treap v2.5 (order statistics tree).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/treap v2.5 (order statistics tree).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string_ds/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/string_ds/all.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string_ds/substr_hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/string_ds/substr_hash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string_ds/suffix_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/string_ds/suffix_array.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string_ds/trie.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/string_ds/trie.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template2.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_minimalist.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template_minimalist.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/ds/ds_tests.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/ds/rsq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/global_includes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/graph/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/graph/generators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/graph/generators/ap_bridge_brute_force.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/graph/generators/graphmaker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/graph/graph_tests.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/graph/test_graph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/rand.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/template_utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/test_utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template_tests/tests.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/util.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-mingw/" />
@@ -45,83 +123,34 @@
     <expand />
     <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-Cygwin" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_lib/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds/bit.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4488">
-              <caret line="264" column="6" selection-start-line="264" selection-start-column="6" selection-end-line="264" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds/segment_tree.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/math/fast_mul.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/math/fast_pow.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template2.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="507">
+              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
               <folding>
-                <element signature="e#602#614#0" expanded="true" />
-                <element signature="e#3029#3041#0" expanded="true" />
-                <element signature="e#3135#3147#0" expanded="true" />
-                <element signature="e#3220#3247#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/template.h">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_lib/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="68">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util.h">
+        <entry file="file://$PROJECT_DIR$/templates/util.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="569">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="e#992#1047#0" expanded="true" />
                 <element signature="e#1122#1156#0" expanded="true" />
@@ -176,13 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/graph/articulation_points.h" />
-        <option value="$PROJECT_DIR$/graph/bridges.h" />
-        <option value="$PROJECT_DIR$/graph/scc.h" />
-        <option value="$PROJECT_DIR$/graph/all.h" />
-        <option value="$PROJECT_DIR$/graph/topological_sort_no_transpose.h" />
-        <option value="$PROJECT_DIR$/graph/topological_sort.h" />
-        <option value="$PROJECT_DIR$/graph/flat_graph.h" />
         <option value="$PROJECT_DIR$/graph/graph.h" />
         <option value="$PROJECT_DIR$/graph_ds/lca_euler.h" />
         <option value="$PROJECT_DIR$/graph_ds/lca_binary_lift.h" />
@@ -226,21 +248,31 @@
         <option value="$PROJECT_DIR$/util.h" />
         <option value="$PROJECT_DIR$/template2.h" />
         <option value="$PROJECT_DIR$/template.h" />
+        <option value="$PROJECT_DIR$/test_lib/setup.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/test/aplusb.cpp" />
+        <option value="$PROJECT_DIR$/test/aplusb_abort.cpp" />
+        <option value="$PROJECT_DIR$/test/aplusb_sigsev.cpp" />
+        <option value="$PROJECT_DIR$/test/aplusb_wa.cpp" />
+        <option value="$PROJECT_DIR$/test/aplusb_ce.cpp" />
+        <option value="$PROJECT_DIR$/test_lib/main.py" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
     <option name="height" value="1020" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,44 +283,39 @@
             <path>
               <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
               <item name="Snippets" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
               <item name="Snippets" type="462c0819:PsiDirectoryNode" />
-              <item name="ds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\repos\Snippets\test" />
       <recent name="E:\repos\Snippets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\repos\Snippets\templates" />
       <recent name="C:\Users\2021100\Desktop\repos\Snippets\test" />
       <recent name="C:\Users\2021100\Desktop\repos\Snippets\test\graph" />
       <recent name="E:\repos\Snippets\graph\test" />
       <recent name="E:\repos\Snippets\graph\generators" />
-      <recent name="E:\repos\Snippets\graph" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,12 +330,74 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug-Cygwin" RUN_TARGET_PROJECT_NAME="Snippets" RUN_TARGET_NAME="Snippets" EXPLICIT_BUILD_TARGET_NAME="all">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Python.test_lib.main">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Snippets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="test_lib.main" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
+    <configuration name="test_lib.main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Snippets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="test_lib.main" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_lib.setup" type="PythonConfigurationType" factoryName="Python">
+      <module name="Snippets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="E:\repos\Snippets\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="test_lib.setup" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.test_lib.main" />
+      <item itemvalue="Python.test_lib.setup" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -370,11 +459,13 @@
       <workItem from="1588361776382" duration="355000" />
       <workItem from="1588391264235" duration="47000" />
       <workItem from="1588391350995" duration="27000" />
+      <workItem from="1588646390947" duration="369000" />
+      <workItem from="1588646780277" duration="3934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167536000" />
+    <option name="totallyTimeSpent" value="171839000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -386,24 +477,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="30" width="1890" height="1020" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20382513" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20309168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3283582" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3179256" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.317757" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.26272067" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3283582" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3281412" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.27622014" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.25337487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -423,95 +514,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/graph/topological_sort_no_transpose.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-          <folding>
-            <element signature="e#14#38#0" expanded="true" />
-            <element signature="e#176#197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph/flat_graph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
-          <folding>
-            <element signature="e#14#41#0" expanded="true" />
-            <element signature="e#507#526#0" expanded="true" />
-            <element signature="e#1717#1754#0" expanded="true" />
-            <element signature="e#3051#3070#0" expanded="true" />
-            <element signature="e#3077#3108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph/topological_sort.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
-          <folding>
-            <element signature="e#14#38#0" expanded="true" />
-            <element signature="e#698#722#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph_ds/lca_euler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding>
-            <element signature="e#14#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph_ds/lca_binary_lift.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding>
-            <element signature="e#14#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds/treap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-          <folding>
-            <element signature="e#155#167#0" expanded="true" />
-            <element signature="e#301#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds/sparse_table.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#128#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph/centroid_decomposition.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-          <folding>
-            <element signature="e#159#180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math/extended_euclidian_algorithm.h" />
-    <entry file="file://$PROJECT_DIR$/string_ds/all.h">
+    <entry file="file://$PROJECT_DIR$/templates/string_ds/all.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
@@ -521,14 +524,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/string_ds/substr_hash.h">
+    <entry file="file://$PROJECT_DIR$/templates/string_ds/substr_hash.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math/heron.h">
+    <entry file="file://$PROJECT_DIR$/templates/math/heron.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
@@ -541,9 +544,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math/shoelace.h" />
-    <entry file="file://$PROJECT_DIR$/string_ds/suffix_array.h" />
-    <entry file="file://$PROJECT_DIR$/math/choose.h">
+    <entry file="file://$PROJECT_DIR$/templates/math/shoelace.h" />
+    <entry file="file://$PROJECT_DIR$/templates/string_ds/suffix_array.h" />
+    <entry file="file://$PROJECT_DIR$/templates/math/choose.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
@@ -554,7 +557,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph_ds/union_find.h">
+    <entry file="file://$PROJECT_DIR$/templates/graph_ds/union_find.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
@@ -564,21 +567,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph/biconnected_components.h">
+    <entry file="file://$PROJECT_DIR$/templates/graph/biconnected_components.h">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds/treap_implicit.h">
+    <entry file="file://$PROJECT_DIR$/templates/ds/treap_implicit.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph/articulation_points.h">
+    <entry file="file://$PROJECT_DIR$/templates/graph/articulation_points.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
@@ -596,18 +599,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-    <entry file="file://$PROJECT_DIR$/template_tests/graph/generators/ap_bridge_brute_force.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
-          <folding>
-            <element signature="e#179#206#0" expanded="true" />
-            <element signature="e#320#347#0" expanded="true" />
-            <element signature="e#574#583#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/template_tests/graph/generators/ap_bridge_brute_force.cpp" />
     <entry file="file://$PROJECT_DIR$/rand.h" />
     <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/chrono">
       <provider selected="true" editor-type-id="text-editor">
@@ -623,7 +615,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math/all.h">
+    <entry file="file://$PROJECT_DIR$/templates/math/all.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -637,27 +629,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph/graph.h">
+    <entry file="file://$PROJECT_DIR$/templates/graph/graph.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template_tests/graph/test_graph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_tests/graph/graph_tests.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/template_tests/graph/test_graph.h" />
+    <entry file="file://$PROJECT_DIR$/template_tests/graph/graph_tests.h" />
     <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/bits/std_function.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -665,45 +645,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template_tests/rand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2915">
-          <caret line="257" column="1" lean-forward="true" selection-start-line="257" selection-start-column="1" selection-end-line="257" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_tests/template_utils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#492#504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_tests/ds/ds_tests.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_tests/ds/rsq.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_tests/test_utils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="109" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds/all.h">
+    <entry file="file://$PROJECT_DIR$/template_tests/rand.h" />
+    <entry file="file://$PROJECT_DIR$/template_tests/template_utils.h" />
+    <entry file="file://$PROJECT_DIR$/template_tests/ds/ds_tests.h" />
+    <entry file="file://$PROJECT_DIR$/template_tests/ds/rsq.h" />
+    <entry file="file://$PROJECT_DIR$/template_tests/test_utils.h" />
+    <entry file="file://$PROJECT_DIR$/templates/ds/all.h">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
@@ -713,104 +660,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template_tests/global_includes.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#93#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template_tests/tests.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#142#161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds/fast_clear_array.h">
+    <entry file="file://$PROJECT_DIR$/template_tests/global_includes.h" />
+    <entry file="file://$PROJECT_DIR$/template_tests/tests.h" />
+    <entry file="file://$PROJECT_DIR$/templates/ds/fast_clear_array.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="881">
           <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template_minimalist.h">
+    <entry file="file://$PROJECT_DIR$/templates/template_minimalist.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input_formats.h">
+    <entry file="file://$PROJECT_DIR$/templates/input_formats.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
           <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math/matrix_exp.h">
+    <entry file="file://$PROJECT_DIR$/templates/math/matrix_exp.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ds/bit.h">
+    <entry file="file://$PROJECT_DIR$/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/templates/ds/bit.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4488">
           <caret line="264" column="6" selection-start-line="264" selection-start-column="6" selection-end-line="264" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ds/segment_tree.h">
+    <entry file="file://$PROJECT_DIR$/templates/ds/segment_tree.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math/fast_mul.h">
+    <entry file="file://$PROJECT_DIR$/templates/math/fast_mul.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util.h">
+    <entry file="file://$PROJECT_DIR$/templates/template.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#992#1047#0" expanded="true" />
-            <element signature="e#1122#1156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math/fast_pow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template2.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="710">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="e#602#614#0" expanded="true" />
             <element signature="e#3029#3041#0" expanded="true" />
@@ -820,10 +725,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template.h">
+    <entry file="file://$PROJECT_DIR$/templates/math/fast_pow.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="391">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/whomax.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/util.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#992#1047#0" expanded="true" />
+            <element signature="e#1122#1156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/aplusb.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_lib/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/aplusb_abort.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/aplusb_sigsev.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/aplusb_wa.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/aplusb_ce.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_lib/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
