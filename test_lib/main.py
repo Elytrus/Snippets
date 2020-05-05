@@ -1,9 +1,9 @@
 import os
 import random
 import subprocess as sub
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
-from multiprocessing import Pool
-from threading import current_thread
+from threading import current_thread, Lock
 
 from colorama import init, Fore, Style
 
@@ -11,17 +11,21 @@ from colorama import init, Fore, Style
 MAX_THREADS = 5
 TIMEOUT = 5.
 GCC_ARGS = ['-DLOCAL', '-O2']
-PROBLEMS = (
-    ('test/aplusb.cpp', 'aplusb'),
-    ('test/aplusb_wa.cpp', 'aplusb'),
-    ('test/aplusb_ce.cpp', 'aplusb'),
-    ('test/aplusb_sigsev.cpp', 'aplusb'),
-    ('test/aplusb_abort.cpp', 'aplusb'),
-)
-RAND_LIM = (0, 1000000000)
 
-# Some constants that shouldn't be touched
+PROBLEMS = (
+    (),
+)
+
+# Some constant values
 DATA_BASE_DIR = 'test_lib/library-checker-problems/sample'
+RAND_LIM = (0, 1000000000)
+TEST_PROBLEMS = (  # Only for testing the tester
+    ('test/test_tests/aplusb.cpp', 'aplusb'),
+    ('test/test_tests/aplusb_wa.cpp', 'aplusb'),
+    ('test/test_tests/aplusb_ce.cpp', 'aplusb'),
+    ('test/test_tests/aplusb_sigsev.cpp', 'aplusb'),
+    ('test/test_tests/aplusb_abort.cpp', 'aplusb'),
+)
 
 # Colorama Style Settings
 CE = Fore.RED + Style.DIM + 'CE' + Style.RESET_ALL + ' '
@@ -29,13 +33,15 @@ WA = Fore.LIGHTRED_EX + 'WA' + Style.RESET_ALL + ' '
 AC = Fore.GREEN + 'AC' + Style.RESET_ALL + ' '
 RE = Fore.LIGHTYELLOW_EX + 'RE' + Style.RESET_ALL + ' '
 
+# Only for debugging
+PROBLEMS = TEST_PROBLEMS
+
 
 def check(out, expected_out):
     """
     Checker for solutions
     :param out: Actual output
     :param expected_out: Expected output
-    :return:
     """
     return out.split() == expected_out.split()
 
@@ -44,7 +50,6 @@ def log(msg):
     """
     Logs a message.  Thread name and time are included
     :param msg: Message to log
-    :return:
     """
     full_msg = f'[{current_thread().name}/{datetime.now().strftime("%H:%M:%S")}] {msg}'
     print(full_msg)
@@ -53,7 +58,6 @@ def log(msg):
 def rand_exe_name():
     """
     Returns a random name for an executable file (that hasn't been taken already)
-    :return:
     """
     path = f'{random.randint(*RAND_LIM)}.exe'
     while os.path.exists(path):
@@ -61,39 +65,53 @@ def rand_exe_name():
     return path
 
 
+def path_name(path):
+    """
+    Returns name of file path
+    :param path: File path
+    """
+    return path.split('/')[-1]
+
+
 def colorama_init():
     """
     Inits colorama
-    :return:
     """
     init(strip=False, convert=True, autoreset=True)
 
 
-def get_res(src_file, problem):
+# Generator lock
+generator_lock = Lock()
+
+
+def get_res(src_file_problem):
     """
     Tests the specified source file.  Returns whether it passed the test cases
-    :param src_file: The source file to test
-    :param problem: The ID of the problem to test the source code on
-    :return:
+    :param src_file_problem: A tuple: (source file to test, ID of the problem to use)
+    :return: Whether the tests passed or not
     """
+    src_file, problem = src_file_problem
+    src_name = path_name(src_file)
 
     # Colorama
     colorama_init()
 
     # Compile
-    log(f'Compiling {src_file}')
+    log(f'Compiling {src_name}')
     exe_path = rand_exe_name()
     sub.run(['g++', src_file] + GCC_ARGS + ['-o', exe_path])
     if not os.path.exists(exe_path):
-        log(f'{CE}Compile of {src_file} failed!')
+        log(f'{CE}Compile of {src_file} failed!')  # Using src_file instead of name so user knows full path
         return False
 
     def cleanup():  # Cleanup function
         os.remove(exe_path)
 
     # Generate test data
-    log(f'Generating test data for {src_file}...')
+    generator_lock.acquire()
+    log(f'Generating test data for {src_name}...')
     sub.run(['python', 'test_lib/library-checker-problems/generate.py', '-p', problem])
+    generator_lock.release()
 
     # Run on tests
     data_dir = f'{DATA_BASE_DIR}/{problem}'
@@ -106,19 +124,19 @@ def get_res(src_file, problem):
         # Run tests
         res = sub.run(['./' + exe_path], timeout=TIMEOUT, capture_output=True, text=True, input=test_input)
         if res.returncode:
-            log(f'{RE}{src_file} RE {test}: Non-zero return code {res.returncode}')
+            log(f'{RE}{src_name} RE {test}: Non-zero return code {res.returncode}')
             cleanup()
             return False
         elif res.stderr:
-            log(f'{RE}{src_file} RE {test}: stderr: {res.stderr}')
+            log(f'{RE}{src_name} RE {test}: stderr: {res.stderr}')
             cleanup()
             return False
 
         # Check
         if check(res.stdout, test_output):
-            log(f'{AC}{src_file} passed {test}')
+            log(f'{AC}{src_name} passed {test}')
         else:
-            log(f'{WA}{src_file} failed {test}')
+            log(f'{WA}{src_name} failed {test}')
             cleanup()
             return False
     cleanup()
@@ -132,11 +150,13 @@ if __name__ == '__main__':
     log('Running tests...')
 
     # Make pool and run tests
-    with Pool(MAX_THREADS) as pool:
+    with ThreadPoolExecutor(max_workers=MAX_THREADS, thread_name_prefix='T') as pool:
         passed_cnt = 0
         failed_cnt = 0
-        for index, passed in enumerate(pool.starmap(get_res, PROBLEMS)):
-            src_name, test_name = PROBLEMS[index]
+        for index, passed in enumerate(pool.map(get_res, PROBLEMS)):
+            src_file, test_name = PROBLEMS[index]
+            src_name = path_name(src_file)
+            
             msg = f'{Fore.GREEN}{src_name} passed' if passed else f'{Fore.LIGHTRED_EX}{src_name} Failed'
             log(f'{msg} test set {test_name}')
 

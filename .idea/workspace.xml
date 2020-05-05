@@ -13,87 +13,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/aplusb.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/aplusb_abort.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/aplusb_ce.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/aplusb_sigsev.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/aplusb_wa.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Snippets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Snippets.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snippets.exe.stackdump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/all.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/bit.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/bit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/fast_clear_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/fast_clear_array.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/segment_tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/segment_tree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/sparse_table.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/sparse_table.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/static_deque.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/static_deque.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/static_stack.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/static_stack.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/treap.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/treap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/treap_implicit.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/treap_implicit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds/treap_order_statistics.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/treap_order_statistics.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/all.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/articulation_points.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/articulation_points.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/bfs.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/bfs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/biconnected_components.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/biconnected_components.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/bridges.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/bridges.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/centroid_decomposition.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/centroid_decomposition.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/dijkstra.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/dijkstra.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/flat_graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/flat_graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/scc.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/scc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/topological_sort.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/topological_sort.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/topological_sort_no_transpose.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph/topological_sort_no_transpose.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_ds/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/all.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_ds/lca_binary_lift.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/lca_binary_lift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_ds/lca_euler.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/lca_euler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_ds/union_find.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/union_find.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_formats.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/input_formats.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/all.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/choose.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/choose.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/extended_euclidian_algorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/extended_euclidian_algorithm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/fast_mul.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/fast_mul.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/fast_pow.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/fast_pow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/gcd.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/gcd.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/heron.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/heron.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/matrix_exp.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/matrix_exp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/shoelace.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/shoelace.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math/sieve_and_factor.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/sieve_and_factor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/algorithms/dfs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/algorithms/dfs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/algorithms/line segment intersections (ccc06s3).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/algorithms/line segment intersections (ccc06s3).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/algorithms/longest increasing subsequence.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/algorithms/longest increasing subsequence.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/algorithms/querying prefix sum arrays.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/algorithms/querying prefix sum arrays.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/data structures/policy based order statistic tree.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/policy based order statistic tree.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/data structures/segment tree (node based).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/segment tree (node based).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/data structures/square root decomp (dmpg 18 silver P5).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/square root decomp (dmpg 18 silver P5).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/data structures/treap v1.0 (order statistics tree).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/treap v1.0 (order statistics tree).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/data structures/treap v2.0 (order statistics tree).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/treap v2.0 (order statistics tree).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/data structures/treap v2.5 (order statistics tree).txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/old/data structures/treap v2.5 (order statistics tree).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_ds/all.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/string_ds/all.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_ds/substr_hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/string_ds/substr_hash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_ds/suffix_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/string_ds/suffix_array.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string_ds/trie.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/string_ds/trie.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template2.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_minimalist.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template_minimalist.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/ds/ds_tests.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/ds/rsq.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/global_includes.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/graph/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/graph/generators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/graph/generators/ap_bridge_brute_force.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/graph/generators/graphmaker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/graph/graph_tests.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/graph/test_graph.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/rand.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/template_utils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/test_utils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template_tests/tests.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/aplusb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/aplusb_abort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb_abort.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/aplusb_ce.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb_ce.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/aplusb_sigsev.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb_sigsev.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/aplusb_wa.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_tests/aplusb_wa.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_lib/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/main.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-mingw/" />
@@ -128,10 +54,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_lib/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+            <state relative-caret-position="983">
+              <caret line="147" column="74" selection-start-line="147" selection-start-column="74" selection-end-line="147" selection-end-column="74" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/template.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+              <folding>
+                <element signature="e#602#614#0" expanded="true" />
+                <element signature="e#3029#3041#0" expanded="true" />
+                <element signature="e#3135#3147#0" expanded="true" />
+                <element signature="e#3220#3247#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -288,7 +229,7 @@
             <path>
               <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
               <item name="Snippets" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="test_lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,11 +252,11 @@
       <recent name="E:\repos\Snippets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\repos\Snippets\test\test_tests" />
       <recent name="E:\repos\Snippets\templates" />
       <recent name="C:\Users\2021100\Desktop\repos\Snippets\test" />
       <recent name="C:\Users\2021100\Desktop\repos\Snippets\test\graph" />
       <recent name="E:\repos\Snippets\graph\test" />
-      <recent name="E:\repos\Snippets\graph\generators" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -358,8 +299,9 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="TERM" value="" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="E:\repos\Snippets\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -460,12 +402,12 @@
       <workItem from="1588391264235" duration="47000" />
       <workItem from="1588391350995" duration="27000" />
       <workItem from="1588646390947" duration="369000" />
-      <workItem from="1588646780277" duration="3934000" />
+      <workItem from="1588646780277" duration="5490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171839000" />
+    <option name="totallyTimeSpent" value="173395000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -669,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/template_minimalist.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/input_formats.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
@@ -709,19 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/template.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#602#614#0" expanded="true" />
-            <element signature="e#3029#3041#0" expanded="true" />
-            <element signature="e#3135#3147#0" expanded="true" />
-            <element signature="e#3220#3247#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -760,7 +682,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/aplusb.cpp">
+    <entry file="file://$PROJECT_DIR$/test/test_tests/aplusb.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
@@ -774,38 +696,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/aplusb_abort.cpp">
+    <entry file="file://$PROJECT_DIR$/test/test_tests/aplusb_abort.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/aplusb_sigsev.cpp">
+    <entry file="file://$PROJECT_DIR$/test/test_tests/aplusb_sigsev.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/aplusb_wa.cpp">
+    <entry file="file://$PROJECT_DIR$/test/test_tests/aplusb_wa.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/aplusb_ce.cpp">
+    <entry file="file://$PROJECT_DIR$/test/test_tests/aplusb_ce.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/template_minimalist.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/template.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#602#614#0" expanded="true" />
+            <element signature="e#3029#3041#0" expanded="true" />
+            <element signature="e#3135#3147#0" expanded="true" />
+            <element signature="e#3220#3247#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_lib/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="983">
+          <caret line="147" column="74" selection-start-line="147" selection-start-column="74" selection-end-line="147" selection-end-column="74" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
