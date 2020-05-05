@@ -13,12 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/math/modular.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/graph_ds/unionfind.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ds/bit.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ds/prefix_sum_array.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ds/sparse_table.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/graph_ds/union_find.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph_ds/union_find.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/math/fast_mul.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/math/fast_pow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ds/bit.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/bit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ds/sparse_table.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/sparse_table.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/util.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_lib/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/main.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -54,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_lib/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
+            <state relative-caret-position="306">
+              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -63,56 +65,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/template.h">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/ds/sparse_table.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="255">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding>
-                <element signature="e#602#614#0" expanded="true" />
-                <element signature="e#3029#3041#0" expanded="true" />
-                <element signature="e#3135#3147#0" expanded="true" />
-                <element signature="e#3220#3247#0" expanded="true" />
+                <element signature="e#207#219#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/graph_ds/unionfind.cpp">
+        <entry file="file://$PROJECT_DIR$/test/ds/sparse_table.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/graph_ds/union_find.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_lib/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/util.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="289">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
-                <element signature="e#992#1047#0" expanded="true" />
-                <element signature="e#1122#1156#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,13 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/graph/centroid_decomposition.h" />
-        <option value="$PROJECT_DIR$/math/choose.h" />
-        <option value="$PROJECT_DIR$/math/fast_pow.h" />
-        <option value="$PROJECT_DIR$/math/fast_mul.h" />
-        <option value="$PROJECT_DIR$/math/extended_euclidian_algorithm.h" />
-        <option value="$PROJECT_DIR$/string_ds/all.h" />
-        <option value="$PROJECT_DIR$/string_ds/substr_hash.h" />
         <option value="$PROJECT_DIR$/math/all.h" />
         <option value="$PROJECT_DIR$/math/shoelace.h" />
         <option value="$PROJECT_DIR$/string_ds/suffix_array.h" />
@@ -204,7 +168,6 @@
         <option value="$PROJECT_DIR$/template2.h" />
         <option value="$PROJECT_DIR$/template.h" />
         <option value="$PROJECT_DIR$/test_lib/setup.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/aplusb.cpp" />
         <option value="$PROJECT_DIR$/test/aplusb_abort.cpp" />
         <option value="$PROJECT_DIR$/test/aplusb_sigsev.cpp" />
@@ -212,9 +175,17 @@
         <option value="$PROJECT_DIR$/test/aplusb_ce.cpp" />
         <option value="$PROJECT_DIR$/templates/math/modular.h" />
         <option value="$PROJECT_DIR$/test/unionfind.cpp" />
-        <option value="$PROJECT_DIR$/test_lib/main.py" />
         <option value="$PROJECT_DIR$/test/graph_ds/unionfind.cpp" />
         <option value="$PROJECT_DIR$/templates/graph_ds/union_find.h" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/templates/util.h" />
+        <option value="$PROJECT_DIR$/test/ds/prefix_sum_array.cpp" />
+        <option value="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" />
+        <option value="$PROJECT_DIR$/test/ds/bit.cpp" />
+        <option value="$PROJECT_DIR$/templates/ds/bit.h" />
+        <option value="$PROJECT_DIR$/test_lib/main.py" />
+        <option value="$PROJECT_DIR$/test/ds/sparse_table.cpp" />
+        <option value="$PROJECT_DIR$/templates/ds/sparse_table.h" />
       </list>
     </option>
   </component>
@@ -248,13 +219,7 @@
               <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
               <item name="Snippets" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="graph_ds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
@@ -264,7 +229,14 @@
             <path>
               <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
               <item name="Snippets" type="462c0819:PsiDirectoryNode" />
-              <item name="test_lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="graph_ds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -276,13 +248,14 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/ds" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\repos\Snippets\test\ds" />
       <recent name="E:\repos\Snippets\test" />
       <recent name="E:\repos\Snippets" />
     </key>
@@ -437,12 +410,12 @@
       <workItem from="1588391264235" duration="47000" />
       <workItem from="1588391350995" duration="27000" />
       <workItem from="1588646390947" duration="369000" />
-      <workItem from="1588646780277" duration="6661000" />
+      <workItem from="1588646780277" duration="10553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174566000" />
+    <option name="totallyTimeSpent" value="178458000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,7 +435,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.317757" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2793354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -492,46 +465,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/math/heron.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <element signature="e#180#192#0" expanded="true" />
-            <element signature="e#601#613#0" expanded="true" />
-            <element signature="e#784#796#0" expanded="true" />
-            <element signature="e#1045#1057#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/math/shoelace.h" />
-    <entry file="file://$PROJECT_DIR$/templates/string_ds/suffix_array.h" />
-    <entry file="file://$PROJECT_DIR$/templates/math/choose.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="e#14#41#0" expanded="true" />
-            <element signature="e#153#170#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/graph/biconnected_components.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ds/treap_implicit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/graph/articulation_points.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -635,13 +568,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp" />
-    <entry file="file://$PROJECT_DIR$/templates/ds/bit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4488">
-          <caret line="264" column="6" selection-start-line="264" selection-start-column="6" selection-end-line="264" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/ds/segment_tree.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -663,24 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12">
           <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/util.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#992#1047#0" expanded="true" />
-            <element signature="e#1122#1156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -740,20 +648,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_lib/setup.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_lib/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -772,15 +670,110 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/graph_ds/unionfind.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/graph_ds/union_find.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_lib/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/cygwin64/usr/include/w32api/commctrl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="5312" column="51" selection-start-line="5312" selection-start-column="51" selection-end-line="5312" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/util.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <element signature="e#992#1047#0" expanded="true" />
+            <element signature="e#1122#1156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ds/prefix_sum_array.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="69" lean-forward="true" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ds/prefix_sum_array.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ds/bit.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ds/bit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="e#909#921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_lib/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ds/sparse_table.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ds/sparse_table.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="e#207#219#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

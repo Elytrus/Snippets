@@ -1,24 +1,28 @@
 #pragma once
 
-#include "test/global_includes.h"
+#include "bits/stdc++.h"
+
+using namespace std;
 
 //begintemplate sparsetable
-//description Sparse Table (RMQ) data structure
-template <int MAX, int LOG, typename T>
+//description Sparse Table (RMQ) data structure.  Structure is 1-indexed (and init array should be as well)
+template <typename T>
 struct SparseTable {
-    int n; T table[LOG][MAX]; T (*merge)(T, T);
-    SparseTable(int n0, T (*merge0)(T, T)) : n(n0), merge(merge0) {}
-    void build(int *arr){
-        copy(arr + 1, arr + n + 1, table[0] + 1);
-        for(int i = 1; i < LOG; i++){
-            int jmp = 1 << (i - 1), end = n - jmp;
-            for(int j = 1; j <= end; j++)
-                table[i][j] = merge(table[i - 1][j], table[i - 1][j + jmp]);
+    virtual T Op(T &a, T &b) = 0;
+    int N, lg;
+    vector<vector<T>> tb;
+    void init(int n, T* init) {
+        N = n; lg = 31 - __builtin_clz(N) + 1; tb.assign(lg, vector<T>(N + 1));
+        copy(init + 1, init + 1 + N, tb[0].begin() + 1);
+        for (int i = 1; i < lg; i++) {
+            int jmp = 1 << (i - 1), end = N - jmp;
+            for (int j = 1; j <= end; j++)
+                tb[i][j] = Op(tb[i - 1][j], tb[i - 1][j + jmp]);
         }
     }
-    T query(int l, int r){
-        int delta = r - l + 1, bit = 31 - __builtin_clz(delta);
-        return merge(table[bit][l], table[bit][r - (1 << bit) + 1]);
+    T query(int L, int R) {
+        int bit = 31 - __builtin_clz(R - L + 1);
+        return Op(tb[bit][L], tb[bit][R - (1 << bit) + 1]);
     }
 };
 //endtemplate sparsetable

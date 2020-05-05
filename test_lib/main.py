@@ -14,6 +14,9 @@ GCC_ARGS = ['-DLOCAL', '-O2']
 
 PROBLEMS = (
     ('test/graph_ds/unionfind.cpp', 'datastructure/unionfind'),
+    ('test/ds/prefix_sum_array.cpp', 'datastructure/static_range_sum'),
+    ('test/ds/bit.cpp', 'datastructure/point_add_range_sum'),
+    ('test/ds/sparse_table.cpp', 'datastructure/staticrmq'),
 )
 
 # Some constant values
@@ -46,13 +49,19 @@ def check(out, expected_out):
     return out.split() == expected_out.split()
 
 
+# TODO: Make result logging multiline instead of as separate messages.  It would be cleaner and faster
+log_lock = Lock()
+
+
 def log(msg):
     """
     Logs a message.  Thread name and time are included
     :param msg: Message to log
     """
+    log_lock.acquire()
     full_msg = f'[{current_thread().name}/{datetime.now().strftime("%H:%M:%S")}] {msg}'
     print(full_msg)
+    log_lock.release()
 
 
 def rand_exe_name():

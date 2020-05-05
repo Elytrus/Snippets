@@ -48,17 +48,3 @@ using os_tree = tree<T, null_type, comp, rb_tree_tag, tree_order_statistics_node
 using namespace std::chrono;
 ll timeMs() { return duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count(); }
 //endtemplate time
-
-ll fpow(ll x, ll y);
-const ll MOD = -1;
-//begintemplate modular
-//description modular integer operations.  Assumes MOD (modulus to work with) is defined and (for division) fpow(ll, ll) (fast power algorithm) is defined
-inline ll madd(ll a, ll b) { return (a + b) % MOD; }
-inline ll msub(ll a, ll b) { return (a - b + MOD) % MOD; }
-inline ll mmul(ll a, ll b) { return (a * b) % MOD; }
-inline ll mdiv(ll a, ll b) { return (a * fpow(b, MOD - 2)) % MOD; }
-inline void amadd(ll &a, ll b) { a = madd(a, b); }
-inline void amsub(ll &a, ll b) { a = msub(a, b); }
-inline void ammul(ll &a, ll b) { a = mmul(a, b); }
-inline void amdiv(ll &a, ll b) { a = mdiv(a, b); }
-//endtemplate modular
