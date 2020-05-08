@@ -21,6 +21,9 @@ template<typename I> string intStr(I x) { string ret; while (x > 0) { ret += (x 
 #define popcount __builtin_popcount
 #define clz __builtin_clz
 #define ctz __builtin_ctz
+#define popcountll __builtin_popcountll
+#define clzll __builtin_clzll
+#define ctzll __builtin_ctzll
 #define finline __attribute__((always_inline))
 // Shorthand Function Macros
 #define sz(x) ((int)((x).size()))

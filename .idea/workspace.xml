@@ -13,15 +13,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ds/bit.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ds/prefix_sum_array.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ds/sparse_table.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ds/bit.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/bit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ds/sparse_table.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/sparse_table.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_lib/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ds/treap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ds/treap_implicit.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/treap_implicit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/graph/graph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/graph/topological_sort_no_transpose.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/math/matrix_exp.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/math/modular.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/modular.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/algorithms/dfs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/algorithms/line segment intersections (ccc06s3).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/algorithms/longest increasing subsequence.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/old/algorithms/querying prefix sum arrays.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/template.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-mingw/" />
@@ -56,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_lib/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="187">
               <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -65,25 +69,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/ds/sparse_table.h">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/graph_ds/union_find.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-              <folding>
-                <element signature="e#207#219#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ds/sparse_table.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/template.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="388">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#602#614#0" expanded="true" />
+                <element signature="e#3029#3041#0" expanded="true" />
+                <element signature="e#3135#3147#0" expanded="true" />
+                <element signature="e#3220#3247#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,10 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/math/all.h" />
-        <option value="$PROJECT_DIR$/math/shoelace.h" />
-        <option value="$PROJECT_DIR$/string_ds/suffix_array.h" />
-        <option value="$PROJECT_DIR$/ds/treap_implicit.h" />
         <option value="$PROJECT_DIR$/graph/biconnected_components.h" />
         <option value="$PROJECT_DIR$/stdincludes.h" />
         <option value="$PROJECT_DIR$/rand.h" />
@@ -173,19 +173,23 @@
         <option value="$PROJECT_DIR$/test/aplusb_sigsev.cpp" />
         <option value="$PROJECT_DIR$/test/aplusb_wa.cpp" />
         <option value="$PROJECT_DIR$/test/aplusb_ce.cpp" />
-        <option value="$PROJECT_DIR$/templates/math/modular.h" />
         <option value="$PROJECT_DIR$/test/unionfind.cpp" />
         <option value="$PROJECT_DIR$/test/graph_ds/unionfind.cpp" />
         <option value="$PROJECT_DIR$/templates/graph_ds/union_find.h" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/templates/util.h" />
         <option value="$PROJECT_DIR$/test/ds/prefix_sum_array.cpp" />
-        <option value="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" />
         <option value="$PROJECT_DIR$/test/ds/bit.cpp" />
         <option value="$PROJECT_DIR$/templates/ds/bit.h" />
         <option value="$PROJECT_DIR$/test_lib/main.py" />
         <option value="$PROJECT_DIR$/test/ds/sparse_table.cpp" />
         <option value="$PROJECT_DIR$/templates/ds/sparse_table.h" />
+        <option value="$PROJECT_DIR$/templates/ds/treap_implicit.h" />
+        <option value="$PROJECT_DIR$/templates/ds/treap.h" />
+        <option value="$PROJECT_DIR$/templates/math/modular.h" />
+        <option value="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" />
+        <option value="$PROJECT_DIR$/templates/math/matrix.h" />
+        <option value="$PROJECT_DIR$/templates/template.h" />
       </list>
     </option>
   </component>
@@ -220,6 +224,24 @@
               <item name="Snippets" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="ds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="graph_ds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snippets" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Snippets" type="b2602c69:ProjectViewProjectNode" />
@@ -410,12 +432,15 @@
       <workItem from="1588391264235" duration="47000" />
       <workItem from="1588391350995" duration="27000" />
       <workItem from="1588646390947" duration="369000" />
-      <workItem from="1588646780277" duration="10553000" />
+      <workItem from="1588646780277" duration="11138000" />
+      <workItem from="1588726539847" duration="764000" />
+      <workItem from="1588812254109" duration="240000" />
+      <workItem from="1588976316942" duration="624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178458000" />
+    <option name="totallyTimeSpent" value="180671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,14 +453,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20309168" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20948827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2793354" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2793354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -445,7 +469,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3281412" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.25337487" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.25337487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -465,26 +489,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/graph/articulation_points.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="e#14#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-    <entry file="file://$PROJECT_DIR$/template_tests/graph/generators/ap_bridge_brute_force.cpp" />
-    <entry file="file://$PROJECT_DIR$/rand.h" />
     <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/chrono">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -513,13 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/graph/graph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/graph/graph.h" />
     <entry file="file://$PROJECT_DIR$/template_tests/graph/test_graph.h" />
     <entry file="file://$PROJECT_DIR$/template_tests/graph/graph_tests.h" />
     <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/bits/std_function.h">
@@ -546,24 +544,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template_tests/global_includes.h" />
     <entry file="file://$PROJECT_DIR$/template_tests/tests.h" />
-    <entry file="file://$PROJECT_DIR$/templates/ds/fast_clear_array.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/input_formats.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
           <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/math/matrix_exp.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
@@ -575,13 +559,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/math/fast_pow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/math/fast_pow.h" />
     <entry file="file://$PROJECT_DIR$/whomax.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -634,37 +612,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/math/fast_mul.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/math/modular.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/math/fast_mul.h" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/template.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#602#614#0" expanded="true" />
-            <element signature="e#3029#3041#0" expanded="true" />
-            <element signature="e#3135#3147#0" expanded="true" />
-            <element signature="e#3220#3247#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -675,13 +627,6 @@
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/graph_ds/union_find.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -710,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ds/prefix_sum_array.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="69" lean-forward="true" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ds/prefix_sum_array.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -737,26 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ds/bit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="e#909#921#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_lib/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ds/sparse_table.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -767,12 +685,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/old/algorithms/querying prefix sum arrays.txt" />
+    <entry file="file://$PROJECT_DIR$/templates/graph/topological_sort.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ds/treap.h" />
+    <entry file="file://$PROJECT_DIR$/templates/ds/fast_clear_array.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/math/modular.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ds/treap_implicit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ds/treap_order_statistics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ds/bit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/ds/sparse_table.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="459">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
           <folding>
             <element signature="e#207#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ds/prefix_sum_array.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_lib/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/math/matrix.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/graph_ds/union_find.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/template.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding>
+            <element signature="e#602#614#0" expanded="true" />
+            <element signature="e#3029#3041#0" expanded="true" />
+            <element signature="e#3135#3147#0" expanded="true" />
+            <element signature="e#3220#3247#0" expanded="true" />
           </folding>
         </state>
       </provider>

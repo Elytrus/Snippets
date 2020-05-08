@@ -18,5 +18,6 @@ struct PSA {
     }
     T query(int l, int r) { return Invop(psum[r], psum[l - 1]); }
 };
-//endtemplate
+//endtemplate prefix_sum_array
+
 

@@ -1,7 +1,7 @@
 #include "test/global_includes.h";
 template <typename T> using vec = vector<T>;
 
-//begintemplate matrixexponent
+//begintemplate matrix
 //description Matrix Multiplication (NbyN) in O(N^3) and Matrix Exponentiation (NbyN) * K in O(N^3logK)
 using Mat = vec<vec<ll>>;
 const ll MOD = 1e9 + 7;
@@ -37,4 +37,4 @@ Mat exp(Mat a, ull pow) {
     }
     return ret;
 }
-//endtemplate
+//endtemplate matrix

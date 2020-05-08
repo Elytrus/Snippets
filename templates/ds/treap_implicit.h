@@ -27,7 +27,7 @@ struct ImplicitTreap {
     }
     void upd(Node* cur) {
         if (cur) {
-            pushDown(cur->l); pushDown(cur->r); // MUST INCLUDE THIS OR YOU LITERALLY DIEEEEEEEEEEEE (WA) (REQUIRED FOR REVERSE OPERATION)
+            pushDown(cur->l); pushDown(cur->r); // MUST INCLUDE THIS OR YOU LITERALLY DIE (WA) (REQUIRED FOR REVERSE OPERATION)
             cur->sz = sz(cur->l) + sz(cur->r) + 1;
 
             assert(("Not implemented yet!", 0));
