@@ -13,19 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a329513-7df0-4dbe-bd54-0c74e64df7a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ds/treap.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ds/treap_implicit.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ds/treap_implicit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/graph/graph.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/graph/topological_sort_no_transpose.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/math/matrix_exp.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/matrix.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/math/modular.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math/modular.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/algorithms/dfs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/algorithms/line segment intersections (ccc06s3).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/algorithms/longest increasing subsequence.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/old/algorithms/querying prefix sum arrays.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.h" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_lib/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_lib/main.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-mingw/" />
@@ -60,11 +49,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_lib/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+            <state relative-caret-position="374">
+              <caret line="207" column="113" selection-start-line="207" selection-start-column="113" selection-end-line="207" selection-end-column="113" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#6#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="255">
+                <caret line="15" column="175" selection-start-line="15" selection-start-column="175" selection-end-line="15" selection-end-column="175" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -78,16 +79,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/template.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="517">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="e#602#614#0" expanded="true" />
-                <element signature="e#3029#3041#0" expanded="true" />
-                <element signature="e#3135#3147#0" expanded="true" />
-                <element signature="e#3220#3247#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,7 +140,6 @@
         <option value="$PROJECT_DIR$/graph/biconnected_components.h" />
         <option value="$PROJECT_DIR$/stdincludes.h" />
         <option value="$PROJECT_DIR$/rand.h" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
         <option value="$PROJECT_DIR$/test/important_template_utils.h" />
         <option value="$PROJECT_DIR$/test/template_utils.h" />
@@ -181,7 +178,6 @@
         <option value="$PROJECT_DIR$/test/ds/prefix_sum_array.cpp" />
         <option value="$PROJECT_DIR$/test/ds/bit.cpp" />
         <option value="$PROJECT_DIR$/templates/ds/bit.h" />
-        <option value="$PROJECT_DIR$/test_lib/main.py" />
         <option value="$PROJECT_DIR$/test/ds/sparse_table.cpp" />
         <option value="$PROJECT_DIR$/templates/ds/sparse_table.h" />
         <option value="$PROJECT_DIR$/templates/ds/treap_implicit.h" />
@@ -190,6 +186,8 @@
         <option value="$PROJECT_DIR$/templates/ds/prefix_sum_array.h" />
         <option value="$PROJECT_DIR$/templates/math/matrix.h" />
         <option value="$PROJECT_DIR$/templates/template.h" />
+        <option value="$PROJECT_DIR$/test_lib/main.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -436,11 +434,12 @@
       <workItem from="1588726539847" duration="764000" />
       <workItem from="1588812254109" duration="240000" />
       <workItem from="1588976316942" duration="624000" />
+      <workItem from="1589229517180" duration="9212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180671000" />
+    <option name="totallyTimeSpent" value="189883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,13 +452,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20948827" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16950959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2793354" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2793354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -469,7 +469,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3281412" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.25337487" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.25337487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -489,13 +489,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/chrono">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="602" column="44" selection-start-line="602" selection-start-column="44" selection-end-line="602" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/functional">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -742,16 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_lib/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/math/matrix.h">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -768,14 +751,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/template.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state relative-caret-position="517">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="e#602#614#0" expanded="true" />
-            <element signature="e#3029#3041#0" expanded="true" />
-            <element signature="e#3135#3147#0" expanded="true" />
-            <element signature="e#3220#3247#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_lib/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="207" column="113" selection-start-line="207" selection-start-column="113" selection-end-line="207" selection-end-column="113" />
+          <folding>
+            <element signature="e#0#6#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="15" column="175" selection-start-line="15" selection-start-column="175" selection-end-line="15" selection-end-column="175" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

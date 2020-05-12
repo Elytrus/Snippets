@@ -3,6 +3,18 @@ Data Structure and Algorithm Snippets
 
 All snippets are written in C++
 
+## Automated tester
+
+After installing the prerequisites from `requirements.txt`, simply run `python test_lib/main.py` to test all templates at once.  Alternatively, you can run `python test_lib/main.py <file_name>` to test a single template.  Note that `<file_name>` must be the name of a source file in the `test/` directory (it doesn't have to be the full path, the program will try to match `<file_name>` to the correct test file to compile and run).
+
+Examples:
+
+- `python test_lib/main.py` will test all templates
+- `python test_lib/main.py bit.cpp` will test the BIT template using the test file `test/ds/bit.cpp`.
+- `python test_lib/main.py graph_ds/unionfind.cpp` will test the unionfind template using the test file `test/graph_ds/unionfind.cpp`.  Note that simply specifying `unionfind` or `unionfind.cpp` in place of `graph_ds/unionfind.cpp` would have worked as well.
+
+Note that in the case of multiple file paths matching the given `<file_name>` argument, the one that comes first in the `PROBLEMS` constant in `test_lib/main.py` will be used.
+
 ## Planned Templates/Other To-Dos
 
 * DS
