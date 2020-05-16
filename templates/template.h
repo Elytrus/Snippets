@@ -26,7 +26,6 @@ template<typename I> string intStr(I x) { string ret; while (x > 0) { ret += (x 
 #define ctzll __builtin_ctzll
 #define finline __attribute__((always_inline))
 // Shorthand Function Macros
-#define sz(x) ((int)((x).size()))
 #define all(x) (x).begin(), (x).end()
 #define rep(i, a, b) for (__typeof(a) i = a; i < b; i++)
 #define reprev(i, a, b) for (__typeof(a) i = a; i > b; i--)
@@ -41,6 +40,7 @@ template<typename I> string intStr(I x) { string ret; while (x > 0) { ret += (x 
 #define Pow2(x) (1LL << (x))
 #define scn(type, ...) type __VA_ARGS__; scan(__VA_ARGS__) // scn -> Short for SCan New
 // Shorthand Functions
+template<typename T> inline int sz(const T &x) { return x.size(); }
 template<typename T> inline void maxa(T& st, T v) { st = max(st, v); }
 template<typename T> inline void mina(T& st, T v) { st = min(st, v); }
 inline void setprec(ostream& out, int prec) { out << setprecision(prec) << fixed; }

@@ -21,6 +21,32 @@ int main() {
 }
 //endtemplate multiple_cases
 
+//begintemplate google
+//description Input with multiple test cases- Google Code Jam/Kickstart Style
+void solve() {
+    $3
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int T; cin >> T;
+    int caseno = 1;
+    while (T--) {
+        // Input
+        $1
+
+        // Reset
+        $2
+
+        cout << "Case #" << (caseno++) << ": ";
+        solve();
+    }
+}
+//endtemplate google
+
+
 //begintemplate usaco
 //description usaco-style File I/O.  Assumes that -DLOCAL is passed when compiling locally
 void init_file_io() {
