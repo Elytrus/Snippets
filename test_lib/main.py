@@ -21,6 +21,7 @@ PROBLEMS = (
 
     ('test/ds/bit.cpp', 'datastructure/point_add_range_sum'),
     ('test/ds/fast_clear_array.cpp', None),
+    ('test/ds/lazy_segment_tree.cpp', 'datastructure/range_affine_range_sum'),
     ('test/ds/prefix_sum_array.cpp', 'datastructure/static_range_sum'),
     ('test/ds/segment_tree.cpp', 'datastructure/point_add_range_sum'),
     ('test/ds/sparse_table.cpp', 'datastructure/staticrmq'),
