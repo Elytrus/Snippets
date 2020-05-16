@@ -1,7 +1,8 @@
 #pragma once
 
-#include "test/global_includes.h"
-#include "fast_pow.h"
+#include "bits/stdc++.h"
+#include "mod.h"
+using namespace std;
 
 //begintemplate choose
 //description N choose K in log(n) time with O(n) setup

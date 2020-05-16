@@ -1,23 +1,30 @@
-import sys
 import os
 import random
 import subprocess as sub
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from threading import Lock
+from threading import current_thread
 
 from colorama import init, Fore, Style
 
 # Configuration settings
-MAX_THREADS = 5
-TIMEOUT = 5.
-GCC_ARGS = ['-DLOCAL', '-O2']
+MAX_THREADS = 5  # Max num of threads
+TIMEOUT = 5.  # Timeout for programs
+GCC_ARGS = ['-DLOCAL', '-O2']  # Compile arguments used
+LOCAL_TEST_ACCEPTED = 'OK'  # When running local tests, correctness is determined by whether the local tester prints this phrase
 
+# List of problems in the form (src path (relative to the repository), problem_id).  If it's a locally tested problem, leave the problem_id as None
 PROBLEMS = (
     ('test/graph_ds/unionfind.cpp', 'datastructure/unionfind'),
-    ('test/ds/prefix_sum_array.cpp', 'datastructure/static_range_sum'),
+
     ('test/ds/bit.cpp', 'datastructure/point_add_range_sum'),
+    ('test/ds/fast_clear_array.cpp', None),
+    ('test/ds/prefix_sum_array.cpp', 'datastructure/static_range_sum'),
+    ('test/ds/segment_tree.cpp', 'datastructure/point_add_range_sum'),
     ('test/ds/sparse_table.cpp', 'datastructure/staticrmq'),
+    ('test/ds/static_deque_and_stack.cpp', None),
 )
 
 # Some constant values
@@ -31,7 +38,7 @@ TEST_PROBLEMS = (  # Only for testing the tester
     ('test/test_tests/aplusb_abort.cpp', 'sample/aplusb'),
 )
 
-# Colorama Style Settings
+# Colorama Style Stuff
 CE = (Fore.RED + Style.DIM, 'CE')
 WA = (Fore.LIGHTRED_EX, 'WA')
 AC = (Fore.GREEN, 'AC')
@@ -102,8 +109,9 @@ def get_res(src_file_problem):
     """
     src_file, problem = src_file_problem
     src_name = path_name(src_file)
-    problem_id = problem.split('/')[-1]
     yosupo = bool(problem)
+    if yosupo:
+        problem_id = problem.split('/')[-1]
 
     # Colorama
     colorama_init()
@@ -120,13 +128,14 @@ def get_res(src_file_problem):
         :param extra: Extra feedback displayed on the next line, optional
         :return:
         """
-        return (f'{verdict[0]}{src_name} ({problem}) {verdict[1]}' + (f': {message}' if message else '') + f'{Style.RESET_ALL}\n' +
+        problem_id_str = f'({problem}) ' if problem else ''
+        return (f'{verdict[0]}{src_name} {problem_id_str}{verdict[1]}' + (f': {message}' if message else '') + f'{Style.RESET_ALL}\n' +
                 (f'\t{extra}\n' if extra else '') +
                 (f'\tpassed: {", ".join(passed)}\n' if passed else '') +
                 (f'\tfailed: {", ".join(failed)}\n' if failed else '')).rstrip('\n')
 
     # Compile
-    log(f'Compiling {src_name}')
+    log(f'Compiling {src_name} ({current_thread().name})')
     exe_path = rand_exe_name()
     sub.run(['g++', src_file] + GCC_ARGS + ['-o', exe_path])
     if not os.path.exists(exe_path):
@@ -190,10 +199,11 @@ def get_res(src_file_problem):
         # Checking
         if msg:
             return msg, False
-        if res.stdout.strip() == 'AC':
+        actual_out = res.stdout.strip()
+        if actual_out == LOCAL_TEST_ACCEPTED:
             return log_message(AC, 'local tests'), True
         else:
-            return log_message(WA, 'local tests'), False
+            return log_message(WA, 'local tests' + (f': {actual_out}' if actual_out else '')), False
 
 
 if __name__ == '__main__':

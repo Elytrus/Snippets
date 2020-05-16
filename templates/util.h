@@ -47,4 +47,5 @@ using os_tree = tree<T, null_type, comp, rb_tree_tag, tree_order_statistics_node
 //description gets time
 using namespace std::chrono;
 ll timeMs() { return duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count(); }
+ll time() { return high_resolution_clock::now().time_since_epoch}
 //endtemplate time

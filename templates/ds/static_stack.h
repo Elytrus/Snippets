@@ -1,19 +1,17 @@
 #pragma once
 
-#include "test/global_includes.h"
+#include "bits/stdc++.h"
+using namespace std;
 
 //begintemplate staticstack
 //description A static, array based stack that's very fast
-template <int MAX, typename T>
+template <typename T, int MN>
 struct StaticStack {
-    T arr[MAX]; int ptr = -1;
-    void push(T v) { arr[++ptr] = v; }
-    T pop() { return arr[ptr--]; }
-    T top() { return arr[ptr]; }
-    int size() { return ptr + 1; }
-    bool empty() { return ptr == -1; }
-    void clear() { ptr = -1; }
-    T* begin() { return arr; }
-    T* end() { return arr + ptr + 1; }
+    array<T, MN> val; int ptr = 0;
+    void push(T v) { if (ptr == MN) throw runtime_error("Too many values! (stack is full)"); val[ptr++] = v; }
+    T pop() { return val[--ptr]; }
+    T top() { return val[ptr - 1]; }
+    int size() { return ptr; }
+    void clear() { ptr = 0; }
 };
 //endtemplate staticstack
