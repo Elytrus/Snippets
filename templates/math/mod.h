@@ -1,36 +1,25 @@
 #pragma once
 
 #include "bits/stdc++.h"
-#ifndef _LL
 
-//begintemplate math
+using ll = long long;
+
+//begintemplate mod
 //description Basic modular arithmetic
 const ll MOD = 1e9 + 7;
-ll madd(ll a, ll b) { return (a + b) % MOD; }
-ll msub(ll a, ll b) { return (a - b + MOD) % MOD; }
-ll mmul(ll a, ll b) { return (a * b) % MOD; }
-ll fpow(ll x, ll y) {
+ll madd(ll a, ll b, ll mod = MOD) { return (a + b) % mod; }
+ll msub(ll a, ll b, ll mod = MOD) { return (a - b + mod) % mod; }
+ll mmul(ll a, ll b, ll mod = MOD) { return (a * b) % mod; }
+ll fpow(ll x, ll y, ll mod = MOD) {
     if (!y) return 1LL;
-    return mmul(fpow(mmul(x, x), y >> 1), (y & 1) ? x : 1LL);
+    return mmul(fpow(mmul(x, x, mod), y >> 1, mod), (y & 1) ? x : 1LL, mod);
 }
-ll mdiv(ll x, ll y) { return mmul(x, fpow(y, MOD - 2)); }
-//endtemplate math
-
-//begintemplate dynamicmod
-//description Basic modular arithmetic with dynamic math
-ll madd(ll a, ll b, ll MOD) { return (a + b) % MOD; }
-ll msub(ll a, ll b, ll MOD) { return (a - b + MOD) % MOD; }
-ll mmul(ll a, ll b, ll MOD) { return (a * b) % MOD; }
-ll fpow(ll x, ll y, ll MOD) {
-    if (!y) return 1LL;
-    return mmul(fpow(mmul(x, x, MOD), y >> 1, MOD), (y & 1) ? x : 1LL, MOD);
-}
-ll mdiv(ll x, ll y, ll MOD) { return mmul(x, fpow(y, MOD - 2, MOD), MOD); }
-//endtemplate dynamicmod
+ll mdiv(ll x, ll y, ll mod = MOD) { return mmul(x, fpow(y, mod - 2, mod), mod); }
+//endtemplate mod
 
 //begintemplate fastmulmod
 //description (a * b) math (math) without overflow (math <= 2 * LLONG_MAX)
-ll fmul(ll x, ll y, ll mod) {
+ll fmul(ll x, ll y, ll mod = MOD) {
     if (!y) return 0LL;
     return (fmul((x + x) % mod, y >> 1, mod) + ((y & 1) ? x : 0LL)) % mod;
 }

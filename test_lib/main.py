@@ -25,6 +25,9 @@ PROBLEMS = (
     ('test/ds/segment_tree.cpp', 'datastructure/point_add_range_sum'),
     ('test/ds/sparse_table.cpp', 'datastructure/staticrmq'),
     ('test/ds/static_deque_and_stack.cpp', None),
+
+    ('test/math/choose.cpp', None),
+    ('test/math/mod.cpp', None),
 )
 
 # Some constant values
@@ -156,7 +159,7 @@ def get_res(src_file_problem):
     passed = []
     failed = []
 
-    def check_RE(res):  # Given a CompletedProcess, returns a log message if there was an RE and None otherwise
+    def check_RE(test, res):  # Given a CompletedProcess, returns a log message if there was an RE and None otherwise
         if res.returncode:
             return log_message(RE, f'non-zero return code', f'Test {test}: code {res.returncode}')
         elif res.stderr:
@@ -176,7 +179,7 @@ def get_res(src_file_problem):
             res = sub.run(['./' + exe_path], timeout=TIMEOUT, capture_output=True, text=True, input=test_input)
 
             # Check
-            msg = check_RE(res)
+            msg = check_RE(test, res)
             if msg:
                 cleanup()
                 return msg, False
@@ -193,7 +196,7 @@ def get_res(src_file_problem):
     else:
         # Run program
         res = sub.run(['./' + exe_path], timeout=TIMEOUT, capture_output=True, text=True)
-        msg = check_RE(res)
+        msg = check_RE('ALL', res)
         cleanup()
 
         # Checking
