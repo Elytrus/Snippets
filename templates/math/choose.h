@@ -6,7 +6,6 @@ using namespace std;
 
 //begintemplate choose
 //description N choose K (and N permute K) in log(n) time with O(n) setup
-//endtemplate choose
 vector<ll> fact;
 void init_nchoosek(int MN, ll mod = MOD) {
     fact.resize(MN + 1);
@@ -16,6 +15,8 @@ void init_nchoosek(int MN, ll mod = MOD) {
 }
 ll choose(ll N, ll K, ll mod = MOD) { return mdiv(fact[N], mmul(fact[K], fact[N - K], mod), mod); }
 ll permute(ll N, ll K, ll mod = MOD) { return mdiv(fact[N], fact[N - K], mod); }
+//endtemplate choose
+
 /*
 Given n coins, the probability of getting k of them to be heads,
 with the probability of a coin being heads being p, can be computed
