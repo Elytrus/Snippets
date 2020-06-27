@@ -87,7 +87,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/ds/splay_implicit.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
+            <state relative-caret-position="529">
               <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
             </state>
           </provider>
@@ -445,12 +445,12 @@
       <workItem from="1589229517180" duration="9629000" />
       <workItem from="1589581139602" duration="17443000" />
       <workItem from="1589636354219" duration="1216000" />
-      <workItem from="1590039103717" duration="238000" />
+      <workItem from="1590039103717" duration="307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209200000" />
+    <option name="totallyTimeSpent" value="209266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -875,7 +875,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ds/splay_implicit.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
+        <state relative-caret-position="529">
           <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
         </state>
       </provider>
